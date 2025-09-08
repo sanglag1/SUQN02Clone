@@ -1,0 +1,1618 @@
+[
+  {
+    "id": "90d30913-25fd-402f-84aa-087797f7b8b6",
+    "userId": "c9b1a23f-9c1f-4f0b-ab09-f280bd13ca92",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "decd62ea-5820-4eaf-8eb5-1543e50ae2a8",
+        "answerIndex": [
+          2
+        ]
+      },
+      {
+        "questionId": "3878263d-2bbf-4ea8-919b-b79ff39851d0",
+        "answerIndex": [
+          1
+        ]
+      },
+      {
+        "questionId": "2864316e-98fd-4e43-a801-347fd9f3c730",
+        "answerIndex": [
+          1
+        ]
+      },
+      {
+        "questionId": "198ed64f-1ef7-4b82-ba9c-a06faacf8c01",
+        "answerIndex": [
+          1
+        ]
+      },
+      {
+        "questionId": "a2be13fe-7fdd-472e-b960-e561118404fe",
+        "answerIndex": [
+          1
+        ]
+      }
+    ],
+    "score": 4,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 7,
+    "completedAt": "2025-08-26T08:54:09.846Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "c9b1a23f-9c1f-4f0b-ab09-f280bd13ca92",
+    "answerMapping": {
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "3878263d-2bbf-4ea8-919b-b79ff39851d0": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "a2be13fe-7fdd-472e-b960-e561118404fe": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "decd62ea-5820-4eaf-8eb5-1543e50ae2a8": [
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "0c9d8d1b-4bb0-45b3-b4a1-96aa4f617eaa",
+    "userId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "198ed64f-1ef7-4b82-ba9c-a06faacf8c01",
+        "answerIndex": [
+          2
+        ]
+      },
+      {
+        "questionId": "2864316e-98fd-4e43-a801-347fd9f3c730",
+        "answerIndex": [
+          1
+        ]
+      },
+      {
+        "questionId": "3878263d-2bbf-4ea8-919b-b79ff39851d0",
+        "answerIndex": [
+          2
+        ]
+      },
+      {
+        "questionId": "decd62ea-5820-4eaf-8eb5-1543e50ae2a8",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "a2be13fe-7fdd-472e-b960-e561118404fe",
+        "answerIndex": [
+          3
+        ]
+      }
+    ],
+    "score": 8,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 146,
+    "completedAt": "2025-08-26T07:38:46.457Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "answerMapping": {
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "3878263d-2bbf-4ea8-919b-b79ff39851d0": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "a2be13fe-7fdd-472e-b960-e561118404fe": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "decd62ea-5820-4eaf-8eb5-1543e50ae2a8": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "4ec0a813-045e-4fe8-94b6-809b91c5ee1b",
+    "userId": "c9b1a23f-9c1f-4f0b-ab09-f280bd13ca92",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "decd62ea-5820-4eaf-8eb5-1543e50ae2a8",
+        "answerIndex": [
+          2
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 10,
+    "timeLimit": 10,
+    "timeUsed": 13,
+    "completedAt": "2025-08-26T08:52:36.523Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "c9b1a23f-9c1f-4f0b-ab09-f280bd13ca92",
+    "answerMapping": {
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "3878263d-2bbf-4ea8-919b-b79ff39851d0": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "a2be13fe-7fdd-472e-b960-e561118404fe": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "decd62ea-5820-4eaf-8eb5-1543e50ae2a8": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "e274ee3b-72cd-4487-9405-ec254f0e37f0": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "e8d171ad-5bcc-49ac-8208-583efe92fdeb": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "f4ca256a-413c-4d1e-9b57-479b3b515125": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "f61e2239-38e4-4b24-af47-f283be64832c": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "f6e429b7-3390-4524-8ee5-6c47de16a66b": [
+        0,
+        1,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "014f1ce4-fb21-4cce-b2a6-ca94a2aeec78",
+    "userId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": null,
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 0,
+    "completedAt": null,
+    "retryCount": 0,
+    "quizHistoryUserId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "answerMapping": {
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "3878263d-2bbf-4ea8-919b-b79ff39851d0": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "a2be13fe-7fdd-472e-b960-e561118404fe": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "decd62ea-5820-4eaf-8eb5-1543e50ae2a8": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "4ccae377-5738-4b72-a827-10069bac6169",
+    "userId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": null,
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 0,
+    "completedAt": null,
+    "retryCount": 0,
+    "quizHistoryUserId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "answerMapping": {
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "3878263d-2bbf-4ea8-919b-b79ff39851d0": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "a2be13fe-7fdd-472e-b960-e561118404fe": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "decd62ea-5820-4eaf-8eb5-1543e50ae2a8": [
+        3,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "4d628a4d-7d53-4d8f-b407-eb6ca6fa5dd8",
+    "userId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "a2be13fe-7fdd-472e-b960-e561118404fe",
+        "answerIndex": [
+          2
+        ]
+      },
+      {
+        "questionId": "decd62ea-5820-4eaf-8eb5-1543e50ae2a8",
+        "answerIndex": [
+          1
+        ]
+      },
+      {
+        "questionId": "198ed64f-1ef7-4b82-ba9c-a06faacf8c01",
+        "answerIndex": [
+          1
+        ]
+      },
+      {
+        "questionId": "2864316e-98fd-4e43-a801-347fd9f3c730",
+        "answerIndex": [
+          3
+        ]
+      },
+      {
+        "questionId": "3878263d-2bbf-4ea8-919b-b79ff39851d0",
+        "answerIndex": [
+          1
+        ]
+      }
+    ],
+    "score": 10,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 128,
+    "completedAt": "2025-08-26T18:33:38.276Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "answerMapping": {
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "3878263d-2bbf-4ea8-919b-b79ff39851d0": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "a2be13fe-7fdd-472e-b960-e561118404fe": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "decd62ea-5820-4eaf-8eb5-1543e50ae2a8": [
+        3,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "7bd283b8-d10b-4a86-9077-e56a58ff2d9e",
+    "userId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "field": "Backend Development",
+    "topic": ".NET",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "8309ec48-09c0-45c3-a8d7-4aeef2a17083",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "e2686fa1-8204-4478-aaf7-810da3b68ec5",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "374e9a43-10ed-443d-bc6d-b51d896f668b",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "5a7c4039-4bae-4653-8c1f-9f6bbf714135",
+        "answerIndex": [
+          1
+        ]
+      },
+      {
+        "questionId": "5b46f6cb-c122-48a8-8999-e6974513269d",
+        "answerIndex": [
+          0
+        ]
+      }
+    ],
+    "score": 10,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 42,
+    "completedAt": "2025-08-26T19:58:28.888Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "answerMapping": {
+      "374e9a43-10ed-443d-bc6d-b51d896f668b": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "5a7c4039-4bae-4653-8c1f-9f6bbf714135": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "5b46f6cb-c122-48a8-8999-e6974513269d": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "8309ec48-09c0-45c3-a8d7-4aeef2a17083": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "e2686fa1-8204-4478-aaf7-810da3b68ec5": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "0622ebaf-ee8d-4307-9ad1-6133ac7a4400",
+    "userId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "field": "Backend Development",
+    "topic": ".NET",
+    "level": "middle",
+    "userAnswers": null,
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 0,
+    "completedAt": null,
+    "retryCount": 0,
+    "quizHistoryUserId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "answerMapping": {
+      "0d55a687-051f-4f19-b437-c801b5499b1e": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "1bd2dc4e-bc7c-4f07-a924-e8b0d47cccc2": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "3d547b46-f5b3-41e2-87ff-b52a01619c12": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "42ada2b8-2a52-4222-bc2a-f4867e549c1c": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "7aeaac26-44b7-45f4-88c1-8f2351ec2d39": [
+        1,
+        2,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "73cb3cd9-6921-463a-a398-6d7118804c52",
+    "userId": "2de84bac-2241-4323-b95d-0cebfecba4c6",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "decd62ea-5820-4eaf-8eb5-1543e50ae2a8",
+        "answerIndex": [
+          1
+        ]
+      },
+      {
+        "questionId": "e8d171ad-5bcc-49ac-8208-583efe92fdeb",
+        "answerIndex": [
+          0
+        ]
+      }
+    ],
+    "score": 1,
+    "totalQuestions": 10,
+    "timeLimit": 10,
+    "timeUsed": 13,
+    "completedAt": "2025-08-27T05:51:59.726Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "2de84bac-2241-4323-b95d-0cebfecba4c6",
+    "answerMapping": {
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "3878263d-2bbf-4ea8-919b-b79ff39851d0": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "a2be13fe-7fdd-472e-b960-e561118404fe": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "decd62ea-5820-4eaf-8eb5-1543e50ae2a8": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "e274ee3b-72cd-4487-9405-ec254f0e37f0": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "e8d171ad-5bcc-49ac-8208-583efe92fdeb": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "f4ca256a-413c-4d1e-9b57-479b3b515125": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "f61e2239-38e4-4b24-af47-f283be64832c": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "f6e429b7-3390-4524-8ee5-6c47de16a66b": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "0f24b13a-fd88-416c-9a6d-43b8d72d3366",
+    "userId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "field": "Backend Development",
+    "topic": ".NET",
+    "level": "middle",
+    "userAnswers": null,
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 0,
+    "completedAt": null,
+    "retryCount": 0,
+    "quizHistoryUserId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "answerMapping": {
+      "0d55a687-051f-4f19-b437-c801b5499b1e": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "3d547b46-f5b3-41e2-87ff-b52a01619c12": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "42ada2b8-2a52-4222-bc2a-f4867e549c1c": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "7aeaac26-44b7-45f4-88c1-8f2351ec2d39": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "e2489991-0b30-490c-bc81-4b43f893415c": [
+        2,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "60f57d73-c0a8-4567-afc9-f93e1182a645",
+    "userId": "2de84bac-2241-4323-b95d-0cebfecba4c6",
+    "field": "Frontend Development",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "707e037d-0506-4a2a-818c-ffac8211dc22",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "46c81242-ed3c-48e2-8177-9cb8ea50e4de",
+        "answerIndex": [
+          0
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 12,
+    "completedAt": "2025-08-29T09:23:00.868Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "2de84bac-2241-4323-b95d-0cebfecba4c6",
+    "answerMapping": {
+      "13d8a759-a07f-4d6c-915d-e22996ad9e4a": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "2b808cbc-a7dd-474e-a481-9ded1cb3f57f": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "46c81242-ed3c-48e2-8177-9cb8ea50e4de": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "4e1db98f-1219-4a3b-bcfa-8955b44ad712": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "707e037d-0506-4a2a-818c-ffac8211dc22": [
+        2,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "770d5942-eaf1-4fd6-85d4-bc6c40d1ca77",
+    "userId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": null,
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 0,
+    "completedAt": null,
+    "retryCount": 0,
+    "quizHistoryUserId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "answerMapping": {
+      "0a9626ec-f2f2-4879-a7fa-110d5c68478b": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "132f22ee-8336-428b-95a5-c01ca3b8de3f": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "2d8d1410-5ee0-47ed-a06d-d0aeaf59bdf8": [
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "7d5da051-7ab3-4316-b6fb-c228118af9b8",
+    "userId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "2864316e-98fd-4e43-a801-347fd9f3c730",
+        "answerIndex": [
+          1
+        ]
+      },
+      {
+        "questionId": "198ed64f-1ef7-4b82-ba9c-a06faacf8c01",
+        "answerIndex": [
+          3
+        ]
+      },
+      {
+        "questionId": "2d8d1410-5ee0-47ed-a06d-d0aeaf59bdf8",
+        "answerIndex": [
+          2
+        ]
+      },
+      {
+        "questionId": "132f22ee-8336-428b-95a5-c01ca3b8de3f",
+        "answerIndex": [
+          1
+        ]
+      },
+      {
+        "questionId": "0a9626ec-f2f2-4879-a7fa-110d5c68478b",
+        "answerIndex": [
+          3
+        ]
+      }
+    ],
+    "score": 10,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 167,
+    "completedAt": "2025-08-27T15:08:33.289Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "dd3a6988-85e6-4342-9179-1250e5f8c138",
+    "answerMapping": {
+      "0a9626ec-f2f2-4879-a7fa-110d5c68478b": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "132f22ee-8336-428b-95a5-c01ca3b8de3f": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "2d8d1410-5ee0-47ed-a06d-d0aeaf59bdf8": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "0f06d1ea-dc5c-44d0-850e-4c1a4a3f9c0e",
+    "userId": "835007b1-5241-41a6-8364-b9c2652bbd33",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "0a9626ec-f2f2-4879-a7fa-110d5c68478b",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "09427686-3931-486d-98dd-33aebe4ae1f2",
+        "answerIndex": [
+          0
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 26,
+    "completedAt": "2025-08-28T09:12:30.685Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "835007b1-5241-41a6-8364-b9c2652bbd33",
+    "answerMapping": {
+      "09427686-3931-486d-98dd-33aebe4ae1f2": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "0a9626ec-f2f2-4879-a7fa-110d5c68478b": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "132f22ee-8336-428b-95a5-c01ca3b8de3f": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        0,
+        3,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "2e5cb544-9ef1-4f50-8e4a-36fadd8aa9d5",
+    "userId": "4b5bac1c-ef3c-44b3-924c-39fea4d3a1d1",
+    "field": "Backend Development",
+    "topic": "Express.js",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "3cd700c4-8f8e-4473-8fe9-bf20e2324831",
+        "answerIndex": [
+          1
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 1,
+    "timeLimit": 5,
+    "timeUsed": 6,
+    "completedAt": "2025-08-28T04:14:02.509Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "4b5bac1c-ef3c-44b3-924c-39fea4d3a1d1",
+    "answerMapping": {
+      "3cd700c4-8f8e-4473-8fe9-bf20e2324831": [
+        2,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "7c530ed5-b425-4eff-a40f-2ecf82dc8f69",
+    "userId": "c02026e2-e29e-4318-bb54-9d3975b3e665",
+    "field": "Backend Development",
+    "topic": ".NET",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "374e9a43-10ed-443d-bc6d-b51d896f668b",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "5b46f6cb-c122-48a8-8999-e6974513269d",
+        "answerIndex": [
+          3
+        ]
+      },
+      {
+        "questionId": "e2686fa1-8204-4478-aaf7-810da3b68ec5",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "5a7c4039-4bae-4653-8c1f-9f6bbf714135",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "8309ec48-09c0-45c3-a8d7-4aeef2a17083",
+        "answerIndex": [
+          3
+        ]
+      }
+    ],
+    "score": 8,
+    "totalQuestions": 5,
+    "timeLimit": 20,
+    "timeUsed": 50,
+    "completedAt": "2025-08-28T04:40:49.033Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "c02026e2-e29e-4318-bb54-9d3975b3e665",
+    "answerMapping": {
+      "374e9a43-10ed-443d-bc6d-b51d896f668b": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "5a7c4039-4bae-4653-8c1f-9f6bbf714135": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "5b46f6cb-c122-48a8-8999-e6974513269d": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "8309ec48-09c0-45c3-a8d7-4aeef2a17083": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "e2686fa1-8204-4478-aaf7-810da3b68ec5": [
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "b505cc04-2a3b-415f-b14b-dca5dbaf71c1",
+    "userId": "c02026e2-e29e-4318-bb54-9d3975b3e665",
+    "field": "Backend Development",
+    "topic": "Express.js",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "3cd700c4-8f8e-4473-8fe9-bf20e2324831",
+        "answerIndex": [
+          0
+        ]
+      }
+    ],
+    "score": 10,
+    "totalQuestions": 1,
+    "timeLimit": 20,
+    "timeUsed": 6,
+    "completedAt": "2025-08-28T04:42:05.084Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "c02026e2-e29e-4318-bb54-9d3975b3e665",
+    "answerMapping": {
+      "3cd700c4-8f8e-4473-8fe9-bf20e2324831": [
+        0,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "b15d817b-0ab0-401d-a72a-c074f1ad6542",
+    "userId": "714f0539-939c-4bac-bc41-ce6a2e8fd562",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "2864316e-98fd-4e43-a801-347fd9f3c730",
+        "answerIndex": [
+          1
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 300,
+    "completedAt": "2025-08-28T05:58:34.718Z",
+    "retryCount": 1,
+    "quizHistoryUserId": "714f0539-939c-4bac-bc41-ce6a2e8fd562",
+    "answerMapping": {
+      "09427686-3931-486d-98dd-33aebe4ae1f2": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "0a9626ec-f2f2-4879-a7fa-110d5c68478b": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "132f22ee-8336-428b-95a5-c01ca3b8de3f": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        3,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "2ae85a68-af12-4654-8d34-1a642a0655aa",
+    "userId": "714f0539-939c-4bac-bc41-ce6a2e8fd562",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "09427686-3931-486d-98dd-33aebe4ae1f2",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "132f22ee-8336-428b-95a5-c01ca3b8de3f",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "198ed64f-1ef7-4b82-ba9c-a06faacf8c01",
+        "answerIndex": [
+          0
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 17,
+    "completedAt": "2025-08-28T05:42:03.549Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "714f0539-939c-4bac-bc41-ce6a2e8fd562",
+    "answerMapping": {
+      "09427686-3931-486d-98dd-33aebe4ae1f2": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "0a9626ec-f2f2-4879-a7fa-110d5c68478b": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "132f22ee-8336-428b-95a5-c01ca3b8de3f": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        1,
+        0,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "d4a0c025-c5f5-4c62-8f0f-4cca39dbf9e2",
+    "userId": "714f0539-939c-4bac-bc41-ce6a2e8fd562",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "2864316e-98fd-4e43-a801-347fd9f3c730",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "132f22ee-8336-428b-95a5-c01ca3b8de3f",
+        "answerIndex": [
+          2
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 26,
+    "completedAt": "2025-08-28T05:47:27.191Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "714f0539-939c-4bac-bc41-ce6a2e8fd562",
+    "answerMapping": {
+      "09427686-3931-486d-98dd-33aebe4ae1f2": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "0a9626ec-f2f2-4879-a7fa-110d5c68478b": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "132f22ee-8336-428b-95a5-c01ca3b8de3f": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "888206f4-15ea-4e1c-b73a-b53ab7b48b94",
+    "userId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "09427686-3931-486d-98dd-33aebe4ae1f2",
+        "answerIndex": [
+          0
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 33,
+    "completedAt": "2025-08-28T08:12:05.103Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "answerMapping": {
+      "09427686-3931-486d-98dd-33aebe4ae1f2": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "0a9626ec-f2f2-4879-a7fa-110d5c68478b": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "132f22ee-8336-428b-95a5-c01ca3b8de3f": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        3,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "c541773b-c0d5-4d36-b54a-8b055ee5f93e",
+    "userId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "field": "Backend Development",
+    "topic": ".NET",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "17a6f4df-3678-494a-8378-f2ed4d4eeab3",
+        "answerIndex": [
+          1
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 2,
+    "completedAt": "2025-08-28T08:13:35.362Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "answerMapping": {
+      "103b7ec8-bc06-473a-9bdf-883744b48c20": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "12983cc0-dd47-478f-88eb-25300c26d1bd": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "17a6f4df-3678-494a-8378-f2ed4d4eeab3": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "1e7bd226-1864-4c06-be9e-5e961bfb043b": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "2173f2cb-148d-4889-ab30-ff62bdd44316": [
+        3,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "e5e17bc4-f73c-420a-b49d-394cdfe9c6d9",
+    "userId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "field": "Backend Development",
+    "topic": ".NET",
+    "level": "junior",
+    "userAnswers": [],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 5,
+    "completedAt": "2025-08-28T08:15:18.645Z",
+    "retryCount": 1,
+    "quizHistoryUserId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "answerMapping": {
+      "103b7ec8-bc06-473a-9bdf-883744b48c20": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "12983cc0-dd47-478f-88eb-25300c26d1bd": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "17a6f4df-3678-494a-8378-f2ed4d4eeab3": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "1e7bd226-1864-4c06-be9e-5e961bfb043b": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "2173f2cb-148d-4889-ab30-ff62bdd44316": [
+        2,
+        0,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "101a9412-d1a2-4cd9-a0f0-a703a451b5b3",
+    "userId": "835007b1-5241-41a6-8364-b9c2652bbd33",
+    "field": "Frontend",
+    "topic": "React",
+    "level": "junior",
+    "userAnswers": [],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 3,
+    "completedAt": "2025-08-28T09:46:26.792Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "835007b1-5241-41a6-8364-b9c2652bbd33",
+    "answerMapping": {
+      "09427686-3931-486d-98dd-33aebe4ae1f2": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "0a9626ec-f2f2-4879-a7fa-110d5c68478b": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "132f22ee-8336-428b-95a5-c01ca3b8de3f": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "198ed64f-1ef7-4b82-ba9c-a06faacf8c01": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "2864316e-98fd-4e43-a801-347fd9f3c730": [
+        1,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "f8f8c90c-a8fd-4ec0-a33c-f1f33d7a1e10",
+    "userId": "2de84bac-2241-4323-b95d-0cebfecba4c6",
+    "field": "Frontend Development",
+    "topic": "HTML",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "bdbc0523-ad0c-49ed-bac7-2ecebcb28bae",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "30803042-3169-48ee-8830-5c746ae687dd",
+        "answerIndex": [
+          1,
+          2,
+          0
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 19,
+    "completedAt": "2025-08-29T09:55:48.116Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "2de84bac-2241-4323-b95d-0cebfecba4c6",
+    "answerMapping": {
+      "30803042-3169-48ee-8830-5c746ae687dd": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "4e88e124-c062-40ed-8a36-18564be83039": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "aa3d2b48-7a4f-4383-840c-520f5c3d02cb": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "bdbc0523-ad0c-49ed-bac7-2ecebcb28bae": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "da609c29-2e27-49a7-a0f6-2c6cf465f35b": [
+        1,
+        0,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "3a4edc67-749b-46f8-9e7b-b89ab0d8c123",
+    "userId": "2de84bac-2241-4323-b95d-0cebfecba4c6",
+    "field": "Frontend Development",
+    "topic": "HTML",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "aa3d2b48-7a4f-4383-840c-520f5c3d02cb",
+        "answerIndex": [
+          0
+        ]
+      },
+      {
+        "questionId": "30803042-3169-48ee-8830-5c746ae687dd",
+        "answerIndex": [
+          3,
+          2
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 15,
+    "completedAt": "2025-08-29T09:59:27.682Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "2de84bac-2241-4323-b95d-0cebfecba4c6",
+    "answerMapping": {
+      "30803042-3169-48ee-8830-5c746ae687dd": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "4e88e124-c062-40ed-8a36-18564be83039": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "aa3d2b48-7a4f-4383-840c-520f5c3d02cb": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "bdbc0523-ad0c-49ed-bac7-2ecebcb28bae": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "da609c29-2e27-49a7-a0f6-2c6cf465f35b": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "4af7a592-43a4-41c4-b6dc-6768183c04a4",
+    "userId": "ac69648e-0da5-47d3-bc81-f5e328ad460d",
+    "field": "Frontend Development",
+    "topic": "JavaScript",
+    "level": "junior",
+    "userAnswers": [
+      {
+        "questionId": "4f4003c5-fcc2-4b50-be1a-cf5a8ea9f599",
+        "answerIndex": [
+          1
+        ]
+      }
+    ],
+    "score": 0,
+    "totalQuestions": 5,
+    "timeLimit": 5,
+    "timeUsed": 4,
+    "completedAt": "2025-08-29T10:59:24.346Z",
+    "retryCount": 0,
+    "quizHistoryUserId": "ac69648e-0da5-47d3-bc81-f5e328ad460d",
+    "answerMapping": {
+      "035482c8-1341-431f-8917-8e852ef125fa": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "4169fb36-8884-4471-8ac5-eeec15d25e42": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "4a3b76e1-1aad-426f-8785-c2019629d666": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "4f4003c5-fcc2-4b50-be1a-cf5a8ea9f599": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "5fc14380-d316-4451-84d2-79a43bb860ce": [
+        0,
+        1,
+        3,
+        2
+      ]
+    }
+  }
+]

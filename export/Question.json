@@ -1,0 +1,5252 @@
+[
+  {
+    "id": "bcaf844b-4c45-448a-b75f-ecf5876f8203",
+    "question": "Which of the following is the main purpose of the Common Language Runtime (CLR) in .NET?",
+    "answers": [
+      {
+        "content": "It manages memory and execution of .NET programs.",
+        "isCorrect": true
+      },
+      {
+        "content": "It provides a graphical user interface for .NET applications.",
+        "isCorrect": false
+      },
+      {
+        "content": "It compiles C# code to machine code directly.",
+        "isCorrect": false
+      },
+      {
+        "content": "It is used for designing databases in .NET.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The Common Language Runtime (CLR) is the core runtime environment of .NET. It manages the execution of .NET programs, including memory management, security, and exception handling. It does not provide a GUI or directly compile code to machine code, but instead uses just-in-time compilation.",
+    "createdAt": "2025-08-29T08:37:57.599Z",
+    "updatedAt": "2025-08-29T08:37:57.599Z",
+    "createdById": null
+  },
+  {
+    "id": "0cf66d26-c3ac-47a7-a3b0-53b000107c55",
+    "question": "Which file extension is typically used for compiled .NET assemblies?",
+    "answers": [
+      {
+        "content": ".exe",
+        "isCorrect": true
+      },
+      {
+        "content": ".dll",
+        "isCorrect": true
+      },
+      {
+        "content": ".cs",
+        "isCorrect": false
+      },
+      {
+        "content": ".config",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "Compiled .NET assemblies are usually in the form of executable files (.exe) or dynamic link libraries (.dll). Source files use .cs for C#, and .config files are used for configuration, not for compiled assemblies.",
+    "createdAt": "2025-08-29T08:37:57.795Z",
+    "updatedAt": "2025-08-29T08:37:57.795Z",
+    "createdById": null
+  },
+  {
+    "id": "d8a14ee7-146e-4d0c-be55-d7065fbd9cdb",
+    "question": "Which language is NOT natively supported by the .NET framework?",
+    "answers": [
+      {
+        "content": "C#",
+        "isCorrect": false
+      },
+      {
+        "content": "VB.NET",
+        "isCorrect": false
+      },
+      {
+        "content": "Java",
+        "isCorrect": true
+      },
+      {
+        "content": "F#",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The .NET framework natively supports languages such as C#, VB.NET, and F#. Java is not a native .NET language and runs on its own platform (Java Virtual Machine).",
+    "createdAt": "2025-08-29T08:37:57.996Z",
+    "updatedAt": "2025-08-29T08:37:57.996Z",
+    "createdById": null
+  },
+  {
+    "id": "035601e5-655b-419a-8aa2-80c39402fb34",
+    "question": "What is the main benefit of the .NET framework's Common Type System (CTS)?",
+    "answers": [
+      {
+        "content": "It allows consistent data types across different .NET languages.",
+        "isCorrect": true
+      },
+      {
+        "content": "It enables direct access to hardware.",
+        "isCorrect": false
+      },
+      {
+        "content": "It enhances graphical capabilities.",
+        "isCorrect": false
+      },
+      {
+        "content": "It manages network connections automatically.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The Common Type System (CTS) in .NET defines how types are declared and used, ensuring compatibility and consistency of data types across languages like C#, VB.NET, and F#. This allows code written in different .NET languages to interoperate seamlessly.",
+    "createdAt": "2025-08-29T08:37:58.202Z",
+    "updatedAt": "2025-08-29T08:37:58.202Z",
+    "createdById": null
+  },
+  {
+    "id": "dca4074c-8d68-417a-84fa-76881b637a8c",
+    "question": "Which of the following is a component of the .NET Framework Class Library?",
+    "answers": [
+      {
+        "content": "System.IO",
+        "isCorrect": false
+      },
+      {
+        "content": "System.Net",
+        "isCorrect": false
+      },
+      {
+        "content": "System.Data",
+        "isCorrect": false
+      },
+      {
+        "content": "All of the above",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The .NET Framework Class Library includes a wide range of namespaces, such as System.IO for file operations, System.Net for networking, and System.Data for data access. 'All of the above' is correct because all listed namespaces are part of the class library.",
+    "createdAt": "2025-08-29T08:37:58.471Z",
+    "updatedAt": "2025-08-29T08:37:58.471Z",
+    "createdById": null
+  },
+  {
+    "id": "fc3a048d-f3cc-4fc8-916b-dcc2a7c669fa",
+    "question": "Which of the following best describes the role of the Common Language Runtime (CLR) in .NET applications?",
+    "answers": [
+      {
+        "content": "It translates source code into machine code before execution.",
+        "isCorrect": false
+      },
+      {
+        "content": "It manages memory, security, and exception handling for applications.",
+        "isCorrect": true
+      },
+      {
+        "content": "It provides a graphical user interface for .NET development.",
+        "isCorrect": false
+      },
+      {
+        "content": "It stores and retrieves data for .NET applications.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "The Common Language Runtime (CLR) is a core component of the .NET framework responsible for managing the execution of .NET programs. It provides essential services such as memory management, security enforcement, exception handling, and garbage collection. CLR does not translate source code directly, nor does it provide a GUI or act as a database.",
+    "createdAt": "2025-08-29T08:38:23.493Z",
+    "updatedAt": "2025-08-29T08:38:23.493Z",
+    "createdById": null
+  },
+  {
+    "id": "e0d4e47a-8eb9-4251-8c09-7a09388e4ad0",
+    "question": "Which data type in .NET is used to represent a sequence of Unicode characters?",
+    "answers": [
+      {
+        "content": "int",
+        "isCorrect": false
+      },
+      {
+        "content": "char",
+        "isCorrect": false
+      },
+      {
+        "content": "string",
+        "isCorrect": true
+      },
+      {
+        "content": "bool",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "The 'string' data type in .NET is used to represent a sequence of Unicode characters. It is a fundamental type for handling textual data, whereas 'int' is for integers, 'char' is for a single character, and 'bool' is for Boolean values.",
+    "createdAt": "2025-08-29T08:38:23.956Z",
+    "updatedAt": "2025-08-29T08:38:23.956Z",
+    "createdById": null
+  },
+  {
+    "id": "64a4a4e4-df26-4109-9eb4-26c64e7fd55a",
+    "question": "In .NET, which of the following statements about assemblies is correct?",
+    "answers": [
+      {
+        "content": "An assembly is a collection of classes and interfaces only.",
+        "isCorrect": false
+      },
+      {
+        "content": "An assembly is the smallest unit of deployment in .NET.",
+        "isCorrect": true
+      },
+      {
+        "content": "Assemblies cannot contain resources like images or XML files.",
+        "isCorrect": false
+      },
+      {
+        "content": "Assemblies must always be written in C#.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "An assembly in .NET is the smallest unit of deployment and versioning. It can contain compiled code, resources such as images, XML files, and metadata. Assemblies can be created from any .NET-compliant language, not just C#, and are not limited to only classes and interfaces.",
+    "createdAt": "2025-08-29T08:38:24.243Z",
+    "updatedAt": "2025-08-29T08:38:24.243Z",
+    "createdById": null
+  },
+  {
+    "id": "da738e72-bddd-4384-88da-ebefe0521635",
+    "question": "Which of the following statements about exception handling in .NET is true?",
+    "answers": [
+      {
+        "content": "The 'try' block is used to catch exceptions.",
+        "isCorrect": false
+      },
+      {
+        "content": "The 'catch' block is used to define code to handle exceptions.",
+        "isCorrect": true
+      },
+      {
+        "content": "Exceptions in .NET cannot be custom-defined.",
+        "isCorrect": false
+      },
+      {
+        "content": "A 'finally' block executes only if an exception occurs.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "In .NET, the 'catch' block is specifically used to define code that handles exceptions thrown within the 'try' block. The 'try' block is used to wrap code that might throw exceptions, and the 'finally' block executes regardless of whether an exception occurs. Developers can also create custom exceptions by inheriting from the base Exception class.",
+    "createdAt": "2025-08-29T08:38:24.505Z",
+    "updatedAt": "2025-08-29T08:38:24.505Z",
+    "createdById": null
+  },
+  {
+    "id": "13701d8a-75ba-442d-8a90-452ac3e6d72e",
+    "question": "Which of the following are valid ways to declare a method in a .NET class?",
+    "answers": [
+      {
+        "content": "public void MyMethod() {}",
+        "isCorrect": true
+      },
+      {
+        "content": "int MyMethod = 5;",
+        "isCorrect": false
+      },
+      {
+        "content": "private string GetName() { return \"Name\"; }",
+        "isCorrect": true
+      },
+      {
+        "content": "void Main(string[] args) {}",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Methods in .NET are declared using an access modifier (such as 'public' or 'private'), followed by a return type, method name, parameters, and a body. Options 1, 3, and 4 are valid method declarations. Option 2 is invalid because it assigns an integer value rather than defining a method.",
+    "createdAt": "2025-08-29T08:38:24.735Z",
+    "updatedAt": "2025-08-29T08:38:24.735Z",
+    "createdById": null
+  },
+  {
+    "id": "1ede22cd-7a6f-4d80-937e-017ab7dbb244",
+    "question": "Which of the following statements correctly describes the role of the Common Language Runtime (CLR) in the .NET framework?",
+    "answers": [
+      {
+        "content": "A. The CLR manages memory, thread execution, and garbage collection for .NET applications.",
+        "isCorrect": true
+      },
+      {
+        "content": "B. The CLR is responsible only for compiling source code to machine code.",
+        "isCorrect": false
+      },
+      {
+        "content": "C. The CLR provides a graphical user interface for .NET applications.",
+        "isCorrect": false
+      },
+      {
+        "content": "D. The CLR acts as a database management system for .NET applications.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "The Common Language Runtime (CLR) is the execution engine for .NET applications. It manages memory, handles thread execution, performs garbage collection, and enforces security and exception handling. It does not provide a GUI or act as a database; its primary role is to provide a managed execution environment.",
+    "createdAt": "2025-08-29T08:39:17.911Z",
+    "updatedAt": "2025-08-29T08:39:17.911Z",
+    "createdById": null
+  },
+  {
+    "id": "e8dd384a-38d4-4b1f-8543-6ce312e49555",
+    "question": "Which features are provided by the Entity Framework in .NET for backend development?",
+    "answers": [
+      {
+        "content": "A. Object-relational mapping (ORM)",
+        "isCorrect": true
+      },
+      {
+        "content": "B. Native support for HTTP requests",
+        "isCorrect": false
+      },
+      {
+        "content": "C. Automated database migrations",
+        "isCorrect": true
+      },
+      {
+        "content": "D. Direct hardware access",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Entity Framework is an ORM tool for .NET that allows developers to work with databases using .NET objects. It supports object-relational mapping and provides features like automated database migrations, which help manage schema changes. It does not provide native HTTP support or direct hardware access.",
+    "createdAt": "2025-08-29T08:39:18.196Z",
+    "updatedAt": "2025-08-29T08:39:18.196Z",
+    "createdById": null
+  },
+  {
+    "id": "a359f83c-0ac4-402f-b218-782c3a771185",
+    "question": "In .NET, what is the primary purpose of the 'async' and 'await' keywords?",
+    "answers": [
+      {
+        "content": "A. To implement multithreading explicitly",
+        "isCorrect": false
+      },
+      {
+        "content": "B. To perform asynchronous programming by allowing non-blocking operations",
+        "isCorrect": true
+      },
+      {
+        "content": "C. To define custom exception handling logic",
+        "isCorrect": false
+      },
+      {
+        "content": "D. To optimize garbage collection",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "The 'async' and 'await' keywords in .NET are used to enable asynchronous programming, allowing developers to write code that performs non-blocking operations, such as I/O tasks, without freezing the main thread. They do not implement multithreading directly, nor do they relate to exception handling or garbage collection.",
+    "createdAt": "2025-08-29T08:39:18.438Z",
+    "updatedAt": "2025-08-29T08:39:18.438Z",
+    "createdById": null
+  },
+  {
+    "id": "0802749c-25b5-454b-bbb5-318b10d36584",
+    "question": "Which of the following accurately describes the use of dependency injection in .NET backend applications?",
+    "answers": [
+      {
+        "content": "A. It allows classes to create their own dependencies internally.",
+        "isCorrect": false
+      },
+      {
+        "content": "B. It enables loose coupling by providing dependencies from external sources.",
+        "isCorrect": true
+      },
+      {
+        "content": "C. It is used exclusively for database connections.",
+        "isCorrect": false
+      },
+      {
+        "content": "D. It is a pattern that replaces object inheritance.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Dependency injection is a design pattern used in .NET to achieve loose coupling between classes by providing dependencies from external sources, typically through constructors or properties. This makes applications easier to test and maintain. It is not limited to database connections nor does it replace inheritance.",
+    "createdAt": "2025-08-29T08:39:18.739Z",
+    "updatedAt": "2025-08-29T08:39:18.739Z",
+    "createdById": null
+  },
+  {
+    "id": "41bf469c-b4b4-4a93-bcb5-2ee65556a5b9",
+    "question": "Which of the following are core components of the .NET framework for backend development?",
+    "answers": [
+      {
+        "content": "A. ASP.NET Core",
+        "isCorrect": true
+      },
+      {
+        "content": "B. Windows Forms",
+        "isCorrect": false
+      },
+      {
+        "content": "C. LINQ",
+        "isCorrect": true
+      },
+      {
+        "content": "D. Xamarin",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      ".NET"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "ASP.NET Core is a cross-platform framework for building backend web applications and APIs, while LINQ (Language Integrated Query) allows querying data from various sources in a consistent manner. Windows Forms is primarily used for desktop applications, and Xamarin is for mobile development, so they are not considered core backend components.",
+    "createdAt": "2025-08-29T08:39:19.020Z",
+    "updatedAt": "2025-08-29T08:39:19.020Z",
+    "createdById": null
+  },
+  {
+    "id": "62c97fa5-5906-422a-9874-73380743e61f",
+    "question": "Which HTTP method is most commonly used to retrieve data from an API?",
+    "answers": [
+      {
+        "content": "POST",
+        "isCorrect": false
+      },
+      {
+        "content": "GET",
+        "isCorrect": true
+      },
+      {
+        "content": "DELETE",
+        "isCorrect": false
+      },
+      {
+        "content": "PUT",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "API Design"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The GET method is primarily used to request data from a server at a specified resource. It is considered safe and idempotent, making it ideal for data retrieval operations in API design.",
+    "createdAt": "2025-08-29T08:39:50.359Z",
+    "updatedAt": "2025-08-29T08:39:50.359Z",
+    "createdById": null
+  },
+  {
+    "id": "3d5af4c0-2007-462a-b4e5-af70ac8e3443",
+    "question": "What is the main purpose of RESTful API design?",
+    "answers": [
+      {
+        "content": "To make APIs stateful",
+        "isCorrect": false
+      },
+      {
+        "content": "To provide a standard way to interact with resources",
+        "isCorrect": true
+      },
+      {
+        "content": "To use only XML for data exchange",
+        "isCorrect": false
+      },
+      {
+        "content": "To force clients to use one programming language",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "API Design"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "RESTful API design aims to create APIs that allow clients to interact with resources in a standardized way using HTTP methods. This approach makes APIs scalable, modular, and easy to understand, focusing on resources and stateless communication.",
+    "createdAt": "2025-08-29T08:39:50.780Z",
+    "updatedAt": "2025-08-29T08:39:50.780Z",
+    "createdById": null
+  },
+  {
+    "id": "9d632675-84f6-4c89-9cc9-8a959ea6686b",
+    "question": "Which of the following is recommended when designing endpoint URLs for a RESTful API?",
+    "answers": [
+      {
+        "content": "Use verbs in the URL paths",
+        "isCorrect": false
+      },
+      {
+        "content": "Use plural nouns to represent resources",
+        "isCorrect": true
+      },
+      {
+        "content": "Include sensitive data in URLs",
+        "isCorrect": false
+      },
+      {
+        "content": "Make URLs as short as possible, regardless of meaning",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "API Design"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In RESTful API design, it is recommended to use plural nouns to represent collections of resources (e.g., /users, /orders). This makes the API intuitive and aligns with common conventions. Verbs should be avoided in paths, as HTTP methods already express actions.",
+    "createdAt": "2025-08-29T08:39:51.074Z",
+    "updatedAt": "2025-08-29T08:39:51.074Z",
+    "createdById": null
+  },
+  {
+    "id": "223b25b6-efad-46f6-b075-9dda1e8e0059",
+    "question": "Which status code should a REST API return when a resource is successfully created?",
+    "answers": [
+      {
+        "content": "200 OK",
+        "isCorrect": false
+      },
+      {
+        "content": "201 Created",
+        "isCorrect": true
+      },
+      {
+        "content": "400 Bad Request",
+        "isCorrect": false
+      },
+      {
+        "content": "404 Not Found",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "API Design"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 201 Created status code signifies that the request has been fulfilled and resulted in the creation of a new resource. This is the standard response for successful POST requests that create resources in RESTful APIs.",
+    "createdAt": "2025-08-29T08:39:51.293Z",
+    "updatedAt": "2025-08-29T08:39:51.293Z",
+    "createdById": null
+  },
+  {
+    "id": "e1e954c3-1bfc-4f6c-86ab-47e1a44834ae",
+    "question": "What is the main advantage of using JSON as a data format in API design?",
+    "answers": [
+      {
+        "content": "It is only compatible with JavaScript",
+        "isCorrect": false
+      },
+      {
+        "content": "It is less readable than XML",
+        "isCorrect": false
+      },
+      {
+        "content": "It is lightweight and easy to parse",
+        "isCorrect": true
+      },
+      {
+        "content": "It requires proprietary libraries",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "API Design"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "JSON is commonly used in API design because it is a lightweight data format that is easy to read and parse by both humans and machines. It is language-independent and widely supported, making it suitable for modern APIs.",
+    "createdAt": "2025-08-29T08:39:51.516Z",
+    "updatedAt": "2025-08-29T08:39:51.516Z",
+    "createdById": null
+  },
+  {
+    "id": "ac1e9459-f004-4609-b1a7-ce51cd55ca87",
+    "question": "Which of the following HTTP methods is MOST appropriate for updating an existing resource in a RESTful API?",
+    "answers": [
+      {
+        "content": "GET",
+        "isCorrect": false
+      },
+      {
+        "content": "POST",
+        "isCorrect": false
+      },
+      {
+        "content": "PUT",
+        "isCorrect": true
+      },
+      {
+        "content": "DELETE",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "API Design"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "PUT is the standard HTTP method for updating an existing resource in RESTful APIs. Unlike POST, which is generally used for creating resources, PUT replaces the entire resource at the specified URI. GET retrieves data, and DELETE removes resources.",
+    "createdAt": "2025-08-29T08:40:11.636Z",
+    "updatedAt": "2025-08-29T08:40:11.636Z",
+    "createdById": null
+  },
+  {
+    "id": "d378a3a0-31b8-4375-a0a0-d0a1afcaef2b",
+    "question": "In API design, which status code(s) should a server return to indicate that a request was successful and a new resource was created?",
+    "answers": [
+      {
+        "content": "200 OK",
+        "isCorrect": false
+      },
+      {
+        "content": "201 Created",
+        "isCorrect": true
+      },
+      {
+        "content": "404 Not Found",
+        "isCorrect": false
+      },
+      {
+        "content": "204 No Content",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "API Design"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "When a server successfully creates a new resource, the appropriate status code is 201 Created. This signals to the client that the request was fulfilled and a new resource was generated. 200 OK is used for successful requests without resource creation, 204 No Content for successful requests with no content, and 404 Not Found for missing resources.",
+    "createdAt": "2025-08-29T08:40:11.875Z",
+    "updatedAt": "2025-08-29T08:40:11.875Z",
+    "createdById": null
+  },
+  {
+    "id": "f02cd08a-cc02-4e75-ac5d-f5d198b97bc8",
+    "question": "Which design principle encourages APIs to use nouns rather than verbs in their endpoint paths?",
+    "answers": [
+      {
+        "content": "Statelessness",
+        "isCorrect": false
+      },
+      {
+        "content": "Resource-Oriented Architecture",
+        "isCorrect": true
+      },
+      {
+        "content": "Versioning",
+        "isCorrect": false
+      },
+      {
+        "content": "Hypermedia as the Engine of Application State (HATEOAS)",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "API Design"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Resource-Oriented Architecture advocates using nouns to represent resources in API endpoint paths, such as /users or /products, rather than verbs like /getUser. This approach aligns with RESTful standards and makes APIs more intuitive and maintainable.",
+    "createdAt": "2025-08-29T08:40:12.135Z",
+    "updatedAt": "2025-08-29T08:40:12.135Z",
+    "createdById": null
+  },
+  {
+    "id": "2ed4487c-e994-4fda-9c27-66ea9cdc795b",
+    "question": "What is the primary benefit of using pagination in API responses?",
+    "answers": [
+      {
+        "content": "Improving security by hiding data",
+        "isCorrect": false
+      },
+      {
+        "content": "Reducing response size and improving performance",
+        "isCorrect": true
+      },
+      {
+        "content": "Allowing clients to update data more easily",
+        "isCorrect": false
+      },
+      {
+        "content": "Automatically validating client requests",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "API Design"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Pagination helps reduce the amount of data returned in a single API response, which improves performance and reduces bandwidth usage. This is especially important when dealing with large datasets, as it allows clients to request manageable chunks of data.",
+    "createdAt": "2025-08-29T08:40:12.351Z",
+    "updatedAt": "2025-08-29T08:40:12.351Z",
+    "createdById": null
+  },
+  {
+    "id": "db9a4b6a-723f-4ffe-abc2-e6a7c7438c0d",
+    "question": "Which of the following are important when documenting an API? Select ALL that apply.",
+    "answers": [
+      {
+        "content": "Detailed endpoint descriptions",
+        "isCorrect": true
+      },
+      {
+        "content": "Expected request/response formats",
+        "isCorrect": true
+      },
+      {
+        "content": "Business plan of the company",
+        "isCorrect": false
+      },
+      {
+        "content": "Error codes and their meanings",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "API Design"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Good API documentation includes detailed descriptions of endpoints, expected request and response formats, and error codes with their meanings. This information helps developers understand how to use the API effectively. Including unrelated business information is not relevant to API documentation.",
+    "createdAt": "2025-08-29T08:40:12.591Z",
+    "updatedAt": "2025-08-29T08:40:12.591Z",
+    "createdById": null
+  },
+  {
+    "id": "56cc118a-89d9-49fe-83cf-dd1f97b99856",
+    "question": "Which of the following is the correct way to declare a variable of type integer in C#?",
+    "answers": [
+      {
+        "content": "int number = 10;",
+        "isCorrect": true
+      },
+      {
+        "content": "integer number = 10;",
+        "isCorrect": false
+      },
+      {
+        "content": "num number = 10;",
+        "isCorrect": false
+      },
+      {
+        "content": "Int number = 10;",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In C#, 'int' is the correct keyword for declaring an integer variable. 'integer' and 'num' are invalid, and 'Int' (with a capital 'I') is incorrect for variable declaration. Understanding basic data types and their syntax is fundamental in C#.",
+    "createdAt": "2025-08-29T08:41:21.549Z",
+    "updatedAt": "2025-08-29T08:41:21.549Z",
+    "createdById": null
+  },
+  {
+    "id": "ab114e81-3cd1-4063-8b5f-738207b0d340",
+    "question": "What is the purpose of the 'using' statement in a C# program?",
+    "answers": [
+      {
+        "content": "To import namespaces for accessing classes and methods",
+        "isCorrect": true
+      },
+      {
+        "content": "To declare a variable",
+        "isCorrect": false
+      },
+      {
+        "content": "To define a method",
+        "isCorrect": false
+      },
+      {
+        "content": "To create a loop",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'using' statement in C# is used to include namespaces, which allows access to classes, methods, and other types defined within those namespaces. This is similar to 'import' in other languages and is essential for organizing code and reusing functionality.",
+    "createdAt": "2025-08-29T08:41:21.811Z",
+    "updatedAt": "2025-08-29T08:41:21.811Z",
+    "createdById": null
+  },
+  {
+    "id": "69a15bde-3423-4e40-9e50-759969c52e57",
+    "question": "What will be the output of the following C# code snippet?\n\nstring greeting = \"Hello\";\nConsole.WriteLine(greeting.Length);",
+    "answers": [
+      {
+        "content": "4",
+        "isCorrect": false
+      },
+      {
+        "content": "5",
+        "isCorrect": true
+      },
+      {
+        "content": "6",
+        "isCorrect": false
+      },
+      {
+        "content": "An error will occur",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'Length' property of a string in C# returns the number of characters in the string. The string \"Hello\" has 5 characters, so 'greeting.Length' will output 5. Understanding properties and basic string manipulation is a core concept in C#.",
+    "createdAt": "2025-08-29T08:41:22.064Z",
+    "updatedAt": "2025-08-29T08:41:22.064Z",
+    "createdById": null
+  },
+  {
+    "id": "cb23e63d-a335-4afc-831f-d1c5fb93c0f0",
+    "question": "Which of the following statements correctly creates a new instance of a class named 'Person'?",
+    "answers": [
+      {
+        "content": "Person p = new Person();",
+        "isCorrect": true
+      },
+      {
+        "content": "Person p = Person();",
+        "isCorrect": false
+      },
+      {
+        "content": "Person p = create Person();",
+        "isCorrect": false
+      },
+      {
+        "content": "Person p = Person.new();",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In C#, objects are created using the 'new' keyword followed by the class constructor, as in 'Person p = new Person();'. This is a fundamental concept in object-oriented programming and C# syntax.",
+    "createdAt": "2025-08-29T08:41:22.306Z",
+    "updatedAt": "2025-08-29T08:41:22.306Z",
+    "createdById": null
+  },
+  {
+    "id": "daaf7f53-2e45-4558-bf4e-60c122a6defb",
+    "question": "Which of the following data types can be used to store decimal numbers in C#? Select ALL that apply.",
+    "answers": [
+      {
+        "content": "int",
+        "isCorrect": false
+      },
+      {
+        "content": "double",
+        "isCorrect": true
+      },
+      {
+        "content": "string",
+        "isCorrect": false
+      },
+      {
+        "content": "float",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "'double' and 'float' are data types in C# that can store decimal numbers. 'int' is used for whole numbers, and 'string' stores text. Understanding the appropriate data types for different kinds of data is essential for writing correct and efficient C# programs.",
+    "createdAt": "2025-08-29T08:41:22.550Z",
+    "updatedAt": "2025-08-29T08:41:22.550Z",
+    "createdById": null
+  },
+  {
+    "id": "4d72e1f9-2552-4b6a-97b0-1134c58d7ff7",
+    "question": "Which of the following statements about interfaces in C# is TRUE?",
+    "answers": [
+      {
+        "content": "Interfaces can contain method definitions with implementations.",
+        "isCorrect": false
+      },
+      {
+        "content": "A class can implement multiple interfaces.",
+        "isCorrect": true
+      },
+      {
+        "content": "Interfaces can contain fields.",
+        "isCorrect": false
+      },
+      {
+        "content": "Interfaces cannot inherit from other interfaces.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "In C#, a class can implement multiple interfaces, which allows for more flexible and modular design. Interfaces cannot contain method implementations (prior to C# 8.0; default interface methods were introduced in C# 8.0, but for the core concept, implementations are not included), nor can they contain fields. Interfaces can inherit from other interfaces, allowing interface composition.",
+    "createdAt": "2025-08-29T08:41:47.931Z",
+    "updatedAt": "2025-08-29T08:41:47.931Z",
+    "createdById": null
+  },
+  {
+    "id": "ce1e82aa-7eb1-4105-ae34-01c15b01d201",
+    "question": "What is the primary purpose of the 'using' statement in C#?",
+    "answers": [
+      {
+        "content": "To declare a new namespace.",
+        "isCorrect": false
+      },
+      {
+        "content": "To import static members from a class.",
+        "isCorrect": false
+      },
+      {
+        "content": "To ensure the deterministic disposal of resources.",
+        "isCorrect": true
+      },
+      {
+        "content": "To define a local variable.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "The 'using' statement is used to define a scope at the end of which an object or objects will be disposed. It is most commonly used with classes that implement IDisposable to ensure that resources such as file handles or database connections are released as soon as they are no longer needed.",
+    "createdAt": "2025-08-29T08:41:48.140Z",
+    "updatedAt": "2025-08-29T08:41:48.140Z",
+    "createdById": null
+  },
+  {
+    "id": "463b5af3-cc9c-4812-aa28-31797a532f04",
+    "question": "Which of the following correctly defines a method that can be overridden in a derived class?",
+    "answers": [
+      {
+        "content": "public virtual void MyMethod() {}",
+        "isCorrect": true
+      },
+      {
+        "content": "public override void MyMethod() {}",
+        "isCorrect": false
+      },
+      {
+        "content": "public abstract void MyMethod();",
+        "isCorrect": false
+      },
+      {
+        "content": "public sealed void MyMethod() {}",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "In C#, a method must be marked as 'virtual' in the base class to allow derived classes to override it. The 'override' keyword is used in the derived class when actually overriding the method, while 'abstract' is used in abstract classes to force implementation in derived classes. 'Sealed' prevents further overriding.",
+    "createdAt": "2025-08-29T08:41:48.375Z",
+    "updatedAt": "2025-08-29T08:41:48.375Z",
+    "createdById": null
+  },
+  {
+    "id": "234f4abd-7d9d-4722-a7ce-80d46f1862fd",
+    "question": "Which of these statements about value types and reference types in C# is CORRECT?",
+    "answers": [
+      {
+        "content": "Value types are always stored on the heap.",
+        "isCorrect": false
+      },
+      {
+        "content": "Reference types hold a reference to the data stored on the heap.",
+        "isCorrect": true
+      },
+      {
+        "content": "Reference types cannot be null.",
+        "isCorrect": false
+      },
+      {
+        "content": "Value types are inherited from System.Object indirectly, not directly.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "In C#, reference types store a reference to the data's memory location on the heap, while value types directly contain their data, usually stored on the stack. Reference types can be null, and all types in C# inherit directly from System.Object.",
+    "createdAt": "2025-08-29T08:41:48.589Z",
+    "updatedAt": "2025-08-29T08:41:48.589Z",
+    "createdById": null
+  },
+  {
+    "id": "9f0c22a7-bc5a-4fd0-9c1d-60aa3055e635",
+    "question": "What will be the output of the following C# code?\n\nint x = 5;\nint y = x;\ny++;\nConsole.WriteLine(x);\n",
+    "answers": [
+      {
+        "content": "5",
+        "isCorrect": true
+      },
+      {
+        "content": "6",
+        "isCorrect": false
+      },
+      {
+        "content": "0",
+        "isCorrect": false
+      },
+      {
+        "content": "Compilation error",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "In C#, 'int' is a value type. When you assign 'y = x;', a copy of the value is made. Incrementing 'y' does not affect 'x', so printing 'x' outputs 5.",
+    "createdAt": "2025-08-29T08:41:48.915Z",
+    "updatedAt": "2025-08-29T08:41:48.915Z",
+    "createdById": null
+  },
+  {
+    "id": "759e16df-d6bb-432d-987c-d24331161a3f",
+    "question": "Which of the following statements about C# value types and reference types is correct?",
+    "answers": [
+      {
+        "content": "Value types are stored on the stack and reference types on the heap.",
+        "isCorrect": true
+      },
+      {
+        "content": "Reference types are stored on the stack and value types on the heap.",
+        "isCorrect": false
+      },
+      {
+        "content": "Both value and reference types are stored on the heap.",
+        "isCorrect": false
+      },
+      {
+        "content": "Both value and reference types are stored on the stack.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "In C#, value types (such as int, float, struct) are typically stored on the stack, which allows for fast allocation and deallocation. Reference types (such as class, array, delegate) are stored on the heap, which supports dynamic memory allocation but requires more management. This distinction affects performance and memory management in backend applications.",
+    "createdAt": "2025-08-29T08:42:14.928Z",
+    "updatedAt": "2025-08-29T08:42:14.928Z",
+    "createdById": null
+  },
+  {
+    "id": "ef94c50e-a07a-4ee0-861a-4a5d9deef139",
+    "question": "What is the main purpose of the 'async' and 'await' keywords in C#?",
+    "answers": [
+      {
+        "content": "To enable parallel execution of code across multiple threads.",
+        "isCorrect": false
+      },
+      {
+        "content": "To improve performance by caching results.",
+        "isCorrect": false
+      },
+      {
+        "content": "To simplify writing asynchronous code without using callbacks.",
+        "isCorrect": true
+      },
+      {
+        "content": "To enforce strict type checking during compilation.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "The 'async' and 'await' keywords in C# are used to simplify asynchronous programming. They allow developers to write code that performs non-blocking operations—such as I/O or network calls—without resorting to complex callbacks. This makes asynchronous code easier to read and maintain, which is essential for scalable backend systems.",
+    "createdAt": "2025-08-29T08:42:15.161Z",
+    "updatedAt": "2025-08-29T08:42:15.161Z",
+    "createdById": null
+  },
+  {
+    "id": "758e2590-5e9b-4e53-a64b-0975daca9bec",
+    "question": "Which of the following declares an interface in C#?",
+    "answers": [
+      {
+        "content": "public struct IAnimal { }",
+        "isCorrect": false
+      },
+      {
+        "content": "public interface IAnimal { }",
+        "isCorrect": true
+      },
+      {
+        "content": "public class IAnimal { }",
+        "isCorrect": false
+      },
+      {
+        "content": "public enum IAnimal { }",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "In C#, interfaces are declared using the 'interface' keyword. Interfaces define a contract—methods and properties—that implementing classes must provide. They are fundamental for abstraction and polymorphism in backend design.",
+    "createdAt": "2025-08-29T08:42:15.489Z",
+    "updatedAt": "2025-08-29T08:42:15.489Z",
+    "createdById": null
+  },
+  {
+    "id": "4e96d07e-e641-4c1b-a153-1e498d16c3b4",
+    "question": "What is the result of the following code snippet?\n\nint x = 5;\nint y = x;\ny++;\n\nWhat are the values of x and y after execution?",
+    "answers": [
+      {
+        "content": "x = 5, y = 6",
+        "isCorrect": true
+      },
+      {
+        "content": "x = 6, y = 6",
+        "isCorrect": false
+      },
+      {
+        "content": "x = 5, y = 5",
+        "isCorrect": false
+      },
+      {
+        "content": "x = 6, y = 5",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "In C#, 'int' is a value type. When 'y = x' is executed, 'y' gets a copy of 'x', so incrementing 'y' does not affect 'x'. After the increment, 'x' remains 5 and 'y' becomes 6. This illustrates the behavior of value types.",
+    "createdAt": "2025-08-29T08:42:15.722Z",
+    "updatedAt": "2025-08-29T08:42:15.722Z",
+    "createdById": null
+  },
+  {
+    "id": "71a96066-e8e0-4eb0-81c0-f0cdca282aa1",
+    "question": "Which statement correctly describes the use of 'using' statement in C#?",
+    "answers": [
+      {
+        "content": "It is used to import namespaces.",
+        "isCorrect": true
+      },
+      {
+        "content": "It ensures that IDisposable objects are disposed of automatically.",
+        "isCorrect": true
+      },
+      {
+        "content": "It is used to define extension methods.",
+        "isCorrect": false
+      },
+      {
+        "content": "It is used to declare constants.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "C#"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "In C#, 'using' serves two main purposes: (1) to import namespaces, making types from those namespaces available without fully qualifying them, and (2) as a statement to ensure that IDisposable objects (like FileStream or SqlConnection) are disposed of automatically when they go out of scope. This is crucial for resource management in backend development.",
+    "createdAt": "2025-08-29T08:42:15.964Z",
+    "updatedAt": "2025-08-29T08:42:15.964Z",
+    "createdById": null
+  },
+  {
+    "id": "7ae1823b-0a76-4c67-86cd-38a0c19af282",
+    "question": "Which of the following best describes a primary key in a relational database?",
+    "answers": [
+      {
+        "content": "A field that uniquely identifies each record in a table.",
+        "isCorrect": true
+      },
+      {
+        "content": "A field that stores duplicate values in a table.",
+        "isCorrect": false
+      },
+      {
+        "content": "A field used to store large amounts of text.",
+        "isCorrect": false
+      },
+      {
+        "content": "A field that allows null values.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "A primary key is a field (or combination of fields) in a relational database table that uniquely identifies each record in that table. It must contain unique values and cannot contain NULL values, ensuring that each record can be uniquely retrieved.",
+    "createdAt": "2025-08-29T08:43:07.761Z",
+    "updatedAt": "2025-08-29T08:43:07.761Z",
+    "createdById": null
+  },
+  {
+    "id": "ca0ec1b1-5d48-4eab-9b25-46be069ab34b",
+    "question": "Which SQL command is used to retrieve data from a database table?",
+    "answers": [
+      {
+        "content": "INSERT",
+        "isCorrect": false
+      },
+      {
+        "content": "SELECT",
+        "isCorrect": true
+      },
+      {
+        "content": "DELETE",
+        "isCorrect": false
+      },
+      {
+        "content": "UPDATE",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The SELECT statement in SQL is used to query and retrieve data from one or more tables in a database. It allows users to specify which columns and rows to return, making it fundamental for data retrieval operations.",
+    "createdAt": "2025-08-29T08:43:08.019Z",
+    "updatedAt": "2025-08-29T08:43:08.019Z",
+    "createdById": null
+  },
+  {
+    "id": "12066346-ac88-420a-9b38-713c5553d107",
+    "question": "What is the main purpose of a foreign key in a database?",
+    "answers": [
+      {
+        "content": "To uniquely identify a record within its own table.",
+        "isCorrect": false
+      },
+      {
+        "content": "To link records between two tables.",
+        "isCorrect": true
+      },
+      {
+        "content": "To store large binary objects.",
+        "isCorrect": false
+      },
+      {
+        "content": "To create a backup of a table.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "A foreign key is a field (or set of fields) in one table that creates a link between records in two tables by referencing the primary key of another table. This enforces referential integrity and establishes relationships between tables.",
+    "createdAt": "2025-08-29T08:43:08.267Z",
+    "updatedAt": "2025-08-29T08:43:08.267Z",
+    "createdById": null
+  },
+  {
+    "id": "1f1d0a81-c5fd-44ff-97f6-ccada1619f90",
+    "question": "Which of the following best defines normalization in database design?",
+    "answers": [
+      {
+        "content": "The process of converting data into binary format.",
+        "isCorrect": false
+      },
+      {
+        "content": "The process of organizing data to reduce redundancy.",
+        "isCorrect": true
+      },
+      {
+        "content": "The process of creating backup copies of data.",
+        "isCorrect": false
+      },
+      {
+        "content": "The process of encrypting sensitive data.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "Normalization is a database design technique that organizes tables and their relationships to minimize data redundancy and improve data integrity. It involves structuring data into multiple related tables and defining relationships between them.",
+    "createdAt": "2025-08-29T08:43:08.484Z",
+    "updatedAt": "2025-08-29T08:43:08.484Z",
+    "createdById": null
+  },
+  {
+    "id": "0b24d35a-ed87-467a-aac6-5a2116811d07",
+    "question": "Which of these is an example of a NoSQL database?",
+    "answers": [
+      {
+        "content": "MySQL",
+        "isCorrect": false
+      },
+      {
+        "content": "PostgreSQL",
+        "isCorrect": false
+      },
+      {
+        "content": "MongoDB",
+        "isCorrect": true
+      },
+      {
+        "content": "SQLite",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "MongoDB is an example of a NoSQL database, which is designed to handle unstructured or semi-structured data and is often used for storing large volumes of data that may not fit well into a traditional relational schema. MySQL, PostgreSQL, and SQLite are relational (SQL) databases.",
+    "createdAt": "2025-08-29T08:43:08.736Z",
+    "updatedAt": "2025-08-29T08:43:08.736Z",
+    "createdById": null
+  },
+  {
+    "id": "a59bdfc1-9aa6-43f6-a3d0-a954acf0715f",
+    "question": "Which statement best describes the purpose of normalization in relational databases?",
+    "answers": [
+      {
+        "content": "A. To increase data redundancy for faster access",
+        "isCorrect": false
+      },
+      {
+        "content": "B. To organize data to minimize duplication and improve integrity",
+        "isCorrect": true
+      },
+      {
+        "content": "C. To decrease the number of tables for simpler queries",
+        "isCorrect": false
+      },
+      {
+        "content": "D. To ensure every table has a primary key",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Normalization is a process in relational databases that organizes data into tables to minimize redundancy and dependency. This improves data integrity by efficiently structuring the data so that each piece of information is stored only once, reducing the risk of inconsistencies and anomalies.",
+    "createdAt": "2025-08-29T08:43:27.158Z",
+    "updatedAt": "2025-08-29T08:43:27.158Z",
+    "createdById": null
+  },
+  {
+    "id": "2cc34055-f155-49a6-8c3d-9022285e6789",
+    "question": "Which of the following are valid reasons to use indexes in a database?",
+    "answers": [
+      {
+        "content": "A. To speed up data retrieval operations",
+        "isCorrect": true
+      },
+      {
+        "content": "B. To ensure referential integrity between tables",
+        "isCorrect": false
+      },
+      {
+        "content": "C. To decrease the storage requirements of the database",
+        "isCorrect": false
+      },
+      {
+        "content": "D. To allow faster sorting of query results",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Indexes are database structures that improve the efficiency of data retrieval operations, such as SELECT queries, by providing quick access to the rows in a table. Additionally, indexes speed up sorting operations. However, they do not ensure referential integrity or decrease storage requirements (they actually increase it slightly).",
+    "createdAt": "2025-08-29T08:43:27.383Z",
+    "updatedAt": "2025-08-29T08:43:27.383Z",
+    "createdById": null
+  },
+  {
+    "id": "766beb2c-b291-453a-8653-33d74326be6a",
+    "question": "What is the main role of a foreign key in a relational database?",
+    "answers": [
+      {
+        "content": "A. To uniquely identify each row in a table",
+        "isCorrect": false
+      },
+      {
+        "content": "B. To ensure data consistency between related tables",
+        "isCorrect": true
+      },
+      {
+        "content": "C. To speed up query execution",
+        "isCorrect": false
+      },
+      {
+        "content": "D. To store large binary objects",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "A foreign key is a field (or collection of fields) in one table that refers to the primary key in another table. Its main role is to maintain data consistency and enforce referential integrity between related tables, ensuring that relationships between records are valid.",
+    "createdAt": "2025-08-29T08:43:27.682Z",
+    "updatedAt": "2025-08-29T08:43:27.682Z",
+    "createdById": null
+  },
+  {
+    "id": "6c39e6e6-4279-4ecc-9372-92e32ff7bab7",
+    "question": "Which of the following SQL statements can be used to remove all records from a table without deleting the table itself?",
+    "answers": [
+      {
+        "content": "A. DROP TABLE tablename;",
+        "isCorrect": false
+      },
+      {
+        "content": "B. DELETE FROM tablename;",
+        "isCorrect": true
+      },
+      {
+        "content": "C. TRUNCATE TABLE tablename;",
+        "isCorrect": true
+      },
+      {
+        "content": "D. REMOVE tablename;",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Both DELETE FROM tablename; and TRUNCATE TABLE tablename; remove all records from a table without dropping the table itself. DELETE removes rows one at a time and can be filtered; TRUNCATE removes all records quickly without logging individual row deletions. DROP TABLE deletes the entire table structure, while REMOVE is not valid SQL.",
+    "createdAt": "2025-08-29T08:43:27.904Z",
+    "updatedAt": "2025-08-29T08:43:27.904Z",
+    "createdById": null
+  },
+  {
+    "id": "ba486adf-438b-46a5-adee-37b78d7d60cc",
+    "question": "Which ACID property ensures that once a transaction is committed, its changes are never lost, even in the event of a system failure?",
+    "answers": [
+      {
+        "content": "A. Atomicity",
+        "isCorrect": false
+      },
+      {
+        "content": "B. Consistency",
+        "isCorrect": false
+      },
+      {
+        "content": "C. Isolation",
+        "isCorrect": false
+      },
+      {
+        "content": "D. Durability",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Durability is the ACID property that ensures once a transaction has been committed, its effects are permanently recorded in the database, even if there is a power loss, crash, or other system failure. This guarantees that committed data will not be lost.",
+    "createdAt": "2025-08-29T08:43:28.106Z",
+    "updatedAt": "2025-08-29T08:43:28.106Z",
+    "createdById": null
+  },
+  {
+    "id": "8db15f1c-3f76-4201-b65b-9ce734b0d007",
+    "question": "Which of the following statements about ACID properties in relational databases are correct?",
+    "answers": [
+      {
+        "content": "Atomicity ensures that a transaction is all-or-nothing.",
+        "isCorrect": true
+      },
+      {
+        "content": "Consistency guarantees that a transaction brings the database from one valid state to another.",
+        "isCorrect": true
+      },
+      {
+        "content": "Isolation ensures that concurrent transactions do not interfere with each other’s intermediate states.",
+        "isCorrect": true
+      },
+      {
+        "content": "Durability allows transactions to be rolled back after a system crash.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "ACID stands for Atomicity, Consistency, Isolation, and Durability, which are key properties for reliable transaction processing in relational databases. Atomicity means that a transaction is treated as a single unit, either fully completed or fully failed. Consistency ensures that the integrity constraints are maintained after a transaction. Isolation keeps concurrent transactions from affecting each other’s intermediate states. Durability guarantees that once a transaction is committed, its changes are permanent, even in the event of a system failure; it does not mean transactions can be rolled back after a crash.",
+    "createdAt": "2025-08-29T08:43:59.618Z",
+    "updatedAt": "2025-08-29T08:43:59.618Z",
+    "createdById": null
+  },
+  {
+    "id": "312708c0-0b4d-41fa-95ef-9a56538af92d",
+    "question": "What is the primary purpose of database indexing?",
+    "answers": [
+      {
+        "content": "To enforce data integrity constraints.",
+        "isCorrect": false
+      },
+      {
+        "content": "To improve the speed of data retrieval operations.",
+        "isCorrect": true
+      },
+      {
+        "content": "To enable referential integrity between tables.",
+        "isCorrect": false
+      },
+      {
+        "content": "To compress the storage size of database tables.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Database indexing is a technique used to optimize the speed of data retrieval operations on a database table by providing efficient lookup capabilities. Indexes do not enforce data integrity or referential integrity, nor do they compress data; their main goal is to minimize the time it takes to locate specific rows based on column values.",
+    "createdAt": "2025-08-29T08:43:59.839Z",
+    "updatedAt": "2025-08-29T08:43:59.839Z",
+    "createdById": null
+  },
+  {
+    "id": "89a6d2e9-3feb-49dc-a3e9-2afb39464d0c",
+    "question": "Which of the following are advantages of using a normalized database schema?",
+    "answers": [
+      {
+        "content": "Reduces data redundancy.",
+        "isCorrect": true
+      },
+      {
+        "content": "Improves update and insert performance for very large tables.",
+        "isCorrect": false
+      },
+      {
+        "content": "Simplifies enforcement of data integrity constraints.",
+        "isCorrect": true
+      },
+      {
+        "content": "Eliminates the need for foreign keys.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Normalization organizes database tables to minimize data redundancy and dependency by dividing data into related tables. This structure simplifies the enforcement of data integrity constraints by using clear relationships, typically via foreign keys. While normalization reduces redundancy, it can sometimes reduce performance for certain operations due to the need for joins, and it does not eliminate the need for foreign keys.",
+    "createdAt": "2025-08-29T08:44:00.098Z",
+    "updatedAt": "2025-08-29T08:44:00.098Z",
+    "createdById": null
+  },
+  {
+    "id": "98b95314-dbd3-473b-ac74-4f213de54ed4",
+    "question": "What is the main difference between SQL and NoSQL databases?",
+    "answers": [
+      {
+        "content": "SQL databases use structured schemas, while NoSQL databases are typically schema-less or have flexible schemas.",
+        "isCorrect": true
+      },
+      {
+        "content": "NoSQL databases cannot support transaction operations.",
+        "isCorrect": false
+      },
+      {
+        "content": "SQL databases are always faster than NoSQL databases for all queries.",
+        "isCorrect": false
+      },
+      {
+        "content": "NoSQL databases are designed to scale horizontally more easily than most SQL databases.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "SQL databases typically use structured schemas with predefined tables and relationships, whereas NoSQL databases offer flexible or schema-less data models, allowing easier scaling and handling of unstructured data. NoSQL databases are known for their horizontal scalability. Both database types can support transactions, and performance depends on the use case, not all queries are faster on SQL.",
+    "createdAt": "2025-08-29T08:44:00.348Z",
+    "updatedAt": "2025-08-29T08:44:00.348Z",
+    "createdById": null
+  },
+  {
+    "id": "349cbd28-c9a0-4b4b-b84b-bfcb68c13a3f",
+    "question": "What is Node.js primarily used for?",
+    "answers": [
+      {
+        "content": "Running JavaScript on the server side",
+        "isCorrect": true
+      },
+      {
+        "content": "Designing graphical user interfaces",
+        "isCorrect": false
+      },
+      {
+        "content": "Compiling C++ code",
+        "isCorrect": false
+      },
+      {
+        "content": "Styling web pages with CSS",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "Node.js is a runtime environment that allows developers to execute JavaScript code on the server side. This enables building scalable network applications, such as web servers and APIs, outside of the browser environment.",
+    "createdAt": "2025-08-29T08:46:12.812Z",
+    "updatedAt": "2025-08-29T08:46:12.812Z",
+    "createdById": null
+  },
+  {
+    "id": "46de4c95-3295-427a-9576-20ecf1ffa5c9",
+    "question": "Which of the following statements are true about database transactions and isolation levels?",
+    "answers": [
+      {
+        "content": "The 'Read Uncommitted' isolation level allows transactions to see uncommitted changes from other transactions.",
+        "isCorrect": true
+      },
+      {
+        "content": "The 'Serializable' isolation level prevents phantom reads, dirty reads, and non-repeatable reads.",
+        "isCorrect": true
+      },
+      {
+        "content": "Higher isolation levels generally decrease concurrency and increase the risk of deadlocks.",
+        "isCorrect": true
+      },
+      {
+        "content": "The 'Repeatable Read' isolation level prevents phantom reads.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Database"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Isolation levels define how and when changes made by one transaction become visible to others. 'Read Uncommitted' is the lowest level and allows dirty reads (seeing uncommitted changes). 'Serializable' is the highest level and prevents all common concurrency anomalies—dirty reads, non-repeatable reads, and phantom reads. Higher isolation levels reduce concurrency, increasing the likelihood of deadlocks. 'Repeatable Read' prevents dirty and non-repeatable reads but not phantom reads.",
+    "createdAt": "2025-08-29T08:44:00.564Z",
+    "updatedAt": "2025-08-29T08:44:00.564Z",
+    "createdById": null
+  },
+  {
+    "id": "53a62a4c-ac20-4250-a408-bdfff3293c63",
+    "question": "Which of the following is the correct way to declare a variable that can store whole numbers in Java?",
+    "answers": [
+      {
+        "content": "int number;",
+        "isCorrect": true
+      },
+      {
+        "content": "float number;",
+        "isCorrect": false
+      },
+      {
+        "content": "string number;",
+        "isCorrect": false
+      },
+      {
+        "content": "double number;",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'int' data type in Java is used to declare variables that can store whole numbers (integers). 'float' and 'double' are used for decimal values, and 'string' is not a valid data type in Java (the correct type for text is 'String' with an uppercase S).",
+    "createdAt": "2025-08-29T08:44:37.411Z",
+    "updatedAt": "2025-08-29T08:44:37.411Z",
+    "createdById": null
+  },
+  {
+    "id": "3d3b98af-ac79-4986-93e3-c9912b2b2fd0",
+    "question": "What is the output of the following Java code snippet?\n\nSystem.out.println(5 + 3 * 2);",
+    "answers": [
+      {
+        "content": "16",
+        "isCorrect": false
+      },
+      {
+        "content": "11",
+        "isCorrect": true
+      },
+      {
+        "content": "21",
+        "isCorrect": false
+      },
+      {
+        "content": "13",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "Java follows standard operator precedence, where multiplication (*) is evaluated before addition (+). Therefore, 3 * 2 is 6, then 5 + 6 is 11.",
+    "createdAt": "2025-08-29T08:44:37.636Z",
+    "updatedAt": "2025-08-29T08:44:37.636Z",
+    "createdById": null
+  },
+  {
+    "id": "954e8c0f-72e7-49d5-9bf6-a9c2a889e766",
+    "question": "Which of the following statements about Java methods is TRUE?",
+    "answers": [
+      {
+        "content": "A method must always return a value.",
+        "isCorrect": false
+      },
+      {
+        "content": "Methods can only be defined inside a class.",
+        "isCorrect": true
+      },
+      {
+        "content": "A method cannot have parameters.",
+        "isCorrect": false
+      },
+      {
+        "content": "Methods cannot be called from other methods.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In Java, all methods must be defined inside a class. Methods can have parameters, can return void (no value), and can be called from other methods.",
+    "createdAt": "2025-08-29T08:44:37.843Z",
+    "updatedAt": "2025-08-29T08:44:37.843Z",
+    "createdById": null
+  },
+  {
+    "id": "160ca560-04fe-4544-932c-30f679842002",
+    "question": "Which keyword is used to create a new object in Java?",
+    "answers": [
+      {
+        "content": "create",
+        "isCorrect": false
+      },
+      {
+        "content": "instance",
+        "isCorrect": false
+      },
+      {
+        "content": "new",
+        "isCorrect": true
+      },
+      {
+        "content": "object",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'new' keyword in Java is used to create new objects. For example, 'new Scanner(System.in);' creates a new Scanner object. The other options are not valid keywords for object creation in Java.",
+    "createdAt": "2025-08-29T08:44:38.067Z",
+    "updatedAt": "2025-08-29T08:44:38.067Z",
+    "createdById": null
+  },
+  {
+    "id": "b6c3ccb9-b150-4ca6-97a2-74f752700ce2",
+    "question": "Which of the following is NOT a valid access modifier in Java?",
+    "answers": [
+      {
+        "content": "public",
+        "isCorrect": false
+      },
+      {
+        "content": "private",
+        "isCorrect": false
+      },
+      {
+        "content": "protected",
+        "isCorrect": false
+      },
+      {
+        "content": "package",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "'public', 'private', and 'protected' are valid access modifiers in Java that define the visibility of classes and members. 'package' is not an access modifier; the default (package-private) access is given when no modifier is specified.",
+    "createdAt": "2025-08-29T08:44:38.280Z",
+    "updatedAt": "2025-08-29T08:44:38.280Z",
+    "createdById": null
+  },
+  {
+    "id": "a2e631f4-aafb-435b-b6cc-f99fd7195d4f",
+    "question": "Which of the following statements about Java interfaces is TRUE?",
+    "answers": [
+      {
+        "content": "An interface can contain method implementations.",
+        "isCorrect": false
+      },
+      {
+        "content": "A class can implement multiple interfaces.",
+        "isCorrect": true
+      },
+      {
+        "content": "Interfaces can have constructors.",
+        "isCorrect": false
+      },
+      {
+        "content": "Interface methods are always public and abstract by default.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "A class in Java can implement multiple interfaces, which allows for multiple inheritance of type. Methods declared in interfaces are public and abstract by default, unless declared static or default. Interfaces cannot have constructors because they are not instantiated directly. Since Java 8, interfaces can have default and static methods with implementations, but prior to that, only method declarations (without implementation) were allowed.",
+    "createdAt": "2025-08-29T08:45:06.222Z",
+    "updatedAt": "2025-08-29T08:45:06.222Z",
+    "createdById": null
+  },
+  {
+    "id": "863f45ba-112f-4400-a1d9-6bc27c44d65b",
+    "question": "What will happen if you try to access an instance variable from a static method in Java?",
+    "answers": [
+      {
+        "content": "It will compile and run without any issue.",
+        "isCorrect": false
+      },
+      {
+        "content": "It will result in a compilation error.",
+        "isCorrect": true
+      },
+      {
+        "content": "It will throw a runtime exception.",
+        "isCorrect": false
+      },
+      {
+        "content": "It will print a default value for the variable.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Static methods belong to the class rather than any particular instance, so they cannot directly access instance variables. Attempting to do so results in a compilation error because the static context does not have access to non-static (instance) members.",
+    "createdAt": "2025-08-29T08:45:06.427Z",
+    "updatedAt": "2025-08-29T08:45:06.427Z",
+    "createdById": null
+  },
+  {
+    "id": "377db710-f76e-4f6a-8809-75668c619b9d",
+    "question": "Which of these are valid ways to handle exceptions in Java?",
+    "answers": [
+      {
+        "content": "Using the try-catch block",
+        "isCorrect": true
+      },
+      {
+        "content": "Declaring the exception with the throws keyword",
+        "isCorrect": true
+      },
+      {
+        "content": "Ignoring the exception",
+        "isCorrect": false
+      },
+      {
+        "content": "Using the finalize method",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Exceptions in Java can be handled using try-catch blocks, which catch and manage exceptions at runtime. Alternatively, methods can declare exceptions with the throws keyword, passing responsibility to the caller. Ignoring exceptions is not a safe or valid practice, and the finalize method is used for garbage collection, not exception handling.",
+    "createdAt": "2025-08-29T08:45:06.676Z",
+    "updatedAt": "2025-08-29T08:45:06.676Z",
+    "createdById": null
+  },
+  {
+    "id": "b1aa7f54-b7fd-40dc-90d2-5b3090862411",
+    "question": "Which of the following are characteristics of Java's 'final' keyword?",
+    "answers": [
+      {
+        "content": "A final variable cannot be reassigned once initialized.",
+        "isCorrect": true
+      },
+      {
+        "content": "A final method cannot be overridden by subclasses.",
+        "isCorrect": true
+      },
+      {
+        "content": "A final class cannot be instantiated.",
+        "isCorrect": false
+      },
+      {
+        "content": "A final class cannot be subclassed.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "The 'final' keyword can be applied to variables, methods, and classes in Java. When applied to a variable, it means the value cannot be changed once assigned. A final method cannot be overridden in a subclass. A final class cannot be subclassed (extended), but it can be instantiated unless its constructor is private. Therefore, option C is incorrect.",
+    "createdAt": "2025-08-29T08:45:06.928Z",
+    "updatedAt": "2025-08-29T08:45:06.928Z",
+    "createdById": null
+  },
+  {
+    "id": "ff32805a-093e-4ef8-883d-1a643fcdc9d6",
+    "question": "Which of the following statements about Java collections is TRUE?",
+    "answers": [
+      {
+        "content": "ArrayList allows duplicate elements.",
+        "isCorrect": true
+      },
+      {
+        "content": "HashSet maintains the insertion order of elements.",
+        "isCorrect": false
+      },
+      {
+        "content": "LinkedList can be used as a queue.",
+        "isCorrect": true
+      },
+      {
+        "content": "TreeMap stores its keys in sorted order.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "ArrayList allows duplicate elements and maintains insertion order. HashSet does not maintain insertion order; it only ensures uniqueness. LinkedList implements the Queue interface, so it can be used as a queue. TreeMap stores its keys in sorted order, based on their natural ordering or a provided Comparator.",
+    "createdAt": "2025-08-29T08:45:07.184Z",
+    "updatedAt": "2025-08-29T08:45:07.184Z",
+    "createdById": null
+  },
+  {
+    "id": "543defc6-d9cc-4160-958e-8fe545c29ce8",
+    "question": "Which of the following statements about Java memory management and garbage collection are TRUE?",
+    "answers": [
+      {
+        "content": "Java uses automatic garbage collection to reclaim memory occupied by unreachable objects.",
+        "isCorrect": true
+      },
+      {
+        "content": "The finalize() method is guaranteed to be called exactly once before an object is garbage collected.",
+        "isCorrect": false
+      },
+      {
+        "content": "The Heap is the memory area where all class-level variables are stored.",
+        "isCorrect": false
+      },
+      {
+        "content": "Objects referenced from a running thread's local variables are not eligible for garbage collection.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Java's memory management automatically reclaims memory using garbage collection for objects that are no longer reachable. The finalize() method is not guaranteed to be called exactly once, and is generally discouraged. The Heap is used for object storage, not class-level variables (which are stored in the Method Area or MetaSpace). Objects referenced by local variables of running threads remain reachable and are not eligible for garbage collection.",
+    "createdAt": "2025-08-29T08:45:36.959Z",
+    "updatedAt": "2025-08-29T08:45:36.959Z",
+    "createdById": null
+  },
+  {
+    "id": "31710251-ee1e-45b4-b82c-26eea1f3690b",
+    "question": "Which statements about Java interfaces and abstract classes are correct?",
+    "answers": [
+      {
+        "content": "A class can implement multiple interfaces but can extend only one class.",
+        "isCorrect": true
+      },
+      {
+        "content": "Abstract classes can have both abstract and non-abstract methods.",
+        "isCorrect": true
+      },
+      {
+        "content": "Interfaces can define constructors.",
+        "isCorrect": false
+      },
+      {
+        "content": "From Java 8 onwards, interfaces can have default methods with concrete implementations.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Java supports multiple inheritance through interfaces, but only single inheritance with classes. Abstract classes can contain both abstract (unimplemented) and concrete (implemented) methods. Interfaces cannot define constructors. Since Java 8, interfaces can have default methods with concrete implementations.",
+    "createdAt": "2025-08-29T08:45:37.199Z",
+    "updatedAt": "2025-08-29T08:45:37.199Z",
+    "createdById": null
+  },
+  {
+    "id": "7bcfd9cc-b69c-4b82-b2d0-b94176018751",
+    "question": "In Java, which of the following statements about exception handling are TRUE?",
+    "answers": [
+      {
+        "content": "Checked exceptions must be either caught or declared to be thrown.",
+        "isCorrect": true
+      },
+      {
+        "content": "Runtime exceptions are subclasses of Error.",
+        "isCorrect": false
+      },
+      {
+        "content": "The finally block always executes after the try block, regardless of whether an exception was thrown.",
+        "isCorrect": true
+      },
+      {
+        "content": "You can have multiple catch blocks to handle different types of exceptions.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Checked exceptions must be handled explicitly in code by either catching them or declaring them in the method signature. Runtime exceptions are subclasses of RuntimeException, not Error. The finally block is always executed after try-catch, except in cases like System.exit(). Multiple catch blocks can be used to handle different exception types.",
+    "createdAt": "2025-08-29T08:45:37.418Z",
+    "updatedAt": "2025-08-29T08:45:37.418Z",
+    "createdById": null
+  },
+  {
+    "id": "a7cfbf3a-56af-4a33-b665-0cd570322558",
+    "question": "Which of the following statements are TRUE regarding Java's multithreading model?",
+    "answers": [
+      {
+        "content": "The synchronized keyword can be used to prevent thread interference and memory consistency errors.",
+        "isCorrect": true
+      },
+      {
+        "content": "The java.util.concurrent package provides higher-level concurrency utilities than those available in earlier Java versions.",
+        "isCorrect": true
+      },
+      {
+        "content": "Calling wait() on an object releases the lock on that object.",
+        "isCorrect": true
+      },
+      {
+        "content": "The volatile keyword guarantees atomicity for variable updates.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "The synchronized keyword ensures that only one thread can access a code block or method at a time, preventing thread interference. The java.util.concurrent package introduces higher-level concurrency utilities such as ExecutorService and ConcurrentHashMap. The wait() method releases the object's monitor and allows other threads to acquire it. However, volatile only guarantees visibility, not atomicity.",
+    "createdAt": "2025-08-29T08:45:37.617Z",
+    "updatedAt": "2025-08-29T08:45:37.617Z",
+    "createdById": null
+  },
+  {
+    "id": "5a0fb1f6-c79a-4068-8b35-a5b3b1bdf5b2",
+    "question": "Which of the following are valid ways to create a new thread in Java?",
+    "answers": [
+      {
+        "content": "Extending the Thread class and overriding the run() method.",
+        "isCorrect": true
+      },
+      {
+        "content": "Implementing the Runnable interface and passing it to a Thread instance.",
+        "isCorrect": true
+      },
+      {
+        "content": "Implementing the Callable interface and submitting it to an ExecutorService.",
+        "isCorrect": true
+      },
+      {
+        "content": "Calling the start() method directly on a class that implements Runnable.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Java"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "You can create a new thread by extending Thread and overriding run(), or by implementing Runnable and passing it to a Thread. Callable is used with ExecutorService to create threads that return results. However, you cannot call start() directly on a Runnable; you must use a Thread instance.",
+    "createdAt": "2025-08-29T08:45:37.902Z",
+    "updatedAt": "2025-08-29T08:45:37.902Z",
+    "createdById": null
+  },
+  {
+    "id": "dd54398e-65fd-40ca-a143-c17087ddd61d",
+    "question": "Which decorator is used to define an Angular component?",
+    "answers": [
+      {
+        "content": "@Module",
+        "isCorrect": false
+      },
+      {
+        "content": "@Injectable",
+        "isCorrect": false
+      },
+      {
+        "content": "@Directive",
+        "isCorrect": false
+      },
+      {
+        "content": "@Component",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "Angular"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The '@Component' decorator is used to define metadata for an Angular component, such as its selector, template, and styles. '@Module' is used for modules, '@Injectable' for services, and '@Directive' for directives.",
+    "createdAt": "2025-08-29T08:54:17.795Z",
+    "updatedAt": "2025-08-29T08:54:17.795Z",
+    "createdById": null
+  },
+  {
+    "id": "c482eea3-185c-4e47-962b-a7beffada864",
+    "question": "Which of the following best describes the event-driven nature of Node.js?",
+    "answers": [
+      {
+        "content": "It handles multiple requests by spawning a new thread for each request.",
+        "isCorrect": false
+      },
+      {
+        "content": "It processes requests sequentially, one after the other.",
+        "isCorrect": false
+      },
+      {
+        "content": "It uses an event loop to handle asynchronous operations without blocking the main thread.",
+        "isCorrect": true
+      },
+      {
+        "content": "It can only process one request at a time.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "Node.js uses an event-driven, non-blocking I/O model. This means it utilizes an event loop to manage asynchronous operations, allowing it to handle many connections efficiently without creating a new thread for every request.",
+    "createdAt": "2025-08-29T08:46:13.049Z",
+    "updatedAt": "2025-08-29T08:46:13.049Z",
+    "createdById": null
+  },
+  {
+    "id": "ae002e0c-b495-4347-a3c9-20fe85a6703e",
+    "question": "Which built-in Node.js module is commonly used to create a simple web server?",
+    "answers": [
+      {
+        "content": "fs",
+        "isCorrect": false
+      },
+      {
+        "content": "http",
+        "isCorrect": true
+      },
+      {
+        "content": "url",
+        "isCorrect": false
+      },
+      {
+        "content": "events",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'http' module in Node.js is used to create HTTP servers and handle HTTP requests and responses, making it essential for building web servers. Other modules like 'fs' and 'url' serve different purposes.",
+    "createdAt": "2025-08-29T08:46:13.270Z",
+    "updatedAt": "2025-08-29T08:46:13.270Z",
+    "createdById": null
+  },
+  {
+    "id": "52a57122-7a0c-4e23-8c66-9a9d156d4cbd",
+    "question": "How do you import a built-in module in Node.js, such as 'fs'?",
+    "answers": [
+      {
+        "content": "import fs from 'fs';",
+        "isCorrect": false
+      },
+      {
+        "content": "require('fs');",
+        "isCorrect": true
+      },
+      {
+        "content": "include 'fs';",
+        "isCorrect": false
+      },
+      {
+        "content": "use fs;",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In Node.js, the 'require' function is used to import built-in or third-party modules. For example, 'const fs = require('fs');' loads the file system module into your application.",
+    "createdAt": "2025-08-29T08:46:13.478Z",
+    "updatedAt": "2025-08-29T08:46:13.478Z",
+    "createdById": null
+  },
+  {
+    "id": "a21d82eb-4a71-451b-964a-018421c74ce8",
+    "question": "Which of the following statements about Node.js asynchronous functions is TRUE?",
+    "answers": [
+      {
+        "content": "They prevent blocking of the main thread.",
+        "isCorrect": true
+      },
+      {
+        "content": "They cannot perform file system operations.",
+        "isCorrect": false
+      },
+      {
+        "content": "They run synchronously by default.",
+        "isCorrect": false
+      },
+      {
+        "content": "They are only used for mathematical calculations.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "Node.js asynchronous functions, such as those using callbacks, promises, or async/await, allow operations (like file I/O or network requests) to be performed without blocking the main thread. This is a core feature of Node.js that enables high concurrency.",
+    "createdAt": "2025-08-29T08:46:13.691Z",
+    "updatedAt": "2025-08-29T08:46:13.691Z",
+    "createdById": null
+  },
+  {
+    "id": "bbce5bc4-169a-4530-a87c-947a858a42a0",
+    "question": "Which of the following best describes the role of the 'event loop' in Node.js?",
+    "answers": [
+      {
+        "content": "It handles synchronous code execution.",
+        "isCorrect": false
+      },
+      {
+        "content": "It manages asynchronous callbacks and non-blocking I/O operations.",
+        "isCorrect": true
+      },
+      {
+        "content": "It is responsible for loading external modules.",
+        "isCorrect": false
+      },
+      {
+        "content": "It provides access to core Node.js APIs.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "The event loop in Node.js is a core concept that allows handling of asynchronous operations, such as non-blocking I/O. It continuously checks the event queue and invokes callbacks as events are completed, enabling Node.js to handle many connections efficiently without blocking the main thread.",
+    "createdAt": "2025-08-29T08:46:31.490Z",
+    "updatedAt": "2025-08-29T08:46:31.490Z",
+    "createdById": null
+  },
+  {
+    "id": "e25c87d6-a85b-4b67-89cb-b77729130986",
+    "question": "Which built-in module in Node.js is primarily used to create and manage web servers?",
+    "answers": [
+      {
+        "content": "fs",
+        "isCorrect": false
+      },
+      {
+        "content": "http",
+        "isCorrect": true
+      },
+      {
+        "content": "os",
+        "isCorrect": false
+      },
+      {
+        "content": "events",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "The 'http' module is a built-in Node.js module designed specifically for creating and managing web servers and handling HTTP requests and responses. Other modules like 'fs' handle file system operations, 'os' provides operating system-related utility methods, and 'events' manages event-driven programming.",
+    "createdAt": "2025-08-29T08:46:31.729Z",
+    "updatedAt": "2025-08-29T08:46:31.729Z",
+    "createdById": null
+  },
+  {
+    "id": "2be0d0f5-3b34-4173-b0bc-7f8682c36da3",
+    "question": "What is the purpose of 'require' in Node.js?",
+    "answers": [
+      {
+        "content": "To import modules and libraries into your application.",
+        "isCorrect": true
+      },
+      {
+        "content": "To execute asynchronous code.",
+        "isCorrect": false
+      },
+      {
+        "content": "To define global variables.",
+        "isCorrect": false
+      },
+      {
+        "content": "To handle HTTP requests.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "'require' is a built-in Node.js function used to import modules, libraries, or files into a Node.js application. This enables modular development and code reuse by allowing you to access functionalities defined in other files or packages.",
+    "createdAt": "2025-08-29T08:46:32.007Z",
+    "updatedAt": "2025-08-29T08:46:32.007Z",
+    "createdById": null
+  },
+  {
+    "id": "0627d346-fd34-400c-a937-56c7cf34ba73",
+    "question": "Which of the following statements about Node.js streams is TRUE?",
+    "answers": [
+      {
+        "content": "Streams can only be used for reading data.",
+        "isCorrect": false
+      },
+      {
+        "content": "Streams provide an efficient way to process large amounts of data incrementally.",
+        "isCorrect": true
+      },
+      {
+        "content": "Streams block the main thread until all data is processed.",
+        "isCorrect": false
+      },
+      {
+        "content": "Streams are only available in third-party modules.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Node.js streams are objects that allow reading or writing data piece by piece, which is especially useful for processing large amounts of data. They do not block the main thread and are available as part of Node.js's core modules, supporting both reading and writing operations.",
+    "createdAt": "2025-08-29T08:46:32.232Z",
+    "updatedAt": "2025-08-29T08:46:32.232Z",
+    "createdById": null
+  },
+  {
+    "id": "374549c1-d842-419e-8b3e-3a816a2543d5",
+    "question": "Which of the following is NOT a valid way to handle asynchronous operations in Node.js?",
+    "answers": [
+      {
+        "content": "Callbacks",
+        "isCorrect": false
+      },
+      {
+        "content": "Promises",
+        "isCorrect": false
+      },
+      {
+        "content": "Async/await",
+        "isCorrect": false
+      },
+      {
+        "content": "Synchronous loops",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "In Node.js, asynchronous operations are typically handled using callbacks, promises, or the async/await syntax. Synchronous loops, such as 'for' or 'while', execute code in a blocking manner and do not handle asynchronous operations, potentially blocking the event loop and degrading performance.",
+    "createdAt": "2025-08-29T08:46:32.451Z",
+    "updatedAt": "2025-08-29T08:46:32.451Z",
+    "createdById": null
+  },
+  {
+    "id": "30992888-c389-4985-8b41-7b81525f28eb",
+    "question": "Which superglobal arrays in PHP are used to access request and session data?",
+    "answers": [
+      {
+        "content": "$_POST",
+        "isCorrect": true
+      },
+      {
+        "content": "$_SESSION",
+        "isCorrect": true
+      },
+      {
+        "content": "$_COOKIE",
+        "isCorrect": true
+      },
+      {
+        "content": "$_ENV",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "PHP provides several superglobal arrays for accessing different types of data. $_POST is used for HTTP POST request data, $_SESSION for session data, and $_COOKIE for cookies. $_ENV is used for environment variables, not for request or session data.",
+    "createdAt": "2025-08-29T08:48:31.267Z",
+    "updatedAt": "2025-08-29T08:48:31.267Z",
+    "createdById": null
+  },
+  {
+    "id": "0d6491b3-893d-4b8b-bec3-a0c07fbfdab0",
+    "question": "Which of the following statements accurately describe the event-driven architecture of Node.js?",
+    "answers": [
+      {
+        "content": "Node.js uses an event loop to handle asynchronous operations.",
+        "isCorrect": true
+      },
+      {
+        "content": "Node.js creates a new thread for each incoming request.",
+        "isCorrect": false
+      },
+      {
+        "content": "Node.js blocks the main thread during I/O operations.",
+        "isCorrect": false
+      },
+      {
+        "content": "Node.js relies on callback functions to process events.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Node.js is designed around an event-driven, non-blocking architecture. It uses an event loop to efficiently handle asynchronous operations, allowing it to process many requests without creating a new thread for each one. Callback functions are used to handle events when asynchronous operations complete. Unlike some traditional web servers, Node.js does not block the main thread during I/O.",
+    "createdAt": "2025-08-29T08:46:54.919Z",
+    "updatedAt": "2025-08-29T08:46:54.919Z",
+    "createdById": null
+  },
+  {
+    "id": "65dbc7ff-0feb-41cb-9ceb-aba1715b0e65",
+    "question": "In Node.js, what is the primary purpose of the 'require' function?",
+    "answers": [
+      {
+        "content": "To import modules or libraries into a Node.js file.",
+        "isCorrect": true
+      },
+      {
+        "content": "To execute asynchronous functions.",
+        "isCorrect": false
+      },
+      {
+        "content": "To define new variables globally.",
+        "isCorrect": false
+      },
+      {
+        "content": "To listen for HTTP requests.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "The 'require' function in Node.js is used to import modules, libraries, or files into a Node.js application. This modular approach allows code reuse and organization. It does not execute asynchronous functions, define global variables, or listen for HTTP requests.",
+    "createdAt": "2025-08-29T08:46:55.140Z",
+    "updatedAt": "2025-08-29T08:46:55.140Z",
+    "createdById": null
+  },
+  {
+    "id": "95ba3521-5aa1-419c-a36d-8ae65f7fbe16",
+    "question": "Which statement best describes the role of the 'process' object in Node.js?",
+    "answers": [
+      {
+        "content": "It provides information and control over the current Node.js process.",
+        "isCorrect": true
+      },
+      {
+        "content": "It is used to create child processes for parallel execution.",
+        "isCorrect": true
+      },
+      {
+        "content": "It handles routing in web applications.",
+        "isCorrect": false
+      },
+      {
+        "content": "It manages database connections.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "The 'process' object in Node.js is a global object that provides information about, and control over, the current Node.js process. It includes properties and methods to interact with the environment, standard input/output, and more. Additionally, it provides the 'child_process' module to create and manage child processes for parallel execution. However, routing and database management are handled by other modules.",
+    "createdAt": "2025-08-29T08:46:55.366Z",
+    "updatedAt": "2025-08-29T08:46:55.366Z",
+    "createdById": null
+  },
+  {
+    "id": "ac5256af-b68e-4626-ae39-668826f14183",
+    "question": "What is the significance of the 'callback' parameter in Node.js asynchronous functions?",
+    "answers": [
+      {
+        "content": "It allows functions to continue execution after an asynchronous operation completes.",
+        "isCorrect": true
+      },
+      {
+        "content": "It terminates the Node.js process.",
+        "isCorrect": false
+      },
+      {
+        "content": "It provides a mechanism for error handling and returning results.",
+        "isCorrect": true
+      },
+      {
+        "content": "It synchronizes multiple asynchronous operations.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Callbacks are fundamental to Node.js's asynchronous programming model. They allow functions to specify what should happen once an asynchronous operation (such as file reading or network requests) completes. Callbacks are also used to handle errors and return results, following the common Node.js convention of passing error as the first argument.",
+    "createdAt": "2025-08-29T08:46:55.586Z",
+    "updatedAt": "2025-08-29T08:46:55.586Z",
+    "createdById": null
+  },
+  {
+    "id": "49ce8951-d64c-401f-81f3-1abd0b8e8db1",
+    "question": "Which core Node.js module is commonly used to create a web server?",
+    "answers": [
+      {
+        "content": "fs",
+        "isCorrect": false
+      },
+      {
+        "content": "http",
+        "isCorrect": true
+      },
+      {
+        "content": "os",
+        "isCorrect": false
+      },
+      {
+        "content": "events",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Node.js"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "The 'http' module is a core Node.js module used to create web servers and handle HTTP requests and responses. The 'fs' module is for file system operations, 'os' provides operating system-related utility methods, and 'events' enables event-driven programming but does not create web servers.",
+    "createdAt": "2025-08-29T08:46:55.803Z",
+    "updatedAt": "2025-08-29T08:46:55.803Z",
+    "createdById": null
+  },
+  {
+    "id": "20f9a111-85da-40b0-a459-4f8ef702b140",
+    "question": "Which symbol is used to indicate a variable in PHP?",
+    "answers": [
+      {
+        "content": "A. $",
+        "isCorrect": true
+      },
+      {
+        "content": "B. #",
+        "isCorrect": false
+      },
+      {
+        "content": "C. @",
+        "isCorrect": false
+      },
+      {
+        "content": "D. %",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In PHP, all variables are prefixed with the dollar sign ($) symbol. This makes it easy to distinguish variables from other elements in the code. For example, $name is a valid PHP variable.",
+    "createdAt": "2025-08-29T08:47:18.905Z",
+    "updatedAt": "2025-08-29T08:47:18.905Z",
+    "createdById": null
+  },
+  {
+    "id": "df10c307-310f-4324-b8ef-733f529359c4",
+    "question": "How can you output text to the browser in PHP?",
+    "answers": [
+      {
+        "content": "A. print()",
+        "isCorrect": true
+      },
+      {
+        "content": "B. echo()",
+        "isCorrect": true
+      },
+      {
+        "content": "C. show()",
+        "isCorrect": false
+      },
+      {
+        "content": "D. display()",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "PHP provides both echo() and print() statements to output text to the browser. They are the most commonly used functions for displaying content. show() and display() are not built-in PHP functions.",
+    "createdAt": "2025-08-29T08:47:19.138Z",
+    "updatedAt": "2025-08-29T08:47:19.138Z",
+    "createdById": null
+  },
+  {
+    "id": "a1e37cbd-1904-477e-b822-f4389e074514",
+    "question": "Which of the following is the correct way to end a PHP statement?",
+    "answers": [
+      {
+        "content": "A. With a colon (:)",
+        "isCorrect": false
+      },
+      {
+        "content": "B. With a semicolon (;)",
+        "isCorrect": true
+      },
+      {
+        "content": "C. With a period (.)",
+        "isCorrect": false
+      },
+      {
+        "content": "D. With a comma (,)",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In PHP, each statement must be terminated with a semicolon (;). This helps the PHP interpreter recognize where one statement ends and another begins, much like in C or JavaScript.",
+    "createdAt": "2025-08-29T08:47:19.451Z",
+    "updatedAt": "2025-08-29T08:47:19.451Z",
+    "createdById": null
+  },
+  {
+    "id": "b3be2f21-2637-4f2a-a9d6-2d6cabf1013e",
+    "question": "What will the following PHP code output? \n\n<?php\n$a = 5;\n$b = '5';\nif ($a == $b) {\n  echo 'Equal';\n} else {\n  echo 'Not Equal';\n}\n?>",
+    "answers": [
+      {
+        "content": "A. Equal",
+        "isCorrect": true
+      },
+      {
+        "content": "B. Not Equal",
+        "isCorrect": false
+      },
+      {
+        "content": "C. Error",
+        "isCorrect": false
+      },
+      {
+        "content": "D. 55",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The '==' operator in PHP checks for value equality but does not check for type. Since $a (integer) and $b (string) both have the value 5, the condition evaluates to true and 'Equal' is output.",
+    "createdAt": "2025-08-29T08:47:19.722Z",
+    "updatedAt": "2025-08-29T08:47:19.722Z",
+    "createdById": null
+  },
+  {
+    "id": "49bdcedc-bd00-48ff-b5d1-254a9dcf53cc",
+    "question": "Which of the following tags correctly indicate the start and end of a PHP block?",
+    "answers": [
+      {
+        "content": "A. <php> ... </php>",
+        "isCorrect": false
+      },
+      {
+        "content": "B. <?php ... ?>",
+        "isCorrect": true
+      },
+      {
+        "content": "C. <PHP> ... </PHP>",
+        "isCorrect": false
+      },
+      {
+        "content": "D. <? ... ?>",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The most widely used PHP opening and closing tags are <?php ... ?> and the short tags <? ... ?>. However, short tags may not always be enabled, so <?php ... ?> is preferred for compatibility. <php> and <PHP> are not valid PHP tags.",
+    "createdAt": "2025-08-29T08:47:19.921Z",
+    "updatedAt": "2025-08-29T08:47:19.921Z",
+    "createdById": null
+  },
+  {
+    "id": "8a6031a1-36db-4dd1-906e-189918b603e6",
+    "question": "Which of the following statements about PHP variables is correct?",
+    "answers": [
+      {
+        "content": "Variables in PHP must start with a dollar sign ($).",
+        "isCorrect": true
+      },
+      {
+        "content": "PHP variables are case insensitive.",
+        "isCorrect": false
+      },
+      {
+        "content": "PHP variables must be declared with a type before use.",
+        "isCorrect": false
+      },
+      {
+        "content": "Variables in PHP can only store strings.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "In PHP, variables always start with a dollar sign ($), such as $variable. PHP variables are case sensitive, do not require explicit type declaration, and can hold different data types—not just strings. This flexibility is part of PHP's loosely typed nature.",
+    "createdAt": "2025-08-29T08:47:42.488Z",
+    "updatedAt": "2025-08-29T08:47:42.488Z",
+    "createdById": null
+  },
+  {
+    "id": "ee0441a3-7cc7-4840-981e-c5bf60bf0433",
+    "question": "Which of the following are valid ways to include external PHP files into your script?",
+    "answers": [
+      {
+        "content": "using the include statement",
+        "isCorrect": true
+      },
+      {
+        "content": "using the import statement",
+        "isCorrect": false
+      },
+      {
+        "content": "using the require statement",
+        "isCorrect": true
+      },
+      {
+        "content": "using the load statement",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "PHP provides 'include' and 'require' statements to include external files. 'include' allows the script to continue if the file is not found, whereas 'require' will produce a fatal error if the file is missing. There are no 'import' or 'load' statements for this purpose in PHP.",
+    "createdAt": "2025-08-29T08:47:42.705Z",
+    "updatedAt": "2025-08-29T08:47:42.705Z",
+    "createdById": null
+  },
+  {
+    "id": "9988f9e4-5057-4f18-bcc2-04227079d5e0",
+    "question": "What is the result of the following code?\n\n$var = \"5\";\n$var += 2;\necho $var;",
+    "answers": [
+      {
+        "content": "52",
+        "isCorrect": false
+      },
+      {
+        "content": "7",
+        "isCorrect": true
+      },
+      {
+        "content": "Error",
+        "isCorrect": false
+      },
+      {
+        "content": "\"5\"2",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "The '+=' operator in PHP performs arithmetic addition. When adding an integer to a string containing a numeric value, PHP automatically converts the string to an integer before the operation. Therefore, \"5\" becomes 5, and 5 + 2 equals 7.",
+    "createdAt": "2025-08-29T08:47:42.911Z",
+    "updatedAt": "2025-08-29T08:47:42.911Z",
+    "createdById": null
+  },
+  {
+    "id": "552a3887-e5d2-43ae-8120-98135468077c",
+    "question": "Which of the following functions can be used to send output to the browser in PHP?",
+    "answers": [
+      {
+        "content": "echo",
+        "isCorrect": true
+      },
+      {
+        "content": "print",
+        "isCorrect": true
+      },
+      {
+        "content": "write",
+        "isCorrect": false
+      },
+      {
+        "content": "output",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "'echo' and 'print' are both PHP language constructs used to send output to the browser. 'write' and 'output' are not valid PHP constructs for this purpose. 'echo' can output one or more strings, while 'print' outputs a single string and returns a value.",
+    "createdAt": "2025-08-29T08:47:43.094Z",
+    "updatedAt": "2025-08-29T08:47:43.094Z",
+    "createdById": null
+  },
+  {
+    "id": "2895ec2b-4fff-43fc-b540-ab89723687ab",
+    "question": "Which of the following will create an associative array in PHP?",
+    "answers": [
+      {
+        "content": "$arr = array(\"A\", \"B\", \"C\");",
+        "isCorrect": false
+      },
+      {
+        "content": "$arr = array(\"key1\" => \"value1\", \"key2\" => \"value2\");",
+        "isCorrect": true
+      },
+      {
+        "content": "$arr = [\"A\", \"B\", \"C\"];",
+        "isCorrect": false
+      },
+      {
+        "content": "$arr = array(1, 2, 3);",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "An associative array in PHP uses named keys that are assigned to values. Option 2 creates an associative array with keys 'key1' and 'key2'. The other options create indexed arrays, where keys are numeric and automatically assigned.",
+    "createdAt": "2025-08-29T08:47:43.454Z",
+    "updatedAt": "2025-08-29T08:47:43.454Z",
+    "createdById": null
+  },
+  {
+    "id": "5cd7bf67-b2b5-4774-847a-4dd8271599b9",
+    "question": "Which of the following statements about PHP's variable scope are TRUE?",
+    "answers": [
+      {
+        "content": "Variables declared within a function are local to that function by default.",
+        "isCorrect": true
+      },
+      {
+        "content": "Global variables can be accessed directly inside any function.",
+        "isCorrect": false
+      },
+      {
+        "content": "The 'global' keyword is used to access global variables within functions.",
+        "isCorrect": true
+      },
+      {
+        "content": "Static variables within functions retain their value between function calls.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "In PHP, variables declared inside a function are local to that function and are not accessible outside unless returned or declared global. The 'global' keyword is needed inside functions to access variables defined in the global scope. Static variables within a function are initialized only once and retain their value between function calls, unlike regular local variables.",
+    "createdAt": "2025-08-29T08:48:30.507Z",
+    "updatedAt": "2025-08-29T08:48:30.507Z",
+    "createdById": null
+  },
+  {
+    "id": "30b19273-2d2f-4db5-bd6d-53254acf0071",
+    "question": "Which of the following are valid ways to include and execute the contents of another PHP file?",
+    "answers": [
+      {
+        "content": "require 'file.php';",
+        "isCorrect": true
+      },
+      {
+        "content": "include_once 'file.php';",
+        "isCorrect": true
+      },
+      {
+        "content": "import 'file.php';",
+        "isCorrect": false
+      },
+      {
+        "content": "require_once 'file.php';",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "PHP provides 'require', 'include', 'require_once', and 'include_once' for including files. 'require' and 'require_once' will produce a fatal error on failure, while 'include' and 'include_once' will only emit a warning. 'import' is not a valid PHP statement for including files.",
+    "createdAt": "2025-08-29T08:48:30.754Z",
+    "updatedAt": "2025-08-29T08:48:30.754Z",
+    "createdById": null
+  },
+  {
+    "id": "46e48bdd-9aba-43d9-8779-04c203a700aa",
+    "question": "Which of the following are characteristics of PHP's type system?",
+    "answers": [
+      {
+        "content": "PHP is a loosely typed language.",
+        "isCorrect": true
+      },
+      {
+        "content": "Variables must be explicitly declared with a type.",
+        "isCorrect": false
+      },
+      {
+        "content": "PHP supports automatic type conversion (type juggling).",
+        "isCorrect": true
+      },
+      {
+        "content": "PHP 7 introduced scalar type declarations and strict types.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "PHP is a loosely typed (dynamically typed) language, which means that variables do not need explicit type declarations and their types can change at runtime. PHP performs automatic type conversion when necessary. Since PHP 7, developers can use scalar type hints and enable strict type mode to enforce type checking, but explicit type declarations are not required for all variables.",
+    "createdAt": "2025-08-29T08:48:31.017Z",
+    "updatedAt": "2025-08-29T08:48:31.017Z",
+    "createdById": null
+  },
+  {
+    "id": "54c9b4c9-e32e-43d3-9898-8f4f1ba8509f",
+    "question": "Which of the following statements about error handling in PHP are correct?",
+    "answers": [
+      {
+        "content": "The set_error_handler() function allows custom error handling routines.",
+        "isCorrect": true
+      },
+      {
+        "content": "PHP supports exceptions using try-catch blocks.",
+        "isCorrect": true
+      },
+      {
+        "content": "Fatal errors can be caught using try-catch blocks.",
+        "isCorrect": false
+      },
+      {
+        "content": "The error_reporting() function can be used to control which errors are reported.",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "PHP"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "PHP provides set_error_handler() to define custom error handlers. Exceptions can be handled using try-catch blocks, but not all errors (such as fatal errors) can be caught this way—fatal errors terminate execution. error_reporting() controls the level of errors that are reported by PHP.",
+    "createdAt": "2025-08-29T08:48:31.532Z",
+    "updatedAt": "2025-08-29T08:48:31.532Z",
+    "createdById": null
+  },
+  {
+    "id": "0c1e8a5e-c957-46ee-90c0-8d0af7e2e0bf",
+    "question": "Which of the following is the correct way to define a function in Python?",
+    "answers": [
+      {
+        "content": "function my_function():",
+        "isCorrect": false
+      },
+      {
+        "content": "def my_function():",
+        "isCorrect": true
+      },
+      {
+        "content": "func my_function():",
+        "isCorrect": false
+      },
+      {
+        "content": "define my_function():",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In Python, functions are defined using the 'def' keyword followed by the function name and parentheses. The 'def' keyword signals the start of a function definition, which is fundamental to Python's syntax and structure.",
+    "createdAt": "2025-08-29T08:52:04.417Z",
+    "updatedAt": "2025-08-29T08:52:04.417Z",
+    "createdById": null
+  },
+  {
+    "id": "f8c88bc2-b5c3-4aa9-891f-2b35507ce0b1",
+    "question": "What is the output of the following code?\n\nprint(type(42))",
+    "answers": [
+      {
+        "content": "<class 'string'>",
+        "isCorrect": false
+      },
+      {
+        "content": "<class 'int'>",
+        "isCorrect": true
+      },
+      {
+        "content": "<type 'integer'>",
+        "isCorrect": false
+      },
+      {
+        "content": "<class 'float'>",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The number 42 is an integer in Python. Using the 'type()' function returns '<class 'int'>' for integer values, showing the dynamic typing nature of Python where types are determined at runtime.",
+    "createdAt": "2025-08-29T08:52:04.715Z",
+    "updatedAt": "2025-08-29T08:52:04.715Z",
+    "createdById": null
+  },
+  {
+    "id": "f57eda65-523b-4f34-a457-1d43cf73136d",
+    "question": "Which of the following statements about Python lists is TRUE?",
+    "answers": [
+      {
+        "content": "Lists can only store integers.",
+        "isCorrect": false
+      },
+      {
+        "content": "Lists are immutable.",
+        "isCorrect": false
+      },
+      {
+        "content": "Lists can contain elements of different data types.",
+        "isCorrect": true
+      },
+      {
+        "content": "Lists must be sorted.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "Python lists are mutable and can store elements of different data types, such as integers, strings, and even other lists. This flexibility is one of the key features of Python lists.",
+    "createdAt": "2025-08-29T08:52:04.942Z",
+    "updatedAt": "2025-08-29T08:52:04.942Z",
+    "createdById": null
+  },
+  {
+    "id": "43c8eab3-dce7-42b4-bbad-dc9198c950c2",
+    "question": "What will be the result of executing the following code?\n\nx = [1, 2, 3]\nx.append(4)\nprint(x)",
+    "answers": [
+      {
+        "content": "[1, 2, 3, 4]",
+        "isCorrect": true
+      },
+      {
+        "content": "[1, 2, 3, 4, 4]",
+        "isCorrect": false
+      },
+      {
+        "content": "[4, 1, 2, 3]",
+        "isCorrect": false
+      },
+      {
+        "content": "[1, 2, 3]",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'append()' method adds an element to the end of a list. After appending 4 to the original list, the resulting list is [1, 2, 3, 4]. This demonstrates how lists are mutable and can be modified after creation.",
+    "createdAt": "2025-08-29T08:52:05.208Z",
+    "updatedAt": "2025-08-29T08:52:05.208Z",
+    "createdById": null
+  },
+  {
+    "id": "b3d40c90-a2c3-4ee9-88f4-58de0cf5d542",
+    "question": "Which of the following is used to import a module named 'math' in Python?",
+    "answers": [
+      {
+        "content": "import math",
+        "isCorrect": true
+      },
+      {
+        "content": "use math",
+        "isCorrect": false
+      },
+      {
+        "content": "include math",
+        "isCorrect": false
+      },
+      {
+        "content": "require(math)",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In Python, the 'import' keyword is used to bring external modules into your code. 'import math' makes the standard math library available, allowing access to mathematical functions and constants.",
+    "createdAt": "2025-08-29T08:52:05.466Z",
+    "updatedAt": "2025-08-29T08:52:05.466Z",
+    "createdById": null
+  },
+  {
+    "id": "952b1c29-8ab1-475c-97f3-aebb1d2ba2b7",
+    "question": "Which of the following statements is true about Python's handling of mutable and immutable objects?",
+    "answers": [
+      {
+        "content": "Lists are mutable, while tuples are immutable.",
+        "isCorrect": true
+      },
+      {
+        "content": "Tuples are mutable, while dictionaries are immutable.",
+        "isCorrect": false
+      },
+      {
+        "content": "Strings are mutable, while sets are immutable.",
+        "isCorrect": false
+      },
+      {
+        "content": "Both lists and dictionaries are immutable.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "In Python, lists are mutable, meaning their contents can be changed after creation, whereas tuples are immutable, meaning once created, their contents cannot be altered. Strings are also immutable, and dictionaries are mutable. Understanding the distinction between mutable and immutable objects is fundamental to writing robust Python code.",
+    "createdAt": "2025-08-29T08:52:30.094Z",
+    "updatedAt": "2025-08-29T08:52:30.094Z",
+    "createdById": null
+  },
+  {
+    "id": "df0c3eda-c44e-4001-bfe7-e97d34fa86a3",
+    "question": "What is the result of executing the following code snippet?\n\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)",
+    "answers": [
+      {
+        "content": "[1, 2, 3]",
+        "isCorrect": false
+      },
+      {
+        "content": "[1, 2, 3, 4]",
+        "isCorrect": true
+      },
+      {
+        "content": "[4]",
+        "isCorrect": false
+      },
+      {
+        "content": "Error: Cannot append to list",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "Assigning 'y = x' makes 'y' refer to the same list object as 'x'. Appending to 'y' modifies the underlying list, so printing 'x' shows '[1, 2, 3, 4]'. This demonstrates how variable assignment with mutable objects creates references to the same object, not copies.",
+    "createdAt": "2025-08-29T08:52:30.319Z",
+    "updatedAt": "2025-08-29T08:52:30.319Z",
+    "createdById": null
+  },
+  {
+    "id": "9d2cab17-fbe1-40e6-a61b-692137cca4e2",
+    "question": "Which of the following keywords is used to define a function in Python?",
+    "answers": [
+      {
+        "content": "function",
+        "isCorrect": false
+      },
+      {
+        "content": "def",
+        "isCorrect": true
+      },
+      {
+        "content": "func",
+        "isCorrect": false
+      },
+      {
+        "content": "define",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "The 'def' keyword is used to define a function in Python. For example, 'def my_function():' starts a function definition. This is a fundamental part of Python syntax for creating reusable code blocks.",
+    "createdAt": "2025-08-29T08:52:30.564Z",
+    "updatedAt": "2025-08-29T08:52:30.564Z",
+    "createdById": null
+  },
+  {
+    "id": "27a30bd4-c681-40c0-804b-063ecbcba124",
+    "question": "Which built-in Python data type is best suited for storing unique unordered elements?",
+    "answers": [
+      {
+        "content": "list",
+        "isCorrect": false
+      },
+      {
+        "content": "tuple",
+        "isCorrect": false
+      },
+      {
+        "content": "set",
+        "isCorrect": true
+      },
+      {
+        "content": "dict",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "A 'set' in Python is designed to store unique elements without any particular order. It automatically removes duplicates and provides efficient membership testing, making it ideal for collections where uniqueness is required.",
+    "createdAt": "2025-08-29T08:52:30.829Z",
+    "updatedAt": "2025-08-29T08:52:30.829Z",
+    "createdById": null
+  },
+  {
+    "id": "91750bc0-ee2a-4365-9312-97baf0d89996",
+    "question": "In Python, which statement is used to handle exceptions during runtime?",
+    "answers": [
+      {
+        "content": "try-except",
+        "isCorrect": true
+      },
+      {
+        "content": "if-else",
+        "isCorrect": false
+      },
+      {
+        "content": "catch-finally",
+        "isCorrect": false
+      },
+      {
+        "content": "handle-error",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "middle"
+    ],
+    "explanation": "The 'try-except' statement is used for exception handling in Python. It allows programmers to catch and handle errors gracefully, preventing programs from crashing due to unexpected runtime issues. The 'try' block contains code that might raise exceptions, and the 'except' block specifies how to handle those exceptions.",
+    "createdAt": "2025-08-29T08:52:31.066Z",
+    "updatedAt": "2025-08-29T08:52:31.066Z",
+    "createdById": null
+  },
+  {
+    "id": "caecf3e1-6855-4c83-ae22-73ca6fb5ed07",
+    "question": "Which of the following Python features make it particularly suitable for backend development in web applications?",
+    "answers": [
+      {
+        "content": "Automatic memory management through garbage collection",
+        "isCorrect": true
+      },
+      {
+        "content": "Dynamic typing and interpreted nature",
+        "isCorrect": true
+      },
+      {
+        "content": "Extensive standard library including modules for HTTP, databases, and threading",
+        "isCorrect": true
+      },
+      {
+        "content": "Built-in support for real-time operating system features",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Python's automatic memory management simplifies resource handling, while dynamic typing and being interpreted make prototyping and development faster. The extensive standard library provides built-in modules for common backend tasks such as networking, database access, and threading, making it highly suitable for backend development. Real-time OS features are not natively supported in Python.",
+    "createdAt": "2025-08-29T08:52:49.507Z",
+    "updatedAt": "2025-08-29T08:52:49.507Z",
+    "createdById": null
+  },
+  {
+    "id": "ed27a0d1-8b3f-4269-90f3-ef5224aaa156",
+    "question": "When using Python for backend development, which of the following statements about the Global Interpreter Lock (GIL) are correct?",
+    "answers": [
+      {
+        "content": "GIL allows multiple threads to execute Python bytecodes simultaneously",
+        "isCorrect": false
+      },
+      {
+        "content": "GIL restricts execution to one thread at a time in a single process",
+        "isCorrect": true
+      },
+      {
+        "content": "GIL affects multi-threaded programs but not multi-process programs",
+        "isCorrect": true
+      },
+      {
+        "content": "GIL is present in all Python implementations",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "The Global Interpreter Lock (GIL) in CPython ensures that only one thread executes Python bytecode at a time, limiting true parallelism in multi-threaded programs. However, multi-process programs (using multiprocessing) are not affected by the GIL because each process has its own interpreter and memory space. Not all Python implementations (e.g., Jython, IronPython) have a GIL.",
+    "createdAt": "2025-08-29T08:52:49.739Z",
+    "updatedAt": "2025-08-29T08:52:49.739Z",
+    "createdById": null
+  },
+  {
+    "id": "1dc0c246-0971-453f-922e-6baecd4557e9",
+    "question": "Which of the following are commonly used Python frameworks for backend web development?",
+    "answers": [
+      {
+        "content": "Django",
+        "isCorrect": true
+      },
+      {
+        "content": "Flask",
+        "isCorrect": true
+      },
+      {
+        "content": "NumPy",
+        "isCorrect": false
+      },
+      {
+        "content": "FastAPI",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Django, Flask, and FastAPI are popular Python frameworks designed for building web backends. Django is a high-level framework with many built-in features, Flask is lightweight and flexible, and FastAPI is modern and optimized for performance and asynchronous programming. NumPy is a library for numerical computation and is not used for backend web development.",
+    "createdAt": "2025-08-29T08:52:50.056Z",
+    "updatedAt": "2025-08-29T08:52:50.056Z",
+    "createdById": null
+  },
+  {
+    "id": "e74f37b7-c431-4941-99c3-6700b3f7905d",
+    "question": "Which of the following statements about Python decorators are TRUE in the context of backend development?",
+    "answers": [
+      {
+        "content": "Decorators allow modification of function behavior without changing the function code",
+        "isCorrect": true
+      },
+      {
+        "content": "Decorators can be used to implement authentication, logging, or caching in web applications",
+        "isCorrect": true
+      },
+      {
+        "content": "Decorators are limited to being applied only to classes in Python",
+        "isCorrect": false
+      },
+      {
+        "content": "Decorators are syntactic sugar for higher-order functions",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "Decorators are a powerful feature in Python that allow developers to modify or extend the behavior of functions or methods without altering their code, which is especially useful for cross-cutting concerns like authentication, logging, or caching in backend applications. Decorators are implemented as higher-order functions and are not limited to classes—they can be applied to functions and methods as well.",
+    "createdAt": "2025-08-29T08:52:50.286Z",
+    "updatedAt": "2025-08-29T08:52:50.286Z",
+    "createdById": null
+  },
+  {
+    "id": "162258c7-3f13-4a8e-b473-51b54deaa23e",
+    "question": "What is the primary advantage of using Python's 'asyncio' library in backend development?",
+    "answers": [
+      {
+        "content": "It enables synchronous blocking I/O operations",
+        "isCorrect": false
+      },
+      {
+        "content": "It allows scalable handling of concurrent network connections using asynchronous I/O",
+        "isCorrect": true
+      },
+      {
+        "content": "It improves performance of CPU-bound tasks",
+        "isCorrect": false
+      },
+      {
+        "content": "It simplifies writing code that handles many I/O-bound operations concurrently",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Backend Development"
+    ],
+    "topics": [
+      "Python"
+    ],
+    "levels": [
+      "senior"
+    ],
+    "explanation": "'asyncio' provides infrastructure for asynchronous I/O, allowing backend applications to handle many network connections or I/O-bound operations concurrently and efficiently. This improves scalability and responsiveness for such tasks. It does not enhance CPU-bound task performance (which require multiprocessing or threading), and does not enable synchronous blocking I/O.",
+    "createdAt": "2025-08-29T08:52:50.538Z",
+    "updatedAt": "2025-08-29T08:52:50.538Z",
+    "createdById": null
+  },
+  {
+    "id": "7351c42e-4b86-435e-91b2-0dd0ab4793d0",
+    "question": "Which of the following is used to create a new Angular component using the Angular CLI?",
+    "answers": [
+      {
+        "content": "ng generate component my-component",
+        "isCorrect": true
+      },
+      {
+        "content": "ng create component my-component",
+        "isCorrect": false
+      },
+      {
+        "content": "ng new component my-component",
+        "isCorrect": false
+      },
+      {
+        "content": "ng add component my-component",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "Angular"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The correct Angular CLI command to generate a new component is 'ng generate component' or its shorthand 'ng g c'. This command scaffolds a new component with all the necessary files and configurations. The other options are not valid Angular CLI commands for generating components.",
+    "createdAt": "2025-08-29T08:54:17.203Z",
+    "updatedAt": "2025-08-29T08:54:17.203Z",
+    "createdById": null
+  },
+  {
+    "id": "c6f2c274-cd6f-4b17-ae6d-90ad2f690ba7",
+    "question": "What is the main purpose of Angular modules (NgModules)?",
+    "answers": [
+      {
+        "content": "To group related components, directives, and services",
+        "isCorrect": true
+      },
+      {
+        "content": "To define routes for navigation",
+        "isCorrect": false
+      },
+      {
+        "content": "To style components with CSS",
+        "isCorrect": false
+      },
+      {
+        "content": "To run unit tests",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "Angular"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "NgModules in Angular are used to organize an application into cohesive blocks of functionality by grouping related components, directives, pipes, and services. This modular structure helps with code organization, lazy loading, and reusability. While modules can help with routing, their primary purpose is grouping related functionalities.",
+    "createdAt": "2025-08-29T08:54:17.455Z",
+    "updatedAt": "2025-08-29T08:54:17.455Z",
+    "createdById": null
+  },
+  {
+    "id": "f853d1a4-702e-41e4-91a9-d9ee9082db73",
+    "question": "What does the double curly braces {{ }} syntax represent in Angular templates?",
+    "answers": [
+      {
+        "content": "Property binding",
+        "isCorrect": false
+      },
+      {
+        "content": "Event binding",
+        "isCorrect": false
+      },
+      {
+        "content": "Interpolation",
+        "isCorrect": true
+      },
+      {
+        "content": "Structural directive",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "Angular"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The double curly braces '{{ }}' in Angular templates are used for interpolation, which allows you to display the value of component properties within the template. Interpolation is a one-way data binding from the component class to the template.",
+    "createdAt": "2025-08-29T08:54:18.041Z",
+    "updatedAt": "2025-08-29T08:54:18.041Z",
+    "createdById": null
+  },
+  {
+    "id": "6baff7a4-ef01-4f95-8673-ba4ccfe76151",
+    "question": "Which of the following is TRUE about Angular services?",
+    "answers": [
+      {
+        "content": "Services are used to share data and logic across components.",
+        "isCorrect": true
+      },
+      {
+        "content": "Services cannot make HTTP requests.",
+        "isCorrect": false
+      },
+      {
+        "content": "Each component must have its own service instance.",
+        "isCorrect": false
+      },
+      {
+        "content": "Services must be declared inside the component decorator.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "Angular"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "Angular services are designed to encapsulate data and business logic that can be shared across multiple components. This promotes reusability and separation of concerns. Services can make HTTP requests and are typically provided in modules or the root injector, not inside component decorators.",
+    "createdAt": "2025-08-29T08:54:18.256Z",
+    "updatedAt": "2025-08-29T08:54:18.256Z",
+    "createdById": null
+  },
+  {
+    "id": "c6f42ed3-baa3-4b41-8568-1e126d95a466",
+    "question": "Which CSS property is used to change the text color of an element?",
+    "answers": [
+      {
+        "content": "background-color",
+        "isCorrect": false
+      },
+      {
+        "content": "color",
+        "isCorrect": true
+      },
+      {
+        "content": "font-size",
+        "isCorrect": false
+      },
+      {
+        "content": "text-decoration",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "CSS"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'color' property in CSS is used to set the color of the text content of an element. 'background-color' sets the background, 'font-size' adjusts the size of the text, and 'text-decoration' applies decorative lines such as underline, but none of these change the text color.",
+    "createdAt": "2025-08-29T08:55:00.041Z",
+    "updatedAt": "2025-08-29T08:55:00.041Z",
+    "createdById": null
+  },
+  {
+    "id": "1c715475-94f1-42f5-b0cd-4ed0556120cc",
+    "question": "Which of the following are valid ways to include CSS in an HTML page?",
+    "answers": [
+      {
+        "content": "Using the <style> tag within the HTML file",
+        "isCorrect": true
+      },
+      {
+        "content": "Linking to an external .css file with <link>",
+        "isCorrect": true
+      },
+      {
+        "content": "Using the style attribute directly on an HTML element",
+        "isCorrect": true
+      },
+      {
+        "content": "Using the <script> tag",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "CSS"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "CSS can be added to an HTML document in three main ways: with the <style> tag in the head for internal styles, by linking to an external stylesheet using the <link> tag, and by using the style attribute for inline styles. The <script> tag is for JavaScript, not CSS.",
+    "createdAt": "2025-08-29T08:55:00.283Z",
+    "updatedAt": "2025-08-29T08:55:00.283Z",
+    "createdById": null
+  },
+  {
+    "id": "28f57415-03f7-4e9c-9b40-9f3cd807e5ca",
+    "question": "What does the 'margin' property in CSS control?",
+    "answers": [
+      {
+        "content": "The space inside the border of an element",
+        "isCorrect": false
+      },
+      {
+        "content": "The space outside the border of an element",
+        "isCorrect": true
+      },
+      {
+        "content": "The thickness of the border",
+        "isCorrect": false
+      },
+      {
+        "content": "The color of the text",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "CSS"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'margin' property controls the space outside the border of an element, creating distance between the element and its neighbors. The 'padding' property controls the space inside the border, while 'border' deals with the thickness and style of borders.",
+    "createdAt": "2025-08-29T08:55:00.542Z",
+    "updatedAt": "2025-08-29T08:55:00.542Z",
+    "createdById": null
+  },
+  {
+    "id": "889ef281-c4af-4bd9-a1be-80a0a2596263",
+    "question": "Which selector will select all <p> elements with the class 'intro'?",
+    "answers": [
+      {
+        "content": "p intro",
+        "isCorrect": false
+      },
+      {
+        "content": ".intro",
+        "isCorrect": false
+      },
+      {
+        "content": "p.intro",
+        "isCorrect": true
+      },
+      {
+        "content": "#intro",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "CSS"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The selector 'p.intro' selects all <p> elements that have class='intro'. '.intro' selects any element with that class, while '#intro' selects an element with id='intro'. 'p intro' would select 'intro' elements that are descendants of <p> elements, which is not valid HTML.",
+    "createdAt": "2025-08-29T08:55:00.827Z",
+    "updatedAt": "2025-08-29T08:55:00.827Z",
+    "createdById": null
+  },
+  {
+    "id": "13f1f7d0-0e50-4830-8180-3ae05fa412ed",
+    "question": "Which of the following CSS properties can be used to make text bold?",
+    "answers": [
+      {
+        "content": "font-style",
+        "isCorrect": false
+      },
+      {
+        "content": "font-weight",
+        "isCorrect": true
+      },
+      {
+        "content": "text-transform",
+        "isCorrect": false
+      },
+      {
+        "content": "text-align",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "CSS"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "'font-weight' is the property used to specify the boldness (thickness) of text. Common values include 'normal' and 'bold'. 'font-style' is for italicizing text, 'text-transform' changes the case, and 'text-align' sets the horizontal alignment.",
+    "createdAt": "2025-08-29T08:55:01.141Z",
+    "updatedAt": "2025-08-29T08:55:01.141Z",
+    "createdById": null
+  },
+  {
+    "id": "da609c29-2e27-49a7-a0f6-2c6cf465f35b",
+    "question": "Which HTML element is used to define the main heading of a webpage?",
+    "answers": [
+      {
+        "content": "<h1>",
+        "isCorrect": true
+      },
+      {
+        "content": "<title>",
+        "isCorrect": false
+      },
+      {
+        "content": "<header>",
+        "isCorrect": false
+      },
+      {
+        "content": "<head>",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "HTML"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The <h1> element is used to define the main heading of a webpage and is considered the highest level heading in HTML, indicating the most important heading on the page. While <title> sets the page title in the browser tab, <header> is a structural element for introductory content, and <head> contains meta-information about the document.",
+    "createdAt": "2025-08-29T08:55:31.544Z",
+    "updatedAt": "2025-08-29T08:55:31.544Z",
+    "createdById": null
+  },
+  {
+    "id": "bdbc0523-ad0c-49ed-bac7-2ecebcb28bae",
+    "question": "What is the correct HTML tag to create a hyperlink?",
+    "answers": [
+      {
+        "content": "<link>",
+        "isCorrect": false
+      },
+      {
+        "content": "<a>",
+        "isCorrect": true
+      },
+      {
+        "content": "<href>",
+        "isCorrect": false
+      },
+      {
+        "content": "<url>",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "HTML"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The <a> element is used to create hyperlinks in HTML. It stands for 'anchor' and uses the 'href' attribute to specify the destination URL. <link> is used for linking external resources like stylesheets, <href> is an attribute, and <url> is not a valid HTML tag.",
+    "createdAt": "2025-08-29T08:55:31.779Z",
+    "updatedAt": "2025-08-29T08:55:31.779Z",
+    "createdById": null
+  },
+  {
+    "id": "30803042-3169-48ee-8830-5c746ae687dd",
+    "question": "Which of the following tags are used to create an unordered list in HTML?",
+    "answers": [
+      {
+        "content": "<ol>",
+        "isCorrect": false
+      },
+      {
+        "content": "<ul>",
+        "isCorrect": true
+      },
+      {
+        "content": "<li>",
+        "isCorrect": true
+      },
+      {
+        "content": "<dl>",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "HTML"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "<ul> is used to start an unordered list (bulleted list), and <li> is used to define each list item within the list. <ol> creates an ordered (numbered) list, and <dl> is for description lists.",
+    "createdAt": "2025-08-29T08:55:32.004Z",
+    "updatedAt": "2025-08-29T08:55:32.004Z",
+    "createdById": null
+  },
+  {
+    "id": "aa3d2b48-7a4f-4383-840c-520f5c3d02cb",
+    "question": "How do you indicate that an image should be displayed in HTML?",
+    "answers": [
+      {
+        "content": "<img src='image.jpg'>",
+        "isCorrect": true
+      },
+      {
+        "content": "<image href='image.jpg'>",
+        "isCorrect": false
+      },
+      {
+        "content": "<picture src='image.jpg'>",
+        "isCorrect": false
+      },
+      {
+        "content": "<media src='image.jpg'>",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "HTML"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The <img> tag is used to embed images in an HTML page. The 'src' attribute specifies the path to the image. <image>, <picture>, and <media> are not used this way for displaying basic images in HTML.",
+    "createdAt": "2025-08-29T08:55:32.249Z",
+    "updatedAt": "2025-08-29T08:55:32.249Z",
+    "createdById": null
+  },
+  {
+    "id": "4e88e124-c062-40ed-8a36-18564be83039",
+    "question": "Which attribute is used to provide alternative text for an image in HTML?",
+    "answers": [
+      {
+        "content": "alt",
+        "isCorrect": true
+      },
+      {
+        "content": "title",
+        "isCorrect": false
+      },
+      {
+        "content": "href",
+        "isCorrect": false
+      },
+      {
+        "content": "src",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "HTML"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'alt' attribute provides alternative text for an image in HTML, which is shown if the image cannot be displayed and is important for accessibility. 'src' specifies the image source, 'title' gives a tooltip, and 'href' is used for links.",
+    "createdAt": "2025-08-29T08:55:32.531Z",
+    "updatedAt": "2025-08-29T08:55:32.531Z",
+    "createdById": null
+  },
+  {
+    "id": "d1c200f9-c383-4073-9c30-7fd2d440bb54",
+    "question": "Which of the following correctly declares a variable in JavaScript?",
+    "answers": [
+      {
+        "content": "var myVariable = 10;",
+        "isCorrect": true
+      },
+      {
+        "content": "myVariable := 10",
+        "isCorrect": false
+      },
+      {
+        "content": "let myVariable == 10;",
+        "isCorrect": false
+      },
+      {
+        "content": "const myVariable == 10;",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "JavaScript"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In JavaScript, variables can be declared using 'var', 'let', or 'const' followed by the variable name, an equals sign, and a value. The correct syntax uses a single '=' for assignment. Therefore, 'var myVariable = 10;' is correct.",
+    "createdAt": "2025-08-29T08:56:17.465Z",
+    "updatedAt": "2025-08-29T08:56:17.465Z",
+    "createdById": null
+  },
+  {
+    "id": "e16c368b-ec5d-4076-8c4a-3e10f72c07d2",
+    "question": "What is the output of the following code?\n\nconsole.log(typeof 'Hello');",
+    "answers": [
+      {
+        "content": "'string'",
+        "isCorrect": true
+      },
+      {
+        "content": "'text'",
+        "isCorrect": false
+      },
+      {
+        "content": "'char'",
+        "isCorrect": false
+      },
+      {
+        "content": "'object'",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "JavaScript"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'typeof' operator in JavaScript returns a string indicating the type of the unevaluated operand. For string literals, 'typeof' returns 'string'.",
+    "createdAt": "2025-08-29T08:56:17.680Z",
+    "updatedAt": "2025-08-29T08:56:17.680Z",
+    "createdById": null
+  },
+  {
+    "id": "4169fb36-8884-4471-8ac5-eeec15d25e42",
+    "question": "Which statement about JavaScript functions is TRUE?",
+    "answers": [
+      {
+        "content": "Functions must always return a value.",
+        "isCorrect": false
+      },
+      {
+        "content": "Functions can be assigned to variables.",
+        "isCorrect": true
+      },
+      {
+        "content": "Functions cannot take parameters.",
+        "isCorrect": false
+      },
+      {
+        "content": "Functions must be named.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "JavaScript"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In JavaScript, functions are first-class citizens, meaning they can be assigned to variables, passed as arguments, and returned from other functions. Functions do not have to return a value, can take parameters, and can be anonymous (without a name).",
+    "createdAt": "2025-08-29T08:56:17.976Z",
+    "updatedAt": "2025-08-29T08:56:17.976Z",
+    "createdById": null
+  },
+  {
+    "id": "f2b5e8ba-35ee-4aa1-beb2-ed4ba6513be2",
+    "question": "What will be logged to the console?\n\nlet x = 5;\nlet y = '5';\nconsole.log(x == y);",
+    "answers": [
+      {
+        "content": "true",
+        "isCorrect": true
+      },
+      {
+        "content": "false",
+        "isCorrect": false
+      },
+      {
+        "content": "undefined",
+        "isCorrect": false
+      },
+      {
+        "content": "null",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "JavaScript"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The '==' operator in JavaScript performs type coercion before comparing. Since 'x' is a number and 'y' is a string containing a number, 'x == y' evaluates to true after coercion.",
+    "createdAt": "2025-08-29T08:56:18.185Z",
+    "updatedAt": "2025-08-29T08:56:18.185Z",
+    "createdById": null
+  },
+  {
+    "id": "4f4003c5-fcc2-4b50-be1a-cf5a8ea9f599",
+    "question": "Which of the following is NOT a valid JavaScript data type?",
+    "answers": [
+      {
+        "content": "string",
+        "isCorrect": false
+      },
+      {
+        "content": "number",
+        "isCorrect": false
+      },
+      {
+        "content": "boolean",
+        "isCorrect": false
+      },
+      {
+        "content": "character",
+        "isCorrect": true
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "JavaScript"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "JavaScript does not have a separate 'character' data type. Instead, single characters are represented as strings of length 1. The valid primitive data types include string, number, and boolean, among others.",
+    "createdAt": "2025-08-29T08:56:18.409Z",
+    "updatedAt": "2025-08-29T08:56:18.409Z",
+    "createdById": null
+  },
+  {
+    "id": "7e6cc4a9-32b9-4f9e-8641-495ec972ea49",
+    "question": "Which of the following is the correct way to declare a variable in JavaScript?",
+    "answers": [
+      {
+        "content": "var name = 'Alex';",
+        "isCorrect": true
+      },
+      {
+        "content": "variable name = 'Alex';",
+        "isCorrect": false
+      },
+      {
+        "content": "let name := 'Alex';",
+        "isCorrect": false
+      },
+      {
+        "content": "const name == 'Alex';",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "JavaScript"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In JavaScript, variables can be declared using the var, let, or const keywords followed by the variable name and an optional assignment. Option A correctly uses 'var' to declare a variable. Option B uses an incorrect keyword, and Options C and D use invalid syntax.",
+    "createdAt": "2025-08-29T08:56:40.549Z",
+    "updatedAt": "2025-08-29T08:56:40.549Z",
+    "createdById": null
+  },
+  {
+    "id": "035482c8-1341-431f-8917-8e852ef125fa",
+    "question": "What is the output of the following code?\n\nconsole.log(typeof 42);",
+    "answers": [
+      {
+        "content": "'integer'",
+        "isCorrect": false
+      },
+      {
+        "content": "'number'",
+        "isCorrect": true
+      },
+      {
+        "content": "'string'",
+        "isCorrect": false
+      },
+      {
+        "content": "'undefined'",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "JavaScript"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In JavaScript, the 'typeof' operator returns a string indicating the type of the unevaluated operand. For both integers and floats, it returns 'number'. There is no separate 'integer' type in JavaScript.",
+    "createdAt": "2025-08-29T08:56:40.782Z",
+    "updatedAt": "2025-08-29T08:56:40.782Z",
+    "createdById": null
+  },
+  {
+    "id": "902d9a4c-fb32-4471-b7e0-7bc1e3d7e67d",
+    "question": "Which of the following statements about JavaScript arrays is TRUE?",
+    "answers": [
+      {
+        "content": "Arrays in JavaScript can only hold numbers.",
+        "isCorrect": false
+      },
+      {
+        "content": "JavaScript arrays have a fixed size after creation.",
+        "isCorrect": false
+      },
+      {
+        "content": "Arrays in JavaScript can contain elements of different types.",
+        "isCorrect": true
+      },
+      {
+        "content": "You must declare the type of elements in a JavaScript array.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "JavaScript"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "JavaScript arrays are flexible and can store elements of any type, including numbers, strings, objects, and even other arrays. They are dynamically sized and do not require a fixed size or declared element type.",
+    "createdAt": "2025-08-29T08:56:41.015Z",
+    "updatedAt": "2025-08-29T08:56:41.015Z",
+    "createdById": null
+  },
+  {
+    "id": "4a3b76e1-1aad-426f-8785-c2019629d666",
+    "question": "What does the '===' operator do in JavaScript?",
+    "answers": [
+      {
+        "content": "Compares values for equality, ignoring type",
+        "isCorrect": false
+      },
+      {
+        "content": "Assigns a value to a variable",
+        "isCorrect": false
+      },
+      {
+        "content": "Compares values and types for equality",
+        "isCorrect": true
+      },
+      {
+        "content": "Checks if a variable is undefined",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "JavaScript"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The '===' operator in JavaScript checks both value and type for equality. This is known as strict equality, meaning both operands must be of the same type and value to be considered equal.",
+    "createdAt": "2025-08-29T08:56:41.278Z",
+    "updatedAt": "2025-08-29T08:56:41.278Z",
+    "createdById": null
+  },
+  {
+    "id": "5fc14380-d316-4451-84d2-79a43bb860ce",
+    "question": "How do you write a single-line comment in JavaScript?",
+    "answers": [
+      {
+        "content": "# This is a comment",
+        "isCorrect": false
+      },
+      {
+        "content": "// This is a comment",
+        "isCorrect": true
+      },
+      {
+        "content": "<!-- This is a comment -->",
+        "isCorrect": false
+      },
+      {
+        "content": "/* This is a comment */",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "JavaScript"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "Single-line comments in JavaScript begin with '//'. Option D is a multi-line comment syntax, while options A and C are used in other languages or HTML, not JavaScript.",
+    "createdAt": "2025-08-29T08:56:41.532Z",
+    "updatedAt": "2025-08-29T08:56:41.532Z",
+    "createdById": null
+  },
+  {
+    "id": "13d8a759-a07f-4d6c-915d-e22996ad9e4a",
+    "question": "What does JSX stand for in React?",
+    "answers": [
+      {
+        "content": "JavaScript XML",
+        "isCorrect": true
+      },
+      {
+        "content": "JavaScript Extended",
+        "isCorrect": false
+      },
+      {
+        "content": "Java Syntax Extension",
+        "isCorrect": false
+      },
+      {
+        "content": "JavaScript XHR",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "React"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows developers to write HTML-like code inside JavaScript, which React then transforms into JavaScript objects.",
+    "createdAt": "2025-08-29T09:03:14.395Z",
+    "updatedAt": "2025-08-29T09:03:14.395Z",
+    "createdById": null
+  },
+  {
+    "id": "2b808cbc-a7dd-474e-a481-9ded1cb3f57f",
+    "question": "How do you pass data from a parent component to a child component in React?",
+    "answers": [
+      {
+        "content": "Using props",
+        "isCorrect": true
+      },
+      {
+        "content": "Using state",
+        "isCorrect": false
+      },
+      {
+        "content": "Using refs",
+        "isCorrect": false
+      },
+      {
+        "content": "Using context",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "React"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In React, data is passed from parent to child components using props (short for properties). Props are read-only and allow data to flow down the component tree.",
+    "createdAt": "2025-08-29T09:03:14.743Z",
+    "updatedAt": "2025-08-29T09:03:14.743Z",
+    "createdById": null
+  },
+  {
+    "id": "e2133fcc-3999-4b41-a3a7-d1295f80fe76",
+    "question": "What is the purpose of the key prop in lists?",
+    "answers": [
+      {
+        "content": "To uniquely identify elements in a list",
+        "isCorrect": true
+      },
+      {
+        "content": "To add styling to list items",
+        "isCorrect": false
+      },
+      {
+        "content": "To store secret data",
+        "isCorrect": false
+      },
+      {
+        "content": "To trigger animations",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "React"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The key prop is used to uniquely identify each element in a list. This helps React optimize rendering and efficiently update or reorder elements.",
+    "createdAt": "2025-08-29T09:03:14.965Z",
+    "updatedAt": "2025-08-29T09:03:14.965Z",
+    "createdById": null
+  },
+  {
+    "id": "46c81242-ed3c-48e2-8177-9cb8ea50e4de",
+    "question": "What does the useEffect hook allow you to do?",
+    "answers": [
+      {
+        "content": "Perform side effects in functional components",
+        "isCorrect": true
+      },
+      {
+        "content": "Define routes in React apps",
+        "isCorrect": false
+      },
+      {
+        "content": "Create new components",
+        "isCorrect": false
+      },
+      {
+        "content": "Update props",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "React"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "useEffect is a React hook that allows you to perform side effects in functional components, such as fetching data or subscribing to events.",
+    "createdAt": "2025-08-29T09:03:15.203Z",
+    "updatedAt": "2025-08-29T09:03:15.203Z",
+    "createdById": null
+  },
+  {
+    "id": "4e1db98f-1219-4a3b-bcfa-8955b44ad712",
+    "question": "What will happen if you try to return multiple adjacent elements from a React component without a wrapper element?",
+    "answers": [
+      {
+        "content": "It will cause a syntax error",
+        "isCorrect": true
+      },
+      {
+        "content": "It will render only the first element",
+        "isCorrect": false
+      },
+      {
+        "content": "It will throw a runtime error",
+        "isCorrect": false
+      },
+      {
+        "content": "It will work as expected",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "React"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In JSX, you must return a single parent element. Returning multiple adjacent elements without a wrapping element (such as a <div> or <React.Fragment>) will result in a syntax error.",
+    "createdAt": "2025-08-29T09:03:15.457Z",
+    "updatedAt": "2025-08-29T09:03:15.457Z",
+    "createdById": null
+  },
+  {
+    "id": "cf6099a0-60ee-45bd-8ff9-0810fe4f7cd4",
+    "question": "How can you prevent a component from re-rendering when its parent re-renders?",
+    "answers": [
+      {
+        "content": "By using React.memo",
+        "isCorrect": true
+      },
+      {
+        "content": "By using useEffect",
+        "isCorrect": false
+      },
+      {
+        "content": "By using useState",
+        "isCorrect": false
+      },
+      {
+        "content": "By updating props",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "React"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "React.memo is a higher-order component that prevents unnecessary re-renders of functional components by memoizing the result unless props change.",
+    "createdAt": "2025-08-29T09:03:15.732Z",
+    "updatedAt": "2025-08-29T09:03:15.732Z",
+    "createdById": null
+  },
+  {
+    "id": "fc2a42d7-7059-4c29-8284-19d22ba42b1b",
+    "question": "What is the default value of props if not provided by the parent component?",
+    "answers": [
+      {
+        "content": "undefined",
+        "isCorrect": true
+      },
+      {
+        "content": "null",
+        "isCorrect": false
+      },
+      {
+        "content": "0",
+        "isCorrect": false
+      },
+      {
+        "content": "false",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "React"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "If a prop is not provided by the parent component, its value is undefined unless a default value is set using defaultProps or default parameters.",
+    "createdAt": "2025-08-29T09:03:15.998Z",
+    "updatedAt": "2025-08-29T09:03:15.998Z",
+    "createdById": null
+  },
+  {
+    "id": "f8dde20b-dbfa-4ff0-9d39-5d49e23485de",
+    "question": "How do you handle events in React components?",
+    "answers": [
+      {
+        "content": "By adding event listeners directly to DOM elements",
+        "isCorrect": false
+      },
+      {
+        "content": "By using camelCase event handler names and passing functions as props",
+        "isCorrect": true
+      },
+      {
+        "content": "By using custom HTML attributes",
+        "isCorrect": false
+      },
+      {
+        "content": "By modifying the window object",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "React"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In React, events are handled by using camelCase event handler names (like onClick) and passing functions as props to those handlers. This is part of React's synthetic event system, which abstracts away browser differences and ensures consistent behavior.",
+    "createdAt": "2025-08-29T09:03:16.251Z",
+    "updatedAt": "2025-08-29T09:03:16.251Z",
+    "createdById": null
+  },
+  {
+    "id": "707e037d-0506-4a2a-818c-ffac8211dc22",
+    "question": "What is the purpose of the 'children' prop in React?",
+    "answers": [
+      {
+        "content": "To hold the component's local state",
+        "isCorrect": false
+      },
+      {
+        "content": "To allow nesting elements inside a component",
+        "isCorrect": true
+      },
+      {
+        "content": "To define lifecycle methods",
+        "isCorrect": false
+      },
+      {
+        "content": "To specify component styling",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "React"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "The 'children' prop in React is used to pass nested elements or components into another component. This allows for flexible composition, enabling components to wrap other elements or components within their opening and closing tags.",
+    "createdAt": "2025-08-29T09:03:16.447Z",
+    "updatedAt": "2025-08-29T09:03:16.447Z",
+    "createdById": null
+  },
+  {
+    "id": "c3ba0eaa-559c-4043-916a-4dc3f6ec9a6b",
+    "question": "What is a 'component' in React?",
+    "answers": [
+      {
+        "content": "A reusable piece of UI built using JavaScript functions or classes.",
+        "isCorrect": true
+      },
+      {
+        "content": "A type of CSS selector.",
+        "isCorrect": false
+      },
+      {
+        "content": "A database table.",
+        "isCorrect": false
+      },
+      {
+        "content": "A JavaScript variable that holds an array.",
+        "isCorrect": false
+      }
+    ],
+    "fields": [
+      "Frontend Development"
+    ],
+    "topics": [
+      "React"
+    ],
+    "levels": [
+      "junior"
+    ],
+    "explanation": "In React, a component is a reusable and independent piece of UI, typically created as a JavaScript function or class. Components help organize and manage the structure and behavior of user interfaces. They are not CSS selectors, database tables, or generic variables.",
+    "createdAt": "2025-08-29T09:04:24.688Z",
+    "updatedAt": "2025-08-29T09:04:24.688Z",
+    "createdById": null
+  }
+]

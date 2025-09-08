@@ -1,0 +1,58 @@
+[
+  {
+    "id": "21d1417c-663d-494e-845b-b9b953856cba",
+    "name": "Free Plan",
+    "price": 0,
+    "duration": 365,
+    "avatarInterviewLimit": 3100,
+    "testQuizEQLimit": 53000,
+    "jdUploadLimit": 3000,
+    "description": "Free plan with limited features for new users",
+    "highlight": false,
+    "createdAt": "2025-08-26T03:45:32.239Z",
+    "isActive": true,
+    "updatedAt": "2025-08-26T03:45:32.239Z"
+  },
+  {
+    "id": "pro_package_id",
+    "name": "Pro",
+    "price": 599000,
+    "duration": 30,
+    "avatarInterviewLimit": 30,
+    "testQuizEQLimit": 150,
+    "jdUploadLimit": 30,
+    "description": "Professional package for experienced people",
+    "highlight": true,
+    "createdAt": "2025-08-26T03:59:42.165Z",
+    "isActive": true,
+    "updatedAt": "2025-08-26T12:25:17.973Z"
+  },
+  {
+    "id": "basic_package_id",
+    "name": "Basic",
+    "price": 10000,
+    "duration": 30,
+    "avatarInterviewLimit": 10,
+    "testQuizEQLimit": 50,
+    "jdUploadLimit": 10,
+    "description": "Basic package for beginners",
+    "highlight": false,
+    "createdAt": "2025-08-26T06:46:56.196Z",
+    "isActive": true,
+    "updatedAt": "2025-08-28T06:35:00.586Z"
+  },
+  {
+    "id": "enterprise_package_id",
+    "name": "Enterprise",
+    "price": 999000,
+    "duration": 30,
+    "avatarInterviewLimit": 100,
+    "testQuizEQLimit": 500,
+    "jdUploadLimit": 100,
+    "description": "Business package with advanced features",
+    "highlight": false,
+    "createdAt": "2025-08-26T06:46:56.589Z",
+    "isActive": false,
+    "updatedAt": "2025-08-28T14:59:19.984Z"
+  }
+]

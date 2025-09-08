@@ -1,0 +1,1298 @@
+[
+  {
+    "id": "b2c3cb0d-0c87-46c4-868a-ab65b723424e",
+    "userId": "c9b1a23f-9c1f-4f0b-ab09-f280bd13ca92",
+    "jobRoleId": "frontend_mid_id",
+    "language": "vi",
+    "startTime": "2025-08-26T08:00:40.541Z",
+    "endTime": "2025-08-26T08:02:34.896Z",
+    "duration": 114,
+    "conversationHistory": [
+      {
+        "role": "ai",
+        "content": "Just checking in—take your time, but let me know if you need any clarification or if you’re ready to continue. This is just a gentle reminder as we're approaching the end of this response window.",
+        "timestamp": "2025-08-26T08:02:40.628Z"
+      },
+      {
+        "role": "user",
+        "content": "I am a student\n",
+        "timestamp": "2025-08-26T08:02:40.628Z"
+      },
+      {
+        "role": "ai",
+        "content": "Hello and welcome to this technical interview for a Mid-level Frontend Developer position! I'll be asking you a series of questions to assess your technical depth, problem solving, project experience, and system design skills. Let's begin with the first question: Can you explain the difference between 'let', 'const', and 'var' in JavaScript, and when you would use each?",
+        "timestamp": "2025-08-26T08:02:40.628Z"
+      },
+      {
+        "role": "user",
+        "content": "End",
+        "timestamp": "2025-08-26T08:02:40.628Z"
+      },
+      {
+        "role": "ai",
+        "content": "Thank you for your time today. If you have any questions or would like feedback on your interview performance, feel free to ask. Have a great day!",
+        "timestamp": "2025-08-26T08:02:40.628Z"
+      }
+    ],
+    "evaluation": {
+      "overallRating": 3,
+      "technicalScore": 2,
+      "recommendations": [
+        "Gain hands-on experience with JavaScript fundamentals",
+        "Practice answering common frontend interview questions",
+        "Work on communication of technical concepts"
+      ],
+      "communicationScore": 6,
+      "problemSolvingScore": 2
+    },
+    "questionCount": 3,
+    "coveredTopics": [],
+    "skillAssessment": {},
+    "progress": 100,
+    "status": "completed"
+  },
+  {
+    "id": "21484d85-efa2-4229-9bab-e1584fe7cb3a",
+    "userId": "c9b1a23f-9c1f-4f0b-ab09-f280bd13ca92",
+    "jobRoleId": "frontend_mid_id",
+    "language": "vi",
+    "startTime": "2025-08-26T08:07:56.968Z",
+    "endTime": "2025-08-26T08:09:11.065Z",
+    "duration": 74,
+    "conversationHistory": [
+      {
+        "role": "user",
+        "content": "I am a student",
+        "timestamp": "2025-08-26T08:09:16.581Z"
+      },
+      {
+        "role": "ai",
+        "content": "Hello and welcome to this technical interview for the Mid-level Frontend Developer position. During this interview, I will ask you a series of technical questions covering various key areas. Let's start with the first question: Can you explain the difference between 'let', 'const', and 'var' in JavaScript, and when would you use each?",
+        "timestamp": "2025-08-26T08:09:16.581Z"
+      },
+      {
+        "role": "user",
+        "content": "End",
+        "timestamp": "2025-08-26T08:09:16.581Z"
+      },
+      {
+        "role": "ai",
+        "content": "Thank you for your time. Since you have indicated that you would like to end the interview, I will conclude it here. If you have any questions or need feedback, feel free to reach out. Have a great day!",
+        "timestamp": "2025-08-26T08:09:16.581Z"
+      }
+    ],
+    "evaluation": {
+      "overallRating": 2,
+      "technicalScore": 1,
+      "recommendations": [
+        "Consider gaining more hands-on experience with frontend technologies.",
+        "Practice answering common technical interview questions.",
+        "Work on communication and engagement during interviews."
+      ],
+      "communicationScore": 3,
+      "problemSolvingScore": 1
+    },
+    "questionCount": 2,
+    "coveredTopics": [],
+    "skillAssessment": {},
+    "progress": 100,
+    "status": "completed"
+  },
+  {
+    "id": "8c87809d-ba55-4f37-93ba-35a9ae513ae0",
+    "userId": "e43783b2-a407-4bb7-ae90-fb524f51a525",
+    "jobRoleId": "frontend_junior_id",
+    "language": "vi-VN",
+    "startTime": "2025-08-27T14:12:53.071Z",
+    "endTime": "2025-08-27T14:15:27.543Z",
+    "duration": 154,
+    "conversationHistory": [
+      {
+        "role": "ai",
+        "content": "Xin chào! Tôi là người phỏng vấn AI cho vị trí Frontend - React Development cấp độ Junior. Bạn có thể giới thiệu về kinh nghiệm và kỹ năng Frontend và React Development của bạn không?",
+        "timestamp": "2025-08-27T14:13:01.961Z"
+      },
+      {
+        "role": "user",
+        "content": "Ờ tôi lại có kinh nghiệm 2, 5 trong vòng vị trí cao nên về rét.",
+        "timestamp": "2025-08-27T14:13:29.303Z"
+      },
+      {
+        "role": "ai",
+        "content": "Cảm ơn bạn đã chia sẻ! Để bắt đầu, mình muốn hỏi về kiến thức cơ bản: Bạn có thể giải thích sự khác biệt giữa một component dạng class và một component dạng function trong React không?",
+        "timestamp": "2025-08-27T14:13:34.667Z"
+      },
+      {
+        "role": "ai",
+        "content": "Bạn cứ thoải mái nhé, mình rất mong chờ câu trả lời của bạn về sự khác biệt giữa component class và component function trong React.",
+        "timestamp": "2025-08-27T14:14:19.887Z"
+      },
+      {
+        "role": "user",
+        "content": "Tôi không biết.",
+        "timestamp": "2025-08-27T14:14:39.789Z"
+      },
+      {
+        "role": "ai",
+        "content": "Cảm ơn bạn đã trả lời thành thật! Không sao cả, mình sẽ giải thích ngắn gọn: component class sử dụng cú pháp class, có thể sử dụng lifecycle methods (như componentDidMount), còn function component thường đơn giản hơn và từ React 16.8 trở đi có thể dùng Hook để quản lý state và các side effect. \n\nTiếp theo, giả sử bạn cần hiển thị một danh sách sản phẩm từ một mảng dữ liệu trong React. Bạn sẽ sử dụng phương pháp nào để render danh sách này, và cần chú ý điều gì khi render danh sách trong React?",
+        "timestamp": "2025-08-27T14:14:42.788Z"
+      },
+      {
+        "role": "user",
+        "content": "End",
+        "timestamp": "2025-08-27T14:15:09.201Z"
+      },
+      {
+        "role": "ai",
+        "content": "Cảm ơn bạn đã tham gia buổi phỏng vấn hôm nay và dành thời gian chia sẻ về kinh nghiệm cũng như kiến thức của mình. Chúc bạn thật nhiều thành công trên con đường phát triển sự nghiệp Frontend - React Development! Buổi phỏng vấn đến đây là kết thúc, cảm ơn bạn rất nhiều.",
+        "timestamp": "2025-08-27T14:15:12.296Z"
+      }
+    ],
+    "evaluation": {
+      "salary_range": {
+        "max": 44000000,
+        "min": 10800000,
+        "currency": "VND"
+      },
+      "overallRating": 3,
+      "technicalScore": 2,
+      "cultureFitScore": 4,
+      "levelAssessment": {
+        "gapAnalysis": [
+          "Kiến thức cơ bản về React và frontend chưa vững",
+          "Chưa có kỹ năng thực hành với các công nghệ liên quan",
+          "Thiếu kinh nghiệm thực tế phát triển sản phẩm",
+          "Cần cải thiện kỹ năng giao tiếp kỹ thuật và giải quyết vấn đề"
+        ],
+        "currentLevel": "Intern/Entry-level",
+        "readinessForNextLevel": false
+      },
+      "recommendations": [
+        "Ôn tập lại kiến thức cơ bản về React, đặc biệt về component, state, props và hook",
+        "Thực hành nhiều hơn với các bài tập render danh sách, quản lý state, xử lý sự kiện trong React",
+        "Tham khảo tài liệu chính thức của React hoặc các khoá học dành cho người mới bắt đầu",
+        "Chủ động hỏi và trả lời các câu hỏi về kiến trúc frontend và API integration",
+        "Luyện tập kỹ năng giao tiếp và diễn đạt kỹ thuật rõ ràng hơn"
+      ],
+      "detailedFeedback": {
+        "potential": "Ứng viên cần học lại căn bản về React và các công nghệ frontend, có tiềm năng nếu chủ động học hỏi và thực hành nghiêm túc. Cần phát triển tư duy giải quyết vấn đề và nâng cấp kỹ năng giao tiếp trong môi trường chuyên nghiệp.",
+        "technical": "Ứng viên chưa đáp ứng được yêu cầu tối thiểu về kiến thức frontend căn bản (React). Không nắm được sự khác biệt giữa class component và function component, không trả lời được phương pháp render danh sách. Chưa thể hiện được kỹ năng về backend, API, database hay các mảng liên quan khác. Kỹ năng thực hành chưa rõ ràng, chưa chứng minh được khả năng làm việc với các công nghệ frontend cơ bản.",
+        "experience": "Kinh nghiệm khai báo là 2,5 năm nhưng không chứng minh được qua câu trả lời; chưa thể hiện kinh nghiệm thực tế về phát triển frontend, chưa có ví dụ về dự án, giải pháp hoặc tình huống làm việc nhóm.",
+        "softSkills": "Ứng viên giao tiếp thành thật, thái độ hợp tác tốt, tuy nhiên còn rụt rè và chưa chủ động giải thích hay trình bày quan điểm kỹ thuật. Chưa thể hiện khả năng giải quyết vấn đề hoặc phản ứng với tình huống thực tế."
+      },
+      "questionAnalysis": [
+        {
+          "score": 2,
+          "clarity": 2,
+          "category": "technical",
+          "feedback": "Câu trả lời hiện tại rất thiếu thông tin và không thể hiện được bất kỳ kỹ năng hay kinh nghiệm nào liên quan đến Frontend hoặc React Development. Người trả lời cần nêu rõ số năm kinh nghiệm, các công nghệ đã từng sử dụng, kỹ năng kỹ thuật, cũng như những dự án hoặc nhiệm vụ đã đảm nhiệm liên quan đến React hoặc Frontend. Ngoài ra, cần chú ý diễn đạt câu trả lời rõ ràng, mạch lạc để nhà tuyển dụng dễ dàng hiểu được năng lực của ứng viên.",
+          "keywords": [],
+          "question": "Xin chào! Tôi là người phỏng vấn AI cho vị trí Frontend - React Development cấp độ Junior. Bạn có thể giới thiệu về kinh nghiệm và kỹ năng Frontend và React Development của bạn không?",
+          "skillTags": [],
+          "strengths": [],
+          "userAnswer": "Ờ tôi lại có kinh nghiệm 2, 5 trong vòng vị trí cao nên về rét.",
+          "weaknesses": [
+            "Câu trả lời không rõ ràng, thiếu ý nghĩa",
+            "Thiếu thông tin về kinh nghiệm cụ thể với Frontend hoặc React",
+            "Không đề cập đến các kỹ năng hoặc công nghệ nào",
+            "Diễn đạt lủng củng, gây khó hiểu cho người nghe"
+          ],
+          "suggestions": [
+            "Giới thiệu rõ ràng về số năm kinh nghiệm và vị trí từng làm",
+            "Nêu cụ thể các dự án hoặc công nghệ đã sử dụng như HTML, CSS, JavaScript, React",
+            "Trình bày các kỹ năng kỹ thuật liên quan như quản lý state, sử dụng các thư viện React, làm việc với API",
+            "Sử dụng ngôn ngữ mạch lạc, tránh diễn đạt lủng củng",
+            "Có thể đề cập đến một số thành tựu hoặc kết quả đạt được trong công việc trước đây"
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        },
+        {
+          "score": 1,
+          "clarity": 10,
+          "category": "technical",
+          "feedback": "Câu trả lời này thể hiện sự thành thật về giới hạn kiến thức nhưng hoàn toàn chưa đáp ứng yêu cầu về mặt chuyên môn. Ứng viên không đưa ra bất kỳ thông tin nào liên quan đến sự khác biệt giữa component class và component function trong React, cũng như không nhắc đến các khái niệm kỹ thuật cơ bản như state, lifecycle methods, hooks, hoặc ưu nhược điểm của từng loại. Để cải thiện, ứng viên nên chủ động tìm hiểu về hai loại component này, nêu rõ định nghĩa, cách sử dụng, sự khác biệt về cú pháp, quản lý state và lifecycle, cũng như những cập nhật mới của React như hooks. Việc tìm hiểu và trình bày các khái niệm này sẽ thể hiện năng lực cũng như sự chủ động học hỏi của ứng viên trong lĩnh vực Frontend.",
+          "keywords": [],
+          "question": "Bạn cứ thoải mái nhé, mình rất mong chờ câu trả lời của bạn về sự khác biệt giữa component class và component function trong React.",
+          "skillTags": [
+            "Thành thật về kiến thức"
+          ],
+          "strengths": [
+            "Thành thật về giới hạn hiểu biết"
+          ],
+          "userAnswer": "Tôi không biết.",
+          "weaknesses": [
+            "Không cung cấp bất kỳ thông tin kỹ thuật nào",
+            "Không trả lời câu hỏi được đặt ra",
+            "Không đề cập đến các khái niệm quan trọng liên quan đến React",
+            "Không thể hiện kỹ năng frontend hoặc React"
+          ],
+          "suggestions": [
+            "Tìm hiểu sự khác biệt giữa component class và component function trong React",
+            "Nêu rõ định nghĩa, cách sử dụng, ưu/nhược điểm của từng loại component",
+            "Đề cập đến các khái niệm như state, lifecycle methods, hooks",
+            "Nếu chưa biết, hãy thể hiện mong muốn học hỏi hoặc hỏi lại để làm rõ hơn"
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        }
+      ],
+      "communicationScore": 4,
+      "technicalStrengths": [
+        "Thành thật nhận biết điểm yếu",
+        "Có tinh thần lắng nghe"
+      ],
+      "problemSolvingScore": 2,
+      "technicalWeaknesses": [
+        "Kiến thức căn bản về React chưa nắm vững",
+        "Không biết sự khác biệt giữa class component và function component",
+        "Không trả lời được câu hỏi về render danh sách trong React",
+        "Thiếu kỹ năng thực tế với frontend technologies"
+      ],
+      "hiringRecommendation": "reject"
+    },
+    "questionCount": 2,
+    "coveredTopics": [
+      "Giới thiệu & kinh nghiệm",
+      "Component class vs function",
+      "Render danh sách trong React"
+    ],
+    "skillAssessment": {
+      "technical": 2,
+      "communication": 2,
+      "problemSolving": 2
+    },
+    "progress": 75,
+    "status": "completed"
+  },
+  {
+    "id": "43150cdb-eb79-48be-83dd-95b7e9ed549f",
+    "userId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "jobRoleId": "frontend_junior_id",
+    "language": "vi-VN",
+    "startTime": "2025-08-28T08:20:11.963Z",
+    "endTime": "2025-08-28T08:22:00.323Z",
+    "duration": 108,
+    "conversationHistory": [
+      {
+        "role": "ai",
+        "content": "Xin chào! Tôi là người phỏng vấn AI cho vị trí Frontend - React Development cấp độ Junior. Bạn có thể giới thiệu về kinh nghiệm và kỹ năng Frontend và React Development của bạn không?",
+        "timestamp": "2025-08-28T08:20:19.067Z"
+      },
+      {
+        "role": "ai",
+        "content": "Xin chào! Tôi là người phỏng vấn AI cho vị trí Frontend - React Development cấp độ Junior. Bạn có thể giới thiệu về kinh nghiệm và kỹ năng Frontend và React Development của bạn không?",
+        "timestamp": "2025-08-28T08:20:19.410Z"
+      },
+      {
+        "role": "user",
+        "content": "Tôi chưa có kinh nghiệm về vị trí này.",
+        "timestamp": "2025-08-28T08:20:46.167Z"
+      },
+      {
+        "role": "ai",
+        "content": "Cảm ơn bạn đã chia sẻ. Đối với vị trí Junior, kiến thức cơ bản về React là rất quan trọng. Bạn có thể giải thích ngắn gọn khái niệm component trong React là gì và vai trò của nó trong việc xây dựng giao diện không?",
+        "timestamp": "2025-08-28T08:20:49.221Z"
+      },
+      {
+        "role": "user",
+        "content": "Tôi không biết trả lời câu hỏi này.",
+        "timestamp": "2025-08-28T08:21:07.077Z"
+      },
+      {
+        "role": "ai",
+        "content": "Không sao đâu, bạn mới bắt đầu nên việc chưa nắm rõ khái niệm là điều bình thường. Component trong React là “khối xây dựng” nhỏ để tạo ra các phần của giao diện người dùng; bạn hãy thử chia sẻ xem bạn từng nghe hoặc hình dung thế nào về cách chia nhỏ giao diện thành các phần để dễ quản lý hơn chưa? Nếu chưa, bạn có thể cho biết bạn mong muốn học gì về React trước tiên?",
+        "timestamp": "2025-08-28T08:21:12.575Z"
+      },
+      {
+        "role": "user",
+        "content": "Kết thúc không? Không, tôi muốn kết thúc phỏng vấn.",
+        "timestamp": "2025-08-28T08:21:44.486Z"
+      },
+      {
+        "role": "ai",
+        "content": "Cảm ơn bạn đã dành thời gian tham gia buổi phỏng vấn hôm nay. Chúc bạn nhiều thành công trên con đường học tập và phát triển sự nghiệp trong lĩnh vực Frontend - React Development! Buổi phỏng vấn đến đây là kết thúc.",
+        "timestamp": "2025-08-28T08:21:47.840Z"
+      }
+    ],
+    "evaluation": {
+      "salary_range": {
+        "max": 44000000,
+        "min": 10800000,
+        "currency": "VND"
+      },
+      "overallRating": 3,
+      "technicalScore": 2,
+      "cultureFitScore": 4,
+      "levelAssessment": {
+        "gapAnalysis": [
+          "Chưa có kiến thức căn bản về Frontend và React",
+          "Thiếu kinh nghiệm thực tiễn hoặc dự án cá nhân",
+          "Chưa thể hiện khả năng học hỏi nhanh hoặc giải quyết vấn đề kỹ thuật",
+          "Cần củng cố giao tiếp kỹ thuật và động lực phát triển bản thân"
+        ],
+        "currentLevel": "Fresher/Chưa đạt yêu cầu Junior",
+        "readinessForNextLevel": false
+      },
+      "recommendations": [
+        "Bắt đầu học các kiến thức cơ bản về HTML, CSS và JavaScript",
+        "Tìm hiểu và thực hành với React thông qua các tài liệu chính thức hoặc khóa học online",
+        "Tham gia các dự án nhỏ hoặc bài tập thực tế để rèn luyện kỹ năng code",
+        "Chủ động hỏi và trao đổi với cộng đồng hoặc mentor khi gặp khó khăn"
+      ],
+      "detailedFeedback": {
+        "potential": "Chưa thể hiện được tiềm năng phát triển cho vị trí Junior do thiếu kiến thức nền tảng, kinh nghiệm và chưa cho thấy động lực/hướng tiếp cận học hỏi rõ ràng.",
+        "technical": "Ứng viên chưa có bất kỳ kinh nghiệm hoặc kiến thức nền tảng nào về Frontend hoặc React. Không trả lời được câu hỏi cơ bản về component trong React, và cũng không thể hiện được khả năng tư duy hoặc tiếp cận các khái niệm cơ bản của lập trình giao diện.",
+        "experience": "Không có kinh nghiệm thực tế hoặc cá nhân liên quan đến phát triển Frontend hoặc sử dụng React, thậm chí ở mức tự học hoặc dự án cá nhân.",
+        "softSkills": "Giao tiếp lịch sự, chủ động thông báo muốn kết thúc phỏng vấn. Tuy nhiên, chưa thể hiện khả năng giải quyết vấn đề hoặc ham học hỏi trong khuôn khổ buổi phỏng vấn."
+      },
+      "questionAnalysis": [
+        {
+          "score": 2,
+          "clarity": 7,
+          "category": "technical",
+          "feedback": "Câu trả lời của bạn rất ngắn gọn và thành thật, tuy nhiên chưa đáp ứng được yêu cầu của nhà tuyển dụng về việc trình bày kinh nghiệm và kỹ năng liên quan đến Frontend hoặc React Development. Dù bạn chưa có kinh nghiệm thực tế, hãy cố gắng chia sẻ về quá trình học hỏi, các dự án cá nhân, hoặc kỹ năng kỹ thuật mà bạn đã tiếp cận như HTML, CSS, JavaScript, React căn bản, hoặc các công cụ phát triển Frontend. Ngoài ra, việc thể hiện tinh thần ham học hỏi và chủ động trong công việc cũng rất quan trọng đối với vị trí Junior. Nên bổ sung các thông tin này vào câu trả lời để gây ấn tượng tốt hơn với nhà tuyển dụng.",
+          "keywords": [],
+          "question": "Xin chào! Tôi là người phỏng vấn AI cho vị trí Frontend - React Development cấp độ Junior. Bạn có thể giới thiệu về kinh nghiệm và kỹ năng Frontend và React Development của bạn không?",
+          "skillTags": [],
+          "strengths": [
+            "Trả lời trung thực về kinh nghiệm cá nhân",
+            "Giao tiếp rõ ràng, ngắn gọn"
+          ],
+          "userAnswer": "Tôi chưa có kinh nghiệm về vị trí này.",
+          "weaknesses": [
+            "Không đề cập đến bất kỳ kỹ năng kỹ thuật nào",
+            "Không cung cấp thông tin về kiến thức hoặc kỹ năng liên quan đến React hoặc Frontend",
+            "Thiếu các từ khóa, khái niệm kỹ thuật hoặc kinh nghiệm thực tế",
+            "Không thể hiện động lực học hỏi hoặc các kỹ năng mềm liên quan"
+          ],
+          "suggestions": [
+            "Nên trình bày về các kỹ năng Frontend cơ bản như HTML, CSS, JavaScript dù chưa có kinh nghiệm thực tế",
+            "Nêu rõ đã từng học hoặc thực hành với React qua dự án cá nhân, bài tập, hay khóa học online",
+            "Chia sẻ về các công cụ hoặc thư viện hỗ trợ Frontend mà bạn biết (VD: Git, npm, VS Code)",
+            "Thể hiện mong muốn học hỏi và phát triển trong lĩnh vực Frontend",
+            "Nếu chưa có kinh nghiệm, hãy nhấn mạnh sự chủ động, khả năng tự học và ví dụ cụ thể về các dự án nhỏ đã thực hiện"
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 2
+        },
+        {
+          "score": 1,
+          "clarity": 10,
+          "category": "technical",
+          "feedback": "Câu trả lời hiện tại hoàn toàn chưa đáp ứng được yêu cầu của câu hỏi vì không đưa ra bất kỳ kiến thức nào về component trong React. Đối với vị trí Junior, việc hiểu và giải thích được khái niệm component là tối thiểu cần thiết. Ứng viên cần bổ sung kiến thức nền tảng về React, đặc biệt là về component (khái niệm, vai trò, cách sử dụng). Ngoài việc học lý thuyết, nên thực hành xây dựng các component đơn giản để hiểu rõ hơn. Đề xuất ứng viên dành thời gian học tập thêm trước khi tham gia phỏng vấn tiếp theo để thể hiện sự sẵn sàng cho vị trí này.",
+          "keywords": [],
+          "question": "Cảm ơn bạn đã chia sẻ. Đối với vị trí Junior, kiến thức cơ bản về React là rất quan trọng. Bạn có thể giải thích ngắn gọn khái niệm component trong React là gì và vai trò của nó trong việc xây dựng giao diện không?",
+          "skillTags": [],
+          "strengths": [
+            "Thành thật trong việc thừa nhận không biết câu trả lời"
+          ],
+          "userAnswer": "Tôi không biết trả lời câu hỏi này.",
+          "weaknesses": [
+            "Không cung cấp bất kỳ kiến thức kỹ thuật nào về React hoặc component",
+            "Không thể hiện khả năng nắm bắt các khái niệm cơ bản về frontend",
+            "Không đề cập đến vai trò của component trong xây dựng giao diện",
+            "Không đưa ra ví dụ hoặc giải thích cụ thể"
+          ],
+          "suggestions": [
+            "Tìm hiểu kiến thức cơ bản về React, đặc biệt là về component",
+            "Thực hành giải thích ngắn gọn các khái niệm cốt lõi và vai trò của chúng",
+            "Chuẩn bị kỹ lưỡng trước phỏng vấn với các câu hỏi kiến thức nền tảng",
+            "Có thể tham khảo tài liệu chính thức của React hoặc các khóa học online"
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        },
+        {
+          "score": 2,
+          "clarity": 3,
+          "category": "technical",
+          "feedback": "Câu trả lời hoàn toàn không đáp ứng yêu cầu của câu hỏi kỹ thuật về React và component. Ứng viên không chia sẻ bất kỳ kiến thức hoặc kinh nghiệm liên quan đến việc chia nhỏ giao diện hay cấu trúc component trong React. Ngoài ra, ứng viên cũng không thể hiện mong muốn học hỏi hay chủ động tìm hiểu, điều này có thể gây ấn tượng không tốt với nhà tuyển dụng về thái độ học tập. Để cải thiện, ứng viên nên trả lời vào trọng tâm, chia sẻ hiểu biết (dù sơ bộ) về component, hoặc thể hiện sự chủ động học hỏi nếu chưa nắm rõ. Đây là câu hỏi cơ bản để đánh giá tiềm năng phát triển của ứng viên tại vị trí junior.",
+          "keywords": [],
+          "question": "Không sao đâu, bạn mới bắt đầu nên việc chưa nắm rõ khái niệm là điều bình thường. Component trong React là “khối xây dựng” nhỏ để tạo ra các phần của giao diện người dùng; bạn hãy thử chia sẻ xem bạn từng nghe hoặc hình dung thế nào về cách chia nhỏ giao diện thành các phần để dễ quản lý hơn chưa? Nếu chưa, bạn có thể cho biết bạn mong muốn học gì về React trước tiên?",
+          "skillTags": [],
+          "strengths": [
+            "Thể hiện rõ ý muốn kết thúc phỏng vấn"
+          ],
+          "userAnswer": "Kết thúc không? Không, tôi muốn kết thúc phỏng vấn.",
+          "weaknesses": [
+            "Không trả lời vào trọng tâm câu hỏi kỹ thuật về React và component",
+            "Không thể hiện kiến thức hay kinh nghiệm liên quan đến React hoặc frontend",
+            "Không đề cập đến bất kỳ khái niệm, thuật ngữ kỹ thuật nào",
+            "Thiếu tinh thần học hỏi hoặc chủ động tìm hiểu thêm",
+            "Thiếu sự giải thích về cách chia nhỏ giao diện"
+          ],
+          "suggestions": [
+            "Nên trả lời vào trọng tâm câu hỏi, ví dụ nêu hiểu biết sơ bộ về component trong React hoặc chia nhỏ giao diện",
+            "Nếu chưa biết, có thể thể hiện mong muốn học hỏi, chẳng hạn hỏi về các kiến thức cơ bản như 'component' hoặc 'props'",
+            "Có thể trình bày mình từng chia nhỏ giao diện bằng HTML/CSS để quản lý tốt hơn",
+            "Thể hiện thái độ tích cực, sẵn sàng học tập và phát triển kỹ năng mới"
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        }
+      ],
+      "communicationScore": 5,
+      "technicalStrengths": [],
+      "problemSolvingScore": 2,
+      "technicalWeaknesses": [
+        "Thiếu kiến thức nền tảng về React và Frontend",
+        "Chưa có khả năng giải thích hoặc hình dung về component",
+        "Không có kinh nghiệm thực tiễn liên quan đến vị trí ứng tuyển",
+        "Chưa thể hiện khả năng học hỏi hoặc tiếp cận vấn đề kỹ thuật"
+      ],
+      "hiringRecommendation": "reject"
+    },
+    "questionCount": 1,
+    "coveredTopics": [
+      "giới thiệu bản thân",
+      "kiến thức cơ bản về React component"
+    ],
+    "skillAssessment": {
+      "technical": 1,
+      "communication": 3,
+      "problemSolving": 2
+    },
+    "progress": 75,
+    "status": "completed"
+  },
+  {
+    "id": "d5e407ee-d081-428b-81de-e7224ab494ce",
+    "userId": "835007b1-5241-41a6-8364-b9c2652bbd33",
+    "jobRoleId": "frontend_junior_id",
+    "language": "vi-VN",
+    "startTime": "2025-08-28T09:17:06.968Z",
+    "endTime": "2025-08-28T09:18:47.737Z",
+    "duration": 100,
+    "conversationHistory": [
+      {
+        "role": "ai",
+        "content": "Xin chào! Tôi là người phỏng vấn AI cho vị trí Frontend - React Development cấp độ Junior. Bạn có thể giới thiệu về kinh nghiệm và kỹ năng Frontend và React Development của bạn không?",
+        "timestamp": "2025-08-28T09:17:19.531Z"
+      },
+      {
+        "role": "user",
+        "content": "Tàu tôi có 2 5 kinh nghiệm trong vị trí phone x và z.",
+        "timestamp": "2025-08-28T09:17:47.443Z"
+      },
+      {
+        "role": "ai",
+        "content": "Cảm ơn bạn đã chia sẻ. Với vị trí Frontend - React Development, tôi muốn tập trung vào các trải nghiệm liên quan đến phát triển giao diện web bằng React. Bạn có thể giải thích ngắn gọn React là gì và tại sao nó lại phổ biến trong phát triển frontend hiện nay không?",
+        "timestamp": "2025-08-28T09:17:52.464Z"
+      },
+      {
+        "role": "user",
+        "content": "Ờ tôi không biết tôi muốn kết thúc phỏng vấn.",
+        "timestamp": "2025-08-28T09:18:31.890Z"
+      },
+      {
+        "role": "ai",
+        "content": "Cảm ơn bạn đã tham gia buổi phỏng vấn hôm nay. Nếu bạn có nhu cầu trao đổi thêm trong tương lai về lĩnh vực Frontend - React Development, hãy liên hệ lại với chúng tôi nhé. Chúc bạn thành công trong các dự định sắp tới!",
+        "timestamp": "2025-08-28T09:18:35.593Z"
+      }
+    ],
+    "evaluation": {
+      "salary_range": {
+        "max": 44000000,
+        "min": 10800000,
+        "currency": "VND"
+      },
+      "overallRating": 1,
+      "technicalScore": 1,
+      "cultureFitScore": 2,
+      "levelAssessment": {
+        "gapAnalysis": [
+          "Kiến thức cơ bản về React và frontend",
+          "Kỹ năng giao tiếp kỹ thuật",
+          "Kinh nghiệm thực tế với dự án web",
+          "Hiểu về quy trình phát triển phần mềm"
+        ],
+        "currentLevel": "Intern / Beginner",
+        "readinessForNextLevel": false
+      },
+      "recommendations": [
+        "Bổ sung kiến thức nền tảng về Frontend (HTML, CSS, JavaScript)",
+        "Tìm hiểu React và các thư viện phổ biến liên quan",
+        "Luyện tập trình bày kỹ thuật và giải thích khái niệm cơ bản",
+        "Tham gia các dự án nhỏ hoặc khóa học thực tế để nâng cao kinh nghiệm"
+      ],
+      "detailedFeedback": {
+        "potential": "Chưa thể hiện được tiềm năng phát triển trong lĩnh vực Frontend hoặc học hỏi các công nghệ mới. Cần đầu tư thêm vào kiến thức nền tảng và kỹ năng giao tiếp.",
+        "technical": "Ứng viên không thể hiện được bất kỳ kiến thức hoặc kinh nghiệm nào liên quan đến React, Frontend hoặc các chủ đề kỹ thuật khác. Trả lời rất mơ hồ, thiếu chiều sâu và không có dữ liệu thực tế.",
+        "experience": "Không cung cấp được thông tin cụ thể về kinh nghiệm thực tế, dự án hoặc vai trò đã từng đảm nhận. Không có dấu hiệu từng làm việc với React hoặc các công nghệ frontend.",
+        "softSkills": "Giao tiếp chưa rõ ràng, thiếu sự chủ động và không thể hiện khả năng hợp tác hoặc giải quyết vấn đề. Ứng viên chủ động xin kết thúc phỏng vấn khi gặp câu hỏi chuyên môn."
+      },
+      "questionAnalysis": [
+        {
+          "score": 2,
+          "clarity": 3,
+          "category": "technical",
+          "feedback": "Câu trả lời hiện tại rất thiếu thông tin và chưa thể hiện được kỹ năng hoặc kinh nghiệm liên quan đến Frontend hay React Development. Ứng viên chỉ đề cập đến số năm kinh nghiệm (không rõ ràng: '2 5') và hai vị trí không xác định (phone x, z), không có mô tả về các công việc đã làm, các công nghệ đã sử dụng, hoặc thành tựu cụ thể. Để trả lời tốt câu hỏi này, ứng viên cần trình bày rõ ràng hơn về kinh nghiệm thực tế với các công nghệ Frontend như HTML, CSS, JavaScript, ReactJS, cũng như các dự án và nhiệm vụ đã thực hiện. Ngoài ra, nên bổ sung thêm về các kỹ năng mềm, khả năng làm việc nhóm hoặc học hỏi công nghệ mới để làm nổi bật bản thân hơn. Câu trả lời như hiện tại chưa đáp ứng được yêu cầu cơ bản của vị trí Frontend Developer (Junior).",
+          "keywords": [
+            "kinh nghiệm",
+            "vị trí phone x",
+            "vị trí z"
+          ],
+          "question": "Xin chào! Tôi là người phỏng vấn AI cho vị trí Frontend - React Development cấp độ Junior. Bạn có thể giới thiệu về kinh nghiệm và kỹ năng Frontend và React Development của bạn không?",
+          "skillTags": [
+            "kinh nghiệm làm việc"
+          ],
+          "strengths": [
+            "Có đề cập đến kinh nghiệm làm việc"
+          ],
+          "userAnswer": "Tàu tôi có 2 5 kinh nghiệm trong vị trí phone x và z.",
+          "weaknesses": [
+            "Không nêu rõ các kỹ năng cụ thể về Frontend hoặc React",
+            "Không giải thích về các dự án hoặc công nghệ đã sử dụng",
+            "Câu trả lời thiếu chi tiết, không rõ ràng về vị trí phone x và z",
+            "Không đề cập đến các khái niệm kỹ thuật hoặc công cụ liên quan",
+            "Cách diễn đạt chưa chuẩn, khó hiểu về số năm kinh nghiệm (2 5)"
+          ],
+          "suggestions": [
+            "Nêu rõ số năm kinh nghiệm và vị trí cụ thể đã từng đảm nhiệm liên quan đến Frontend hoặc React",
+            "Đề cập đến các kỹ năng kỹ thuật như HTML, CSS, JavaScript, ReactJS, Redux, hoặc các công cụ khác nếu có sử dụng",
+            "Chia sẻ về các dự án đã từng tham gia, những nhiệm vụ đã thực hiện và kết quả đạt được",
+            "Sử dụng câu trả lời mạch lạc, rõ ràng và đầy đủ hơn để thể hiện năng lực bản thân",
+            "Nếu có chứng chỉ hoặc khóa học liên quan, hãy đề cập để tăng mức độ tin cậy"
+          ],
+          "completeness": 2,
+          "technicalAccuracy": 2
+        },
+        {
+          "score": 1,
+          "clarity": 2,
+          "category": "technical",
+          "feedback": "Ứng viên đã không trả lời đúng vào câu hỏi được đặt ra về React, cũng như lý do vì sao React lại phổ biến trong phát triển frontend hiện nay. Câu trả lời không cung cấp bất kỳ thông tin kỹ thuật nào, không thể hiện kiến thức hay kỹ năng liên quan đến vị trí Frontend Developer. Ngoài ra, cách ứng xử của ứng viên thiếu sự chuyên nghiệp, cho thấy không sẵn sàng tham gia vào quá trình phỏng vấn hoặc học hỏi thêm. Để cải thiện, ứng viên nên chuẩn bị kiến thức cơ bản về React, sử dụng các thuật ngữ kỹ thuật phù hợp và thể hiện thái độ tích cực, hợp tác trong quá trình tuyển dụng.",
+          "keywords": [],
+          "question": "Cảm ơn bạn đã chia sẻ. Với vị trí Frontend - React Development, tôi muốn tập trung vào các trải nghiệm liên quan đến phát triển giao diện web bằng React. Bạn có thể giải thích ngắn gọn React là gì và tại sao nó lại phổ biến trong phát triển frontend hiện nay không?",
+          "skillTags": [],
+          "strengths": [],
+          "userAnswer": "Ờ tôi không biết tôi muốn kết thúc phỏng vấn.",
+          "weaknesses": [
+            "Không trả lời đúng trọng tâm câu hỏi",
+            "Thiếu bất kỳ thông tin kỹ thuật nào về React",
+            "Không giải thích lý do React phổ biến",
+            "Thiếu sự chuyên nghiệp trong giao tiếp",
+            "Không thể hiện kiến thức hoặc kỹ năng liên quan đến vị trí ứng tuyển"
+          ],
+          "suggestions": [
+            "Nên trả lời ngắn gọn React là gì (ví dụ: một thư viện Javascript dùng để xây dựng giao diện người dùng)",
+            "Giải thích vì sao React phổ biến (ví dụ: component-based, hiệu năng cao, cộng đồng lớn, dễ mở rộng)",
+            "Thể hiện thái độ tích cực và chuyên nghiệp khi trả lời phỏng vấn",
+            "Nếu chưa biết, nên thành thật chia sẻ và chủ động học hỏi chứ không nên từ chối trả lời",
+            "Sử dụng các thuật ngữ cơ bản như 'component', 'virtual DOM', 'SPA', v.v."
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        }
+      ],
+      "communicationScore": 2,
+      "technicalStrengths": [],
+      "problemSolvingScore": 1,
+      "technicalWeaknesses": [
+        "Không thể trình bày kiến thức cơ bản về React hoặc Frontend",
+        "Không cung cấp được ví dụ thực tế hoặc kinh nghiệm liên quan",
+        "Thiếu kỹ năng giải thích, phân tích kỹ thuật",
+        "Không thể hiện khả năng học hỏi hoặc chủ động trao đổi"
+      ],
+      "hiringRecommendation": "reject"
+    },
+    "questionCount": 1,
+    "coveredTopics": [
+      "Giới thiệu bản thân & kiến thức React cơ bản"
+    ],
+    "skillAssessment": {
+      "technical": 1,
+      "communication": 2,
+      "problemSolving": 1
+    },
+    "progress": 25,
+    "status": "completed"
+  },
+  {
+    "id": "de5b287e-fee8-4133-bc37-27b7fda1ba07",
+    "userId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "jobRoleId": "frontend_junior_id",
+    "language": "en-US",
+    "startTime": "2025-08-28T16:57:27.642Z",
+    "endTime": "2025-08-28T16:59:01.484Z",
+    "duration": 93,
+    "conversationHistory": [
+      {
+        "role": "ai",
+        "content": "Hello! Thank you for joining the interview today. My name is [Interviewer Name], and I'll be talking to you about your experience and knowledge in React development. Let's start with a few questions to get a sense of your understanding of React basics.\n\nFirst question: What is the default value of props in a React component if not provided by the parent?",
+        "timestamp": "2025-08-28T16:57:39.493Z"
+      },
+      {
+        "role": "ai",
+        "content": "Just a gentle reminder—whenever you're ready, please go ahead and share your response to the current question. Take your time and let me know if you need any clarification.",
+        "timestamp": "2025-08-28T16:58:33.801Z"
+      },
+      {
+        "role": "user",
+        "content": "kết thúc phỏng vấn",
+        "timestamp": "2025-08-28T16:58:50.483Z"
+      },
+      {
+        "role": "ai",
+        "content": "Thank you for letting me know. The interview is now complete. I appreciate your participation and wish you the best in your future endeavors in software development. Have a great day!",
+        "timestamp": "2025-08-28T16:58:53.456Z"
+      }
+    ],
+    "evaluation": {
+      "salary_range": {
+        "max": 44000000,
+        "min": 10800000,
+        "currency": "VND"
+      },
+      "overallRating": 3,
+      "technicalScore": 2,
+      "cultureFitScore": 3,
+      "levelAssessment": {
+        "gapAnalysis": [
+          "Basic technical knowledge of React and frontend stack is lacking",
+          "Needs to develop communication and problem-solving skills",
+          "No evidence of teamwork or project experience",
+          "Should practice answering standard interview questions"
+        ],
+        "currentLevel": "Below Junior",
+        "readinessForNextLevel": false
+      },
+      "recommendations": [
+        "Prepare to answer basic React and frontend questions",
+        "Review core JavaScript, HTML, and CSS concepts",
+        "Practice explaining technical concepts clearly",
+        "Demonstrate problem-solving with example scenarios"
+      ],
+      "detailedFeedback": {
+        "potential": "Based on this interaction, the candidate did not demonstrate a growth mindset or willingness to engage and learn. Significant improvement is needed to meet even junior-level expectations.",
+        "technical": "The candidate did not answer any technical questions or demonstrate any understanding of React, frontend technologies, or related development concepts. No evidence of technical competency was provided.",
+        "experience": "No practical knowledge or experience was demonstrated. The candidate did not share examples of past projects, challenges, or relevant skills.",
+        "softSkills": "Minimal communication was observed. The candidate did not engage in discussion or respond to questions, limiting assessment of collaboration, adaptability, or problem-solving."
+      },
+      "questionAnalysis": [
+        {
+          "score": 1,
+          "clarity": 2,
+          "category": "behavioral",
+          "feedback": "The response 'kết thúc phỏng vấn' (translation: 'end of interview') does not address the question asked, nor does it demonstrate any relevant technical knowledge or communication skills expected from a Frontend Developer (Junior) candidate. There is no mention of any frontend technologies, concepts, or problem-solving approaches. To improve, the candidate should provide a substantive answer that addresses the question, includes technical details (such as HTML, CSS, JavaScript, or frameworks), and demonstrates their thought process and communication skills.",
+          "keywords": [],
+          "question": "Just a gentle reminder—whenever you're ready, please go ahead and share your response to the current question. Take your time and let me know if you need any clarification.",
+          "skillTags": [],
+          "strengths": [
+            "Polite tone"
+          ],
+          "userAnswer": "kết thúc phỏng vấn",
+          "weaknesses": [
+            "Does not answer the question",
+            "No technical content",
+            "No demonstration of relevant frontend knowledge",
+            "No explanation or examples provided"
+          ],
+          "suggestions": [
+            "Provide an actual answer to the question asked",
+            "Include relevant technical details or examples",
+            "Demonstrate understanding of frontend concepts or skills",
+            "Communicate reasoning and thought process clearly"
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        }
+      ],
+      "communicationScore": 4,
+      "technicalStrengths": [],
+      "problemSolvingScore": 2,
+      "technicalWeaknesses": [
+        "Did not provide any technical answers",
+        "No demonstration of React or frontend knowledge",
+        "No evidence of practical coding skills",
+        "Lack of engagement with technical questions"
+      ],
+      "hiringRecommendation": "reject"
+    },
+    "questionCount": 0,
+    "coveredTopics": [],
+    "skillAssessment": {
+      "technical": 0,
+      "communication": 0,
+      "problemSolving": 0
+    },
+    "progress": 10,
+    "status": "completed"
+  },
+  {
+    "id": "d3339caa-8eeb-4fb2-9ad1-020747b8b261",
+    "userId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "jobRoleId": "frontend_junior_id",
+    "language": "en-US",
+    "startTime": "2025-08-29T02:54:47.746Z",
+    "endTime": "2025-08-29T02:56:17.535Z",
+    "duration": 89,
+    "conversationHistory": [
+      {
+        "role": "ai",
+        "content": "Hello! I am your AI interviewer for the Junior Frontend - React Development position. Could you tell me about your Frontend and React Development experience and skills?",
+        "timestamp": "2025-08-29T02:55:06.903Z"
+      },
+      {
+        "role": "user",
+        "content": "im a frontend developer",
+        "timestamp": "2025-08-29T02:55:32.865Z"
+      },
+      {
+        "role": "ai",
+        "content": "Thanks for sharing that! Let's start with a fundamental React question: Can you explain what the virtual DOM is and why React uses it?",
+        "timestamp": "2025-08-29T02:55:36.952Z"
+      },
+      {
+        "role": "user",
+        "content": "idont know",
+        "timestamp": "2025-08-29T02:55:50.614Z"
+      },
+      {
+        "role": "ai",
+        "content": "No problem—everyone starts somewhere, and it's great that you're open about what you know. The virtual DOM is a key concept in React, so I'd encourage you to read more about it. Let’s move to another foundational topic: In React, what is JSX and why is it commonly used when building components?",
+        "timestamp": "2025-08-29T02:55:53.183Z"
+      },
+      {
+        "role": "user",
+        "content": "end",
+        "timestamp": "2025-08-29T02:56:05.046Z"
+      },
+      {
+        "role": "ai",
+        "content": "Thank you for your time and participation today. The interview is now complete, and I appreciate your interest in the Junior Frontend - React Development position. Wishing you all the best in your career journey!",
+        "timestamp": "2025-08-29T02:56:08.642Z"
+      }
+    ],
+    "evaluation": {
+      "salary_range": {
+        "max": 44000000,
+        "min": 10800000,
+        "currency": "VND"
+      },
+      "overallRating": 2,
+      "technicalScore": 2,
+      "cultureFitScore": 3,
+      "levelAssessment": {
+        "gapAnalysis": [
+          "Basic understanding of frontend technologies",
+          "Essential React concepts and syntax",
+          "Ability to articulate technical experience",
+          "Demonstrated problem-solving skills",
+          "Exposure to end-to-end development and collaboration"
+        ],
+        "currentLevel": "Entry/Pre-Junior",
+        "readinessForNextLevel": false
+      },
+      "recommendations": [
+        "Invest time in learning core frontend technologies including HTML, CSS, JavaScript, and React fundamentals",
+        "Understand basic concepts such as virtual DOM, JSX, and component-based architecture",
+        "Engage in small personal or guided projects to gain practical experience",
+        "Explore online courses or tutorials tailored to junior frontend developers",
+        "Prepare for interviews by reviewing common frontend and React questions"
+      ],
+      "detailedFeedback": {
+        "potential": "While the candidate is at a very early stage, their openness about skill gaps indicates a possible willingness to learn. However, there is currently insufficient evidence of foundational knowledge or learning agility expected for even a junior role.",
+        "technical": "The candidate did not demonstrate knowledge of fundamental frontend or React concepts such as the virtual DOM or JSX. No specific technical experience or skills were shared, and there was no evidence of proficiency with any required technology stack for a Junior Frontend Developer.",
+        "experience": "No practical knowledge, project experience, or real-world application was provided. The candidate did not discuss any previous work, technology stack decisions, or integration challenges.",
+        "softSkills": "Communication was minimal and lacked clarity or depth. The candidate answered questions with very brief responses and did not elaborate on experience or skills. There was no demonstration of adaptability, collaboration, or problem-solving ability."
+      },
+      "questionAnalysis": [
+        {
+          "score": 1,
+          "clarity": 2,
+          "category": "technical",
+          "feedback": "The answer provided is extremely brief and lacks any technical detail or context. Simply stating 'I'm a frontend developer' does not give the interviewer any insight into your experience, skills, or proficiency with React or other relevant frontend technologies. For a junior position, it's important to mention what technologies you have worked with, any relevant projects, and your familiarity with key concepts such as components, state management, and responsive design. Improving your answer by adding specifics about your technical skills, experience with React, and examples of your work would greatly enhance your candidacy.",
+          "keywords": [],
+          "question": "Hello! I am your AI interviewer for the Junior Frontend - React Development position. Could you tell me about your Frontend and React Development experience and skills?",
+          "skillTags": [],
+          "strengths": [
+            "Concise response"
+          ],
+          "userAnswer": "im a frontend developer",
+          "weaknesses": [
+            "No details about experience",
+            "No mention of specific technologies or skills",
+            "No examples of work or projects",
+            "Does not address React experience",
+            "No communication of proficiency level",
+            "Lacks context about responsibilities or learning"
+          ],
+          "suggestions": [
+            "Describe your experience with frontend technologies (e.g., HTML, CSS, JavaScript)",
+            "Mention any React projects you have worked on",
+            "List relevant frameworks, libraries, or tools you are familiar with",
+            "Share how long you have been working in frontend development",
+            "Highlight specific skills or accomplishments",
+            "Explain your learning process or how you stay updated with frontend trends"
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        },
+        {
+          "score": 1,
+          "clarity": 10,
+          "category": "technical",
+          "feedback": "The candidate's answer, 'idont know', is clear in communicating that they do not know the answer to the question. While honesty is appreciated, the response lacks any attempt to address the fundamental React concept of the virtual DOM or its significance. For a junior frontend developer position, a basic understanding of the virtual DOM and why React uses it is expected. The candidate did not mention any key technical terms or demonstrate relevant technical skills. To improve, the candidate should study foundational React topics and try to provide at least a partial or related answer, or express a willingness to learn. This would help demonstrate initiative and foundational knowledge required for the position.",
+          "keywords": [],
+          "question": "Thanks for sharing that! Let's start with a fundamental React question: Can you explain what the virtual DOM is and why React uses it?",
+          "skillTags": [
+            "communication"
+          ],
+          "strengths": [
+            "Honesty in admitting lack of knowledge"
+          ],
+          "userAnswer": "idont know",
+          "weaknesses": [
+            "No technical explanation provided",
+            "Did not attempt to answer the question",
+            "No key concepts or terms mentioned",
+            "No demonstration of relevant skills"
+          ],
+          "suggestions": [
+            "Review core React concepts such as the virtual DOM and its purpose",
+            "Be prepared to explain foundational topics in future interviews",
+            "If unsure, express willingness to learn or ask for clarification",
+            "Consider providing partial answers or related knowledge"
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        }
+      ],
+      "communicationScore": 3,
+      "technicalStrengths": [],
+      "problemSolvingScore": 2,
+      "technicalWeaknesses": [
+        "Very limited technical knowledge demonstrated",
+        "Unable to answer basic React/Frontend questions",
+        "No evidence of practical experience with required frameworks or tools",
+        "No demonstration of problem-solving or real-world application"
+      ],
+      "hiringRecommendation": "reject"
+    },
+    "questionCount": 1,
+    "coveredTopics": [
+      "React fundamentals",
+      "JSX"
+    ],
+    "skillAssessment": {
+      "technical": 2,
+      "communication": 3,
+      "problemSolving": 2
+    },
+    "progress": 20,
+    "status": "completed"
+  },
+  {
+    "id": "21fd1c09-5c97-40a7-a737-9c23facdb73d",
+    "userId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "jobRoleId": "frontend_junior_id",
+    "language": "ja-JP",
+    "startTime": "2025-08-29T04:08:05.661Z",
+    "endTime": "2025-08-29T04:09:17.412Z",
+    "duration": 71,
+    "conversationHistory": [
+      {
+        "role": "ai",
+        "content": "こんにちは！私はJuniorレベルのFrontend - React DevelopmentポジションのAI面接官です。FrontendとReact Developmentの経験とスキルについて教えていただけますか？",
+        "timestamp": "2025-08-29T04:08:14.866Z"
+      },
+      {
+        "role": "user",
+        "content": "konichiwa",
+        "timestamp": "2025-08-29T04:08:25.395Z"
+      },
+      {
+        "role": "ai",
+        "content": "こんにちは！ではさっそくですが、Reactコンポーネントのreturn文の役割について、簡単に説明していただけますか？",
+        "timestamp": "2025-08-29T04:08:29.987Z"
+      },
+      {
+        "role": "user",
+        "content": "ưakaneyo",
+        "timestamp": "2025-08-29T04:08:42.037Z"
+      },
+      {
+        "role": "ai",
+        "content": "ご回答ありがとうございます。Reactのreturn文について触れられていないようですが、returnはコンポーネントがブラウザに表示する内容（JSX）を返すために使われます。次の質問に進みますね。",
+        "timestamp": "2025-08-29T04:08:47.268Z"
+      },
+      {
+        "role": "system",
+        "content": "もしreturn文について疑問があればお知らせください。",
+        "timestamp": "2025-08-29T04:08:48.236Z"
+      },
+      {
+        "role": "user",
+        "content": "end",
+        "timestamp": "2025-08-29T04:09:01.278Z"
+      },
+      {
+        "role": "ai",
+        "content": "本日の面接は以上となります。ご参加いただきありがとうございました。今後の選考については、担当者よりご連絡いたしますので、どうぞよろしくお願いいたします。",
+        "timestamp": "2025-08-29T04:09:06.050Z"
+      }
+    ],
+    "evaluation": {
+      "salary_range": {
+        "max": 44000000,
+        "min": 10800000,
+        "currency": "VND"
+      },
+      "overallRating": 2,
+      "technicalScore": 2,
+      "cultureFitScore": 2,
+      "levelAssessment": {
+        "gapAnalysis": [
+          "Fundamental understanding of React and frontend development",
+          "Basic technical communication",
+          "Practical project experience",
+          "Ability to answer and engage with standard interview questions"
+        ],
+        "currentLevel": "Trainee/Entry (Below Junior)",
+        "readinessForNextLevel": false
+      },
+      "recommendations": [
+        "Review fundamental React concepts, such as JSX, components, and lifecycle",
+        "Practice answering common frontend and JavaScript interview questions",
+        "Improve English or Japanese communication for technical interviews",
+        "Gain hands-on experience by building small web projects",
+        "Learn to explain technical concepts clearly and concisely"
+      ],
+      "detailedFeedback": {
+        "potential": "There is no basis to assess learning agility or growth potential, as the candidate did not provide substantive responses to any questions.",
+        "technical": "The candidate did not demonstrate any technical knowledge relevant to a Junior Frontend Developer role. They did not provide answers to the React or frontend technical questions presented, nor did they discuss any technologies, frameworks, or coding experience.",
+        "experience": "No practical experience, project work, or real-world application was discussed. The candidate did not mention any past roles or demonstrable contributions relevant to frontend development.",
+        "softSkills": "Communication was not effective. The candidate did not engage with the questions or provide clarity in their responses. There was no evidence of cross-functional communication, adaptability, or problem-solving."
+      },
+      "questionAnalysis": [
+        {
+          "score": 1,
+          "clarity": 1,
+          "category": "technical",
+          "feedback": "The answer consists only of a greeting ('konichiwa') and does not address the core of the question, which asked about frontend and React development experience and skills. There is no technical content or relevant information provided. To improve, the candidate should briefly describe their experience with frontend and React development, mention specific technologies, tools, or concepts they have used, and highlight any relevant projects or learning. Using key terms such as 'components', 'state', 'props', 'JSX', or mentioning familiarity with popular libraries would demonstrate basic competence for a junior frontend role.",
+          "keywords": [],
+          "question": "こんにちは！私はJuniorレベルのFrontend - React DevelopmentポジションのAI面接官です。FrontendとReact Developmentの経験とスキルについて教えていただけますか？",
+          "skillTags": [],
+          "strengths": [
+            "Polite greeting"
+          ],
+          "userAnswer": "konichiwa",
+          "weaknesses": [
+            "Does not address the question",
+            "No evidence of technical knowledge",
+            "No mention of experience or relevant skills",
+            "No technical terminology",
+            "No demonstration of communication skills beyond basic greeting"
+          ],
+          "suggestions": [
+            "Provide a summary of your experience with frontend technologies (e.g., HTML, CSS, JavaScript).",
+            "Mention any experience with React, including specific projects or features built.",
+            "Discuss familiarity with concepts such as components, state, props, and React lifecycle.",
+            "Highlight any relevant tools or libraries (e.g., Redux, React Router, testing frameworks).",
+            "Use technical terminology to show understanding.",
+            "Give examples to illustrate your skills and experience."
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        },
+        {
+          "score": 1,
+          "clarity": 1,
+          "category": "technical",
+          "feedback": "The answer 'ưakaneyo' does not address the question at all. There is no technical content, explanation, or reference to React, return statements, or component rendering. For a junior position, it is expected that the candidate can at least briefly describe that the return statement in a React component determines what UI elements (JSX) are displayed on the screen. The candidate should also use clear language and possibly include relevant keywords such as 'JSX', 'render', and 'component'. To improve, the candidate should directly answer the question with a simple explanation and, if possible, a short example.",
+          "keywords": [],
+          "question": "こんにちは！ではさっそくですが、Reactコンポーネントのreturn文の役割について、簡単に説明していただけますか？",
+          "skillTags": [],
+          "strengths": [],
+          "userAnswer": "ưakaneyo",
+          "weaknesses": [
+            "No explanation provided",
+            "No relevant technical content",
+            "Does not address the question",
+            "No demonstration of communication skills"
+          ],
+          "suggestions": [
+            "Provide a clear and concise explanation of the return statement in a React component.",
+            "Mention that the return statement specifies what JSX should be rendered.",
+            "Reference key concepts such as JSX, render, and component structure.",
+            "Use simple language and, if possible, provide a basic code example."
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        }
+      ],
+      "communicationScore": 2,
+      "technicalStrengths": [],
+      "problemSolvingScore": 1,
+      "technicalWeaknesses": [
+        "No demonstration of frontend or React knowledge",
+        "Did not answer basic technical questions",
+        "No discussion of backend, API, or system architecture concepts",
+        "No evidence of practical coding or project experience"
+      ],
+      "hiringRecommendation": "reject"
+    },
+    "questionCount": 1,
+    "coveredTopics": [
+      "Reactコンポーネントのreturn文"
+    ],
+    "skillAssessment": {
+      "technical": 1,
+      "communication": 2,
+      "problemSolving": 1
+    },
+    "progress": 20,
+    "status": "completed"
+  },
+  {
+    "id": "49735012-ec16-4706-873b-48034ddc6343",
+    "userId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "jobRoleId": "frontend_junior_id",
+    "language": "zh-CN",
+    "startTime": "2025-08-29T04:12:13.014Z",
+    "endTime": "2025-08-29T04:13:27.109Z",
+    "duration": 74,
+    "conversationHistory": [
+      {
+        "role": "ai",
+        "content": "您好！我是您的AI面试官，负责Junior级别Frontend - React Development职位。您能介绍一下您在Frontend和React Development方面的经验和技能吗？",
+        "timestamp": "2025-08-29T04:12:25.800Z"
+      },
+      {
+        "role": "user",
+        "content": "nihao",
+        "timestamp": "2025-08-29T04:12:46.428Z"
+      },
+      {
+        "role": "ai",
+        "content": "很高兴见到您，欢迎参加Frontend - React Development的面试！我们会从React的基础知识开始，逐步深入实际开发场景。请问，在React中，JSX语法的主要作用是什么？",
+        "timestamp": "2025-08-29T04:12:49.978Z"
+      },
+      {
+        "role": "user",
+        "content": "end",
+        "timestamp": "2025-08-29T04:13:17.640Z"
+      },
+      {
+        "role": "ai",
+        "content": "感谢您的参与，面试到这里就结束了。祝您在前端开发的职业道路上取得更好的发展，也感谢您抽出时间参加我们的面试！",
+        "timestamp": "2025-08-29T04:13:21.264Z"
+      }
+    ],
+    "evaluation": {
+      "salary_range": {
+        "max": 44000000,
+        "min": 10800000,
+        "currency": "VND"
+      },
+      "overallRating": 2,
+      "technicalScore": 2,
+      "cultureFitScore": 3,
+      "levelAssessment": {
+        "gapAnalysis": [
+          "基础前端知识薄弱",
+          "缺乏任何React实际经验",
+          "技术表达和沟通能力需训练",
+          "缺乏项目参与经历"
+        ],
+        "currentLevel": "Significantly below Junior",
+        "readinessForNextLevel": false
+      },
+      "recommendations": [
+        "系统学习HTML、CSS、JavaScript基础知识",
+        "掌握React基本用法和组件设计",
+        "练习使用Git进行版本管理",
+        "参与实际项目以积累开发经验",
+        "加强沟通能力，学会清晰表达自己的技术思路"
+      ],
+      "detailedFeedback": {
+        "potential": "从当前表现来看，候选人缺乏基础知识和学习动力，建议先系统学习前端开发基础后再考虑求职。",
+        "technical": "候选人未能展示任何关于前端或React开发的技术能力，没有回答任何关于JSX或React相关的基础问题，也未体现对API、数据库或系统架构等知识的了解，技术表现远低于Junior级别要求。",
+        "experience": "无任何实际开发经验或项目经历的展示，未谈及端到端开发、技术选型或性能优化，缺乏对真实开发环境的理解。",
+        "softSkills": "沟通极为简略，仅有简单问候与结束语，未体现任何团队协作、项目管理或跨职能沟通能力，无法判断其解决问题和适应能力。"
+      },
+      "questionAnalysis": [],
+      "communicationScore": 2,
+      "technicalStrengths": [],
+      "problemSolvingScore": 1,
+      "technicalWeaknesses": [
+        "未能展示任何前端技术知识",
+        "未涉及React或JSX相关内容",
+        "缺乏基础技术表达和项目经验",
+        "未展现API、数据库、性能优化、测试等基本技能"
+      ],
+      "hiringRecommendation": "reject"
+    },
+    "questionCount": 1,
+    "coveredTopics": [
+      "自我介绍",
+      "JSX语法"
+    ],
+    "skillAssessment": {
+      "technical": 1,
+      "communication": 1,
+      "problemSolving": 1
+    },
+    "progress": 10,
+    "status": "completed"
+  },
+  {
+    "id": "af4b4b0e-82d9-4b4c-86d7-c767ae30c1bf",
+    "userId": "861c578a-4baa-4d48-9be8-51fa65d57e02",
+    "jobRoleId": "frontend_junior_id",
+    "language": "ja-JP",
+    "startTime": "2025-08-29T04:16:26.145Z",
+    "endTime": "2025-08-29T04:17:56.747Z",
+    "duration": 90,
+    "conversationHistory": [
+      {
+        "role": "ai",
+        "content": "こんにちは！私はJuniorレベルのFrontend - React DevelopmentポジションのAI面接官です。FrontendとReact Developmentの経験とスキルについて教えていただけますか？",
+        "timestamp": "2025-08-29T04:16:35.936Z"
+      },
+      {
+        "role": "user",
+        "content": "konichiwa",
+        "timestamp": "2025-08-29T04:17:03.724Z"
+      },
+      {
+        "role": "ai",
+        "content": "ご挨拶ありがとうございます！まずはReactコンポーネントにおけるreturn文の役割についてお聞きします。Reactコンポーネントでreturn文はどのような目的で使われるか、簡単に説明してください。",
+        "timestamp": "2025-08-29T04:17:09.113Z"
+      },
+      {
+        "role": "user",
+        "content": "wakanekunai",
+        "timestamp": "2025-08-29T04:17:29.834Z"
+      },
+      {
+        "role": "ai",
+        "content": "ご回答ありがとうございます。Reactのreturn文は、コンポーネントが画面上に表示する内容（JSXやHTML）を返すために使われます。次は、Reactで「state」がどのような役割を持っているか説明できますか？",
+        "timestamp": "2025-08-29T04:17:33.649Z"
+      },
+      {
+        "role": "user",
+        "content": "end",
+        "timestamp": "2025-08-29T04:17:40.060Z"
+      },
+      {
+        "role": "ai",
+        "content": "本日はご参加いただきありがとうございました。これで面接は終了となります。ご回答いただき感謝いたします。今後のご活躍をお祈りしています！",
+        "timestamp": "2025-08-29T04:17:43.899Z"
+      }
+    ],
+    "evaluation": {
+      "salary_range": {
+        "max": 44000000,
+        "min": 10800000,
+        "currency": "VND"
+      },
+      "overallRating": 3,
+      "technicalScore": 2,
+      "cultureFitScore": 4,
+      "levelAssessment": {
+        "gapAnalysis": [
+          "Reactの基礎知識習得",
+          "フロントエンド技術の理解",
+          "実装経験・プロジェクト経験の獲得",
+          "技術面接への準備"
+        ],
+        "currentLevel": "Entry/未経験",
+        "readinessForNextLevel": false
+      },
+      "recommendations": [
+        "Reactの基礎知識（コンポーネント、JSX、state、props）を学習する",
+        "簡単なReactプロジェクトを作成して実践的な経験を積む",
+        "フロントエンドの基礎（HTML, CSS, JavaScript）を復習する",
+        "技術面接の質問に対する準備を行う"
+      ],
+      "detailedFeedback": {
+        "potential": "学習意欲や成長のポテンシャルを判断する材料が少なく、現段階ではJuniorレベルの技術力には到達していません。基礎から着実に学ぶ必要があります。",
+        "technical": "Reactの基本的な概念（return文、stateなど）について質問したが、理解や説明ができていない様子が見受けられました。フロントエンド技術全般の知識や経験も不足しています。",
+        "experience": "現時点では実務経験やプロジェクト経験はほぼ確認できませんでした。エンドツーエンドの開発やチームでの協働経験も不足しています。",
+        "softSkills": "コミュニケーションは最低限の挨拶ができているものの、技術的な質問に対し十分な回答ができていません。面接の流れを理解できているかも疑問が残ります。"
+      },
+      "questionAnalysis": [
+        {
+          "score": 1,
+          "clarity": 2,
+          "category": "technical",
+          "feedback": "この回答は「こんにちは」という挨拶のみで、質問の意図に全く答えていません。フロントエンドやReactに関する経験・知識・スキルについての具体的な説明や技術的なキーワードが一切含まれていません。面接の質問には、自身の経験やスキルセット、実際に使用した技術や開発したプロジェクトなどを詳しく述べる必要があります。今後は、HTML, CSS, JavaScript、Reactの基礎や応用、チームでの開発経験など、技術面に関して実例を挙げながら答えることで、より良い印象を与えることができます。",
+          "keywords": [],
+          "question": "こんにちは！私はJuniorレベルのFrontend - React DevelopmentポジションのAI面接官です。FrontendとReact Developmentの経験とスキルについて教えていただけますか？",
+          "skillTags": [],
+          "strengths": [
+            "挨拶ができている"
+          ],
+          "userAnswer": "konichiwa",
+          "weaknesses": [
+            "技術的な内容が全く含まれていない",
+            "経験やスキルについて言及がない",
+            "質問に答えていない",
+            "フロントエンドやReactに関するキーワードや具体例がない"
+          ],
+          "suggestions": [
+            "自身のフロントエンド開発経験について具体的に述べる（例：HTML, CSS, JavaScriptの経験）",
+            "Reactに関する知識やプロジェクト経験を説明する（例：コンポーネント作成、状態管理、Hooksの利用など）",
+            "使用した技術や学んだこと、得意分野を明記する",
+            "自己紹介や学習意欲についても触れる",
+            "今後どのように成長したいかを伝える"
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        },
+        {
+          "score": 1,
+          "clarity": 1,
+          "category": "technical",
+          "feedback": "今回の回答『wakanekunai』は、質問に対する内容が全く含まれておらず、Reactコンポーネントにおけるreturn文の役割について技術的な説明や用語の使用が一切ありません。Reactの基礎知識や理解度を示すことができていません。今後は、return文がJSXを返してUIを描画するために使われること、コンポーネントの戻り値としてUI要素を返すという基本的な説明を盛り込むよう心がけてください。",
+          "keywords": [],
+          "question": "ご挨拶ありがとうございます！まずはReactコンポーネントにおけるreturn文の役割についてお聞きします。Reactコンポーネントでreturn文はどのような目的で使われるか、簡単に説明してください。",
+          "skillTags": [],
+          "strengths": [],
+          "userAnswer": "wakanekunai",
+          "weaknesses": [
+            "技術的な説明が全くない",
+            "質問に対する具体的な回答がない",
+            "Reactやreturn文、コンポーネントなどのキーワードに言及していない",
+            "内容が不明瞭で意味が伝わらない"
+          ],
+          "suggestions": [
+            "Reactコンポーネントでreturn文がどのような役割を持つか明確に説明すること",
+            "JSXやUIの描画にreturnが使われることに触れると良い",
+            "Reactの基本用語（コンポーネント、JSX、returnなど）を使って説明すること",
+            "簡潔かつ具体的な文章で答えること"
+          ],
+          "completeness": 1,
+          "technicalAccuracy": 1
+        }
+      ],
+      "communicationScore": 3,
+      "technicalStrengths": [
+        "基本的な挨拶ができる"
+      ],
+      "problemSolvingScore": 2,
+      "technicalWeaknesses": [
+        "Reactのreturn文やstateの基礎知識が不足している",
+        "技術的な質問への回答ができていない",
+        "フロントエンド技術全般の理解不足",
+        "実装経験や具体的な知識が見られない"
+      ],
+      "hiringRecommendation": "reject"
+    },
+    "questionCount": 1,
+    "coveredTopics": [
+      "Reactコンポーネントのreturn文",
+      "Reactのstateの役割"
+    ],
+    "skillAssessment": {
+      "technical": 1,
+      "communication": 2,
+      "problemSolving": 1
+    },
+    "progress": 20,
+    "status": "completed"
+  }
+]

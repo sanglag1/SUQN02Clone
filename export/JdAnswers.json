@@ -1,0 +1,217 @@
+[
+  {
+    "id": "e11c703e-00ce-432e-a16c-6bc893bb89f3",
+    "userId": "user_31sCRqT7JhcSfH9x4bdP86D1JeS",
+    "jdQuestionSetId": "6de2adf7-14b5-4356-8892-08d89ee80d5e",
+    "questionIndex": 0,
+    "questionText": "1. What is the difference between Artificial Intelligence (AI) and Machine Learning (ML)?",
+    "userAnswer": "The difference between Artificial Intelligence (AI) and Machine Learning (ML) is mainly about scope and methods:\n\nArtificial Intelligence (AI):\n\nA broad field of computer science focused on building systems that can simulate human intelligence—such as reasoning, problem-solving, decision-making, and understanding natural language.\n\nIncludes many approaches: rule-based systems, expert systems, planning, robotics, computer vision, natural language processing, and machine learning.\n\nGoal: Create machines that can “think” and act intelligently.\n\nMachine Learning (ML):\n\nA subset of AI that focuses on systems that can learn from data and improve performance over time without being explicitly programmed.\n\nUses algorithms and statistical models to find patterns in data and make predictions or decisions.\n\nExamples: spam email filtering, recommendation systems, fraud detection.\n\nGoal: Learn from experience (data) to perform tasks better.\n\n👉 In short:\n\nAI = big concept (machines acting smart).\n\nML = one way to achieve AI (by letting machines learn from data).\n\nWould you like me to also give a simple analogy (like human intelligence vs. learning from experience) so it’s easier to explain quickly in an interview or presentation?",
+    "feedback": "This answer provides a thorough and accurate distinction between Artificial Intelligence (AI) and Machine Learning (ML). The explanation covers both definitions, their scopes, methods, and goals, making the core difference clear. The use of examples (spam filtering, recommendation systems) helps contextualize ML, while mentioning AI approaches (rule-based systems, expert systems, etc.) demonstrates a good grasp of the breadth of AI. The short summary and offer of an analogy show strong communication skills and awareness of interview dynamics. However, the answer could be slightly more concise for a junior interview, and the technical terms could be simplified further. The content is very relevant and well-structured, but a simpler analogy or direct comparison (e.g., 'All ML is AI, but not all AI is ML') would enhance clarity for beginners.",
+    "scores": {
+      "clarity": 8,
+      "content": 9,
+      "overall": 9,
+      "relevance": 10
+    },
+    "overallScore": 85,
+    "strengths": [
+      "Comprehensive coverage of both AI and ML concepts",
+      "Use of practical examples to illustrate ML applications"
+    ],
+    "improvements": [
+      "Simplify technical language for junior-level clarity",
+      "Condense explanation to focus on direct comparison for interviews"
+    ],
+    "skillAssessment": {
+      "level": "intermediate",
+      "suggestions": [
+        "Use a simple analogy or visual to highlight the subset relationship (e.g., Venn diagram or 'ML is a subset of AI')",
+        "For interviews, prepare a concise version with one sentence and one example for each term"
+      ],
+      "recommendedNextLevel": "intermediate"
+    },
+    "timeSpent": 19,
+    "answeredAt": "2025-08-27T14:21:35.637Z",
+    "createdAt": "2025-08-27T14:21:35.637Z",
+    "updatedAt": "2025-08-27T14:21:35.637Z"
+  },
+  {
+    "id": "7a03a9a7-90cd-45ad-af65-ad254e6c7f62",
+    "userId": "user_31sCRqT7JhcSfH9x4bdP86D1JeS",
+    "jdQuestionSetId": "6de2adf7-14b5-4356-8892-08d89ee80d5e",
+    "questionIndex": 1,
+    "questionText": "2. Can you explain what Natural Language Processing (NLP) is and give a simple example of its use?",
+    "userAnswer": "tôi không biết",
+    "feedback": "Câu trả lời 'tôi không biết' cho thấy ứng viên chưa có kiến thức về Natural Language Processing (NLP) hoặc chưa chuẩn bị cho câu hỏi này. Ứng viên chưa thể hiện được bất kỳ nội dung nào liên quan đến khái niệm NLP hoặc ví dụ ứng dụng thực tế. Việc không trả lời cũng không giúp nhà tuyển dụng đánh giá kỹ năng hoặc mức độ hiểu biết về công nghệ được yêu cầu trong JD. Ứng viên nên tìm hiểu những kiến thức cơ bản về NLP, ví dụ như định nghĩa, chức năng, và một số ứng dụng phổ biến (ví dụ: chuyển văn bản thành giọng nói, phân tích cảm xúc, chatbot, v.v.).",
+    "scores": {
+      "clarity": 8,
+      "content": 1,
+      "overall": 2,
+      "relevance": 1
+    },
+    "overallScore": 5,
+    "strengths": [
+      "Trả lời ngắn gọn, không vòng vo",
+      "Thẳng thắn thừa nhận chưa biết thay vì đoán sai"
+    ],
+    "improvements": [
+      "Cần có kiến thức cơ bản về NLP để trả lời câu hỏi",
+      "Nên chuẩn bị ví dụ đơn giản về ứng dụng NLP"
+    ],
+    "skillAssessment": {
+      "level": "basic",
+      "suggestions": [
+        "Tìm hiểu khái niệm NLP và các ứng dụng cơ bản (ví dụ: nhận diện thực thể, phân tích cảm xúc)",
+        "Luyện tập trả lời các câu hỏi định nghĩa, chức năng và ví dụ về NLP"
+      ],
+      "recommendedNextLevel": "basic"
+    },
+    "timeSpent": 10,
+    "answeredAt": "2025-08-27T14:22:13.125Z",
+    "createdAt": "2025-08-27T14:22:13.125Z",
+    "updatedAt": "2025-08-27T14:22:13.125Z"
+  },
+  {
+    "id": "3899883c-4f3a-45db-aa9b-8fe9144469ec",
+    "userId": "user_31VwX7ejLjkC49442tBXduKMCz5",
+    "jdQuestionSetId": "dec14331-a387-45cd-a3bd-3bbd84594ca1",
+    "questionIndex": 0,
+    "questionText": "1. What is the difference between supervised and unsupervised learning in the context of Machine Learning (ML)?",
+    "userAnswer": "toi khong biet",
+    "feedback": "The answer 'toi khong biet' (I don't know) does not provide any content or attempt to address the question about the difference between supervised and unsupervised learning in Machine Learning. While honesty about knowledge gaps is important, this response shows a lack of familiarity with a very basic and fundamental concept in the field. For junior candidates, it's expected to have at least a simple understanding of core ML terms. To improve, the candidate should review basic ML concepts and be prepared to explain them in simple terms.",
+    "scores": {
+      "clarity": 2,
+      "content": 1,
+      "overall": 1,
+      "relevance": 1
+    },
+    "overallScore": 10,
+    "strengths": [
+      "Demonstrated honesty by admitting lack of knowledge",
+      "Did not attempt to fabricate an answer"
+    ],
+    "improvements": [
+      "Needs to learn the basic concepts of supervised and unsupervised learning",
+      "Should prepare to provide at least a simple explanation for fundamental ML topics"
+    ],
+    "skillAssessment": {
+      "level": "basic",
+      "suggestions": [
+        "Study the definitions and differences between supervised and unsupervised learning in ML",
+        "Practice explaining basic ML concepts to ensure readiness for future interviews"
+      ],
+      "recommendedNextLevel": "basic"
+    },
+    "timeSpent": 8,
+    "answeredAt": "2025-08-28T08:29:56.967Z",
+    "createdAt": "2025-08-28T08:29:56.967Z",
+    "updatedAt": "2025-08-28T08:29:56.967Z"
+  },
+  {
+    "id": "9cbc9834-52e0-48d7-9597-5a040cd180d8",
+    "userId": "user_31uQ6tl3poiHMx1CM9khHSgQbtZ",
+    "jdQuestionSetId": "e1bad371-3195-4301-849a-67a52b190904",
+    "questionIndex": 0,
+    "questionText": "1. What is the difference between functional and non-functional testing when testing AI features?",
+    "userAnswer": "toi khong biet",
+    "feedback": "The answer 'toi khong biet' (I don't know) demonstrates that the candidate was unable to provide any information regarding the difference between functional and non-functional testing, particularly in the context of AI features. While it's honest to admit a lack of knowledge, the response does not show any understanding of the basic concepts being asked. To improve, the candidate should review the definitions and examples of both functional and non-functional testing, especially as they apply to AI applications. Demonstrating even a basic attempt or partial answer would have been better than leaving the question blank.",
+    "scores": {
+      "clarity": 1,
+      "content": 1,
+      "overall": 1,
+      "relevance": 1
+    },
+    "overallScore": 0,
+    "strengths": [
+      "Honesty in acknowledging lack of knowledge."
+    ],
+    "improvements": [
+      "Should attempt to answer by recalling any related knowledge.",
+      "Needs to study the differences between functional and non-functional testing."
+    ],
+    "skillAssessment": {
+      "level": "basic",
+      "suggestions": [
+        "Review definitions and examples of functional and non-functional testing, especially related to AI.",
+        "Prepare basic answers for common QA/testing concepts."
+      ],
+      "recommendedNextLevel": "basic"
+    },
+    "timeSpent": 8,
+    "answeredAt": "2025-08-28T09:24:45.154Z",
+    "createdAt": "2025-08-28T09:24:45.154Z",
+    "updatedAt": "2025-08-28T09:24:45.154Z"
+  },
+  {
+    "id": "b88797d4-9225-49c2-83cd-ea7432ec4fe7",
+    "userId": "user_313ZeZOuWsLXwB1idH5qqLXETcf",
+    "jdQuestionSetId": "a87773cd-ec2c-4127-ac6c-a0c8318162c6",
+    "questionIndex": 0,
+    "questionText": "1. Can you briefly explain what Machine Learning (ML) is and give an example of its application in software testing?",
+    "userAnswer": "Đây sợ phải đi sửa cũng quên đấy hello hello hello hello hello.",
+    "feedback": "The answer provided does not address the question about Machine Learning (ML) or its application in software testing. The response consists of unrelated words and phrases, with no relevant technical content. There is no demonstration of understanding of ML concepts, nor any example provided. For improvement, the candidate should focus on providing a clear definition of Machine Learning, and briefly describing how it can be used in software testing (e.g., for automated defect prediction or test case generation). Clarity, relevance, and content are all lacking in this response.",
+    "scores": {
+      "clarity": 1,
+      "content": 1,
+      "overall": 1,
+      "relevance": 1
+    },
+    "overallScore": 5,
+    "strengths": [
+      "None displayed in this response."
+    ],
+    "improvements": [
+      "Provide a definition of Machine Learning.",
+      "Give a relevant example of ML in software testing.",
+      "Structure the answer logically and clearly."
+    ],
+    "skillAssessment": {
+      "level": "basic",
+      "suggestions": [
+        "Study basic concepts of Machine Learning such as supervised and unsupervised learning.",
+        "Research how ML can be applied in software testing (e.g., test automation, defect prediction).",
+        "Practice writing concise and relevant responses to technical questions."
+      ],
+      "recommendedNextLevel": "basic"
+    },
+    "timeSpent": 5,
+    "answeredAt": "2025-08-28T13:20:59.192Z",
+    "createdAt": "2025-08-28T13:20:59.192Z",
+    "updatedAt": "2025-08-28T13:20:59.192Z"
+  },
+  {
+    "id": "06eef657-a00b-4b0a-8cac-73bdd0fadeb8",
+    "userId": "user_31VwX7ejLjkC49442tBXduKMCz5",
+    "jdQuestionSetId": "693462f7-fa54-47a3-a920-cd8504a813d1",
+    "questionIndex": 0,
+    "questionText": "1. Can you briefly explain what Artificial Intelligence (AI) is and give an example of its application in software?",
+    "userAnswer": "tôi không biết",
+    "feedback": "The answer provided ('tôi không biết' which translates to 'I don't know') does not address the question about Artificial Intelligence (AI) or provide any example of its application in software. While honesty is valuable in an interview, it is important to attempt to provide a basic explanation or example when asked about a fundamental topic. This answer lacks content, relevance, and clarity. To improve, the candidate should prepare by studying the basic concepts of AI, common definitions, and simple software examples. Even a brief explanation or a widely-known application such as chatbots or recommendation systems would demonstrate some foundational knowledge.",
+    "scores": {
+      "clarity": 1,
+      "content": 1,
+      "overall": 1,
+      "relevance": 1
+    },
+    "overallScore": 5,
+    "strengths": [
+      "Demonstrated honesty in response"
+    ],
+    "improvements": [
+      "Should attempt to answer even with basic knowledge",
+      "Needs to study core concepts of Artificial Intelligence and its applications"
+    ],
+    "skillAssessment": {
+      "level": "basic",
+      "suggestions": [
+        "Review basic definitions and examples of AI before future interviews",
+        "Practice explaining simple AI concepts, such as machine learning or chatbots, in your own words"
+      ],
+      "recommendedNextLevel": "basic"
+    },
+    "timeSpent": 12,
+    "answeredAt": "2025-08-29T09:35:04.475Z",
+    "createdAt": "2025-08-29T09:35:04.475Z",
+    "updatedAt": "2025-08-29T09:35:04.475Z"
+  }
+]

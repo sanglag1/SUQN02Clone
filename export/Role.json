@@ -1,0 +1,22 @@
+[
+  {
+    "id": "user_role_id",
+    "name": "user",
+    "displayName": "User",
+    "description": "Standard user role",
+    "isActive": true,
+    "isDefault": true,
+    "createdAt": "2025-08-26T03:39:19.985Z",
+    "updatedAt": "2025-08-26T03:39:19.985Z"
+  },
+  {
+    "id": "admin_role_id",
+    "name": "admin",
+    "displayName": "Administrator",
+    "description": "Administrator with full access",
+    "isActive": true,
+    "isDefault": false,
+    "createdAt": "2025-08-26T03:39:20.106Z",
+    "updatedAt": "2025-08-26T03:39:20.106Z"
+  }
+]

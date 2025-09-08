@@ -1,0 +1,425 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Role {
+  id          String           @id @default(uuid())
+  name        String           @unique
+  displayName String
+  description String?
+  isActive    Boolean          @default(true)
+  isDefault   Boolean          @default(false)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  permissions RolePermission[]
+  users       User[]
+
+  @@index([name])
+  @@index([isActive])
+}
+
+model Permission {
+  id          String           @id @default(uuid())
+  name        String           @unique
+  displayName String
+  description String?
+  category    String?
+  isActive    Boolean          @default(true)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  roles       RolePermission[]
+
+  @@index([name])
+  @@index([category])
+  @@index([isActive])
+}
+
+model RolePermission {
+  id           String     @id @default(uuid())
+  roleId       String
+  permissionId String
+  createdAt    DateTime   @default(now())
+  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+  role         Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+
+  @@unique([roleId, permissionId])
+  @@index([roleId])
+  @@index([permissionId])
+}
+
+model User {
+  id                       String           @id @default(uuid())
+  email                    String           @unique
+  clerkId                  String           @unique
+  firstName                String?
+  lastName                 String?
+  avatar                   String?
+  bio                      String?
+  phone                    String?
+  department               String?
+  joinDate                 String?
+  status                   String?          @default("Hoạt động")
+  experienceLevel          ExperienceLevel? @default(mid)
+  roleId                   String           @default("user_role_id")
+  skills                   String[]
+  lastLogin                DateTime?
+  lastSignInAt             DateTime?
+  lastActivity             DateTime?
+  isOnline                 Boolean          @default(false)
+  clerkSessionActive       Boolean          @default(false)
+  createdAt                DateTime         @default(now())
+  updatedAt                DateTime         @updatedAt
+  userActivityId           String?          @unique
+  preferredJobRoleId       String?
+  preferredLanguage        String?          @default("vi")
+  interviewPreferences     Json?
+  autoStartWithPreferences Boolean          @default(true)
+  interviews               Interview[]
+  paymentHistory           PaymentHistory[]
+  questionsCreated         Question[]       @relation("QuestionsCreated")
+  quizHistory              Quiz[]           @relation("QuizHistory")
+  quizzes                  Quiz[]
+  preferredJobRole         JobRole?         @relation("UserPreferredJobRole", fields: [preferredJobRoleId], references: [id])
+  role                     Role             @relation(fields: [roleId], references: [id])
+  userActivity             UserActivity?
+  userPackages             UserPackage[]
+  savedQuestions           Question[]       @relation("SavedQuestions")
+
+  @@index([roleId])
+}
+
+model Interview {
+  id                  String          @id @default(uuid())
+  userId              String
+  jobRoleId           String
+  language            String
+  startTime           DateTime
+  endTime             DateTime?
+  duration            Int?
+  conversationHistory Json
+  evaluation          Json
+  questionCount       Int             @default(0)
+  coveredTopics       String[]
+  skillAssessment     Json
+  progress            Int             @default(0)
+  status              InterviewStatus @default(in_progress)
+  jobRole             JobRole         @relation(fields: [jobRoleId], references: [id])
+  user                User            @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([jobRoleId])
+}
+
+model Quiz {
+  id                String     @id @default(uuid())
+  userId            String
+  field             String
+  topic             String
+  level             QuizLevel
+  userAnswers       Json?
+  score             Int
+  totalQuestions    Int
+  timeLimit         Int
+  timeUsed          Int
+  completedAt       DateTime?
+  retryCount        Int?       @default(0)
+  quizHistoryUserId String?
+  answerMapping     Json?
+  quizHistoryUser   User?      @relation("QuizHistory", fields: [quizHistoryUserId], references: [id])
+  user              User       @relation(fields: [userId], references: [id])
+  questions         Question[] @relation("QuizQuestions")
+}
+
+model Question {
+  id          String      @id @default(uuid())
+  question    String
+  answers     Json?
+  fields      String[]
+  topics      String[]
+  levels      QuizLevel[]
+  explanation String?
+  createdAt   DateTime?   @default(now())
+  updatedAt   DateTime?   @updatedAt
+  createdById String?
+  createdBy   User?       @relation("QuestionsCreated", fields: [createdById], references: [id])
+  quizzes     Quiz[]      @relation("QuizQuestions")
+  usersSaved  User[]      @relation("SavedQuestions")
+}
+
+model UserActivity {
+  id              String    @id @default(uuid())
+  userId          String    @unique
+  activities      Json?
+  skills          Json?
+  goals           Json?
+  learningStats   Json?
+  strengths       String[]
+  weaknesses      String[]
+  recommendations String[]
+  lastActive      DateTime? @default(now())
+  progressHistory Json?
+  user            User      @relation(fields: [userId], references: [id])
+}
+
+model JdQuestions {
+  id             String          @id @default(uuid())
+  userId         String
+  jobTitle       String
+  questionType   QuestionType
+  level          ExperienceLevel
+  questions      String[]
+  originalJDText String?
+  fileName       String?
+  createdAt      DateTime?       @default(now())
+  updatedAt      DateTime?       @updatedAt
+  jdAnswers      JdAnswers[]
+}
+
+model JdAnswers {
+  id              String      @id @default(uuid())
+  userId          String
+  jdQuestionSetId String
+  questionIndex   Int
+  questionText    String
+  userAnswer      String
+  feedback        String?
+  scores          Json?
+  overallScore    Float?
+  strengths       String[]
+  improvements    String[]
+  skillAssessment Json?
+  timeSpent       Int?
+  answeredAt      DateTime    @default(now())
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+  jdQuestionSet   JdQuestions @relation(fields: [jdQuestionSetId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([jdQuestionSetId])
+  @@index([answeredAt])
+}
+
+model Assessment {
+  id               String           @id @default(uuid())
+  userId           String
+  type             AssessmentType
+  jobRoleId        String?
+  selectedCategory String?
+  level            String
+  duration         Int
+  totalTime        Int
+  history          Json?
+  realTimeScores   Json?
+  finalScores      Json?
+  status           AssessmentStatus @default(in_progress)
+  overallFeedback  String?
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime?        @updatedAt
+  jobRole          JobRole?         @relation(fields: [jobRoleId], references: [id])
+
+  @@index([jobRoleId])
+}
+
+model ServicePackage {
+  id                   String           @id @default(uuid())
+  name                 String
+  price                Int
+  duration             Int
+  avatarInterviewLimit Int              @default(0)
+  testQuizEQLimit      Int              @default(0)
+  jdUploadLimit        Int              @default(0)
+  description          String?
+  highlight            Boolean          @default(false)
+  createdAt            DateTime         @default(now())
+  isActive             Boolean          @default(true)
+  updatedAt            DateTime         @updatedAt
+  paymentHistory       PaymentHistory[]
+  userPackages         UserPackage[]
+
+  @@index([name])
+  @@index([price])
+}
+
+model UserPackage {
+  id                  String         @id @default(uuid())
+  userId              String
+  servicePackageId    String
+  orderCode           String?        @unique
+  startDate           DateTime       @default(now())
+  endDate             DateTime
+  avatarInterviewUsed Int            @default(0)
+  testQuizEQUsed      Int            @default(0)
+  jdUploadUsed        Int            @default(0)
+  isActive            Boolean        @default(true)
+  createdAt           DateTime       @default(now())
+  updatedAt           DateTime       @updatedAt
+  servicePackage      ServicePackage @relation(fields: [servicePackageId], references: [id])
+  user                User           @relation(fields: [userId], references: [id])
+
+  @@unique([userId, servicePackageId])
+  @@index([userId])
+  @@index([servicePackageId])
+  @@index([isActive])
+}
+
+model PaymentHistory {
+  id               String         @id @default(uuid())
+  userId           String
+  servicePackageId String
+  orderCode        String         @unique
+  amount           Int
+  refundAmount     Int            @default(0)
+  description      String
+  status           PaymentStatus  @default(pending)
+  paymentMethod    String?
+  transactionId    String?
+  checkoutUrl      String?
+  qrCode           String?
+  returnUrl        String?
+  cancelUrl        String?
+  paidAt           DateTime?
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  servicePackage   ServicePackage @relation(fields: [servicePackageId], references: [id])
+  user             User           @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([servicePackageId])
+  @@index([status])
+  @@index([orderCode])
+}
+
+model JobCategory {
+  id              String              @id @default(uuid())
+  name            String              @unique
+  skills          String[]            // Array of skills like ["React", "Vite", "TypeScript"]
+  jobRoles        JobRole[]
+  specializations JobSpecialization[]
+}
+
+model JobSpecialization {
+  id         String      @id @default(uuid())
+  name       String      @unique
+  categoryId String
+  jobRoles   JobRole[]
+  category   JobCategory @relation(fields: [categoryId], references: [id])
+}
+
+model JobRole {
+  id               String             @id @default(uuid())
+  key              String             @unique
+  title            String
+  level            JobLevel
+  description      String?
+  minExperience    Int                @default(0)
+  maxExperience    Int?
+  order            Int                @default(0)
+  categoryId       String?
+  specializationId String?
+  assessments      Assessment[]
+  interviews       Interview[]
+  category         JobCategory?       @relation(fields: [categoryId], references: [id])
+  specialization   JobSpecialization? @relation(fields: [specializationId], references: [id])
+  usersPreferred   User[]             @relation("UserPreferredJobRole")
+
+  @@index([title])
+  @@index([level])
+  @@index([categoryId])
+  @@index([specializationId])
+}
+
+enum ExperienceLevel {
+  junior
+  mid
+  senior
+}
+
+enum InterviewStatus {
+  completed
+  interrupted
+  in_progress
+}
+
+enum InterviewMessageRole {
+  user
+  ai
+  system
+}
+
+enum HiringRecommendation {
+  strong_hire
+  hire
+  consider
+  reject
+}
+
+enum QuizLevel {
+  junior
+  middle
+  senior
+}
+
+enum QuestionType {
+  technical
+  behavioral
+}
+
+enum GoalStatus {
+  pending
+  in_progress
+  completed
+}
+
+enum GoalType {
+  skill
+  interview
+  certification
+}
+
+enum SkillLevel {
+  beginner
+  intermediate
+  advanced
+  expert
+}
+
+enum ActivityType {
+  interview
+  quiz
+  practice
+  learning
+  goal_completed
+  goal_started
+  jd
+}
+
+enum AssessmentType {
+  test
+  eq
+}
+
+enum PaymentStatus {
+  pending
+  success
+  failed
+  cancelled
+}
+
+enum AssessmentStatus {
+  in_progress
+  completed
+}
+
+enum JobLevel {
+  Intern
+  Junior
+  Mid
+  Senior
+  Lead
+}
+

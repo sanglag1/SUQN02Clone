@@ -1,0 +1,91 @@
+[
+  {
+    "id": "frontend_category_id",
+    "name": "Frontend Development",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Vue.js",
+      "Angular",
+      "TypeScript",
+      "SASS",
+      "Webpack",
+      "Vite"
+    ]
+  },
+  {
+    "id": "backend_category_id",
+    "name": "Backend Development",
+    "skills": [
+      "Node.js",
+      "Python",
+      "Java",
+      "C#",
+      ".NET",
+      "PHP",
+      "Go",
+      "Rust",
+      "Database",
+      "API Design",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "fullstack_category_id",
+    "name": "Full Stack Development",
+    "skills": [
+      "Frontend",
+      "Backend",
+      "Database",
+      "DevOps",
+      "API Design",
+      "System Design",
+      "Cloud Services"
+    ]
+  },
+  {
+    "id": "mobile_category_id",
+    "name": "Mobile Development",
+    "skills": [
+      "React Native",
+      "Flutter",
+      "iOS",
+      "Android",
+      "Swift",
+      "Kotlin",
+      "Mobile UI/UX",
+      "App Store"
+    ]
+  },
+  {
+    "id": "devops_category_id",
+    "name": "DevOps & Cloud",
+    "skills": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "CI/CD",
+      "Terraform",
+      "Monitoring",
+      "Linux"
+    ]
+  },
+  {
+    "id": "data_category_id",
+    "name": "Data & AI",
+    "skills": [
+      "Python",
+      "SQL",
+      "Machine Learning",
+      "Data Analysis",
+      "TensorFlow",
+      "PyTorch",
+      "Big Data",
+      "Statistics"
+    ]
+  }
+]

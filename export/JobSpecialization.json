@@ -1,0 +1,17 @@
+[
+  {
+    "id": "react_specialization_id",
+    "name": "React Development",
+    "categoryId": "frontend_category_id"
+  },
+  {
+    "id": "node_specialization_id",
+    "name": "Node.js Development",
+    "categoryId": "backend_category_id"
+  },
+  {
+    "id": "python_specialization_id",
+    "name": "Python Development",
+    "categoryId": "backend_category_id"
+  }
+]
