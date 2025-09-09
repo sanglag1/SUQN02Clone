@@ -41,7 +41,7 @@ interface UserActivityDetail {
     firstName: string;
     lastName: string;
     email: string;
-    role: string;
+    role: unknown;
     isOnline: boolean;
     lastActivity: string;
     clerkId: string;
@@ -64,11 +64,12 @@ interface UserActivityDetail {
   };
   activities?: Activity[];
   skills: Array<{
-    _id: string;
+    _id?: string;
     name: string;
-    level: string;
-    score: number;
-    lastAssessed: string;
+    level?: string;
+    score?: number;
+    currentScore?: number;
+    lastAssessed?: string;
   }>;
   goals: Array<{
     _id: string;
@@ -409,21 +410,21 @@ export default function UserActivityDetailView({ userId, onBack }: UserActivityD
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              {(Array.isArray(data.skills) ? data.skills : []).slice(0, 10).map((skill) => (
-                <div key={skill._id} className="flex items-center justify-between">
+              {(Array.isArray(data.skills) ? data.skills : []).slice(0, 10).map((skill, idx) => (
+                <div key={skill._id ?? `${skill.name}-${idx}`} className="flex items-center justify-between">
                   <div className="flex-1">
                     <div className="flex items-center gap-2">
                       <p className="font-medium">{skill.name}</p>
-                      <Badge className={getSkillLevelColor(skill.level)}>
-                        {skill.level}
+                      <Badge className={getSkillLevelColor(skill.level ?? 'intermediate')}>
+                        {skill.level ?? 'intermediate'}
                       </Badge>
                     </div>
-                    <Progress value={safeNumber(skill.score)} className="mt-2" />
+                    <Progress value={safeNumber(skill.currentScore ?? skill.score ?? 0)} className="mt-2" />
                   </div>
                   <div className="text-right ml-4">
-                    <p className="font-bold">{safeNumber(skill.score)}%</p>
+                    <p className="font-bold">{safeNumber(skill.currentScore ?? skill.score ?? 0)}%</p>
                     <p className="text-xs text-gray-500">
-                      {formatDate(skill.lastAssessed)}
+                      {skill.lastAssessed ? formatDate(skill.lastAssessed) : ''}
                     </p>
                   </div>
                 </div>

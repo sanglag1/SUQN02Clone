@@ -21,6 +21,7 @@ interface EvaluationData {
   communicationScore?: number;
   technicalScore?: number;
   problemSolvingScore?: number;
+  deliveryScore?: number; // new field for practice context
   confidenceScore?: number;
   strengths?: string[];
   weaknesses?: string[];
@@ -82,6 +83,7 @@ export async function GET(
 
     // Parse evaluation data từ Json field
     const evaluation = interview.evaluation as EvaluationData;
+    const deliveryScore = typeof evaluation.deliveryScore === 'number' ? evaluation.deliveryScore : 0;
 
     // Parse conversation history từ Json field
     const conversationHistory = (interview.conversationHistory as unknown as ConversationMessage[]) || [];
@@ -99,6 +101,7 @@ export async function GET(
       communicationScore: evaluation.communicationScore || 0,
       technicalScore: evaluation.technicalScore || 0,
       problemSolvingScore: evaluation.problemSolvingScore || 0,
+      deliveryScore,
       confidenceScore: evaluation.confidenceScore || 0,
       strengths: evaluation.strengths || [],
       weaknesses: evaluation.weaknesses || [],

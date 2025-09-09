@@ -57,28 +57,32 @@ const UserAvatar = ({ user }: { user: UserActivity['user'] }) => {
 
 interface UserActivity {
   id: string;
-  userId: string;
   user: {
     id: string;
     firstName: string;
     lastName: string;
     email: string;
     avatar?: string;
-    role: string;
-    status: string;
+    role?: unknown;
+    realTimeActivity?: {
+      isCurrentlyActive: boolean;
+      isCurrentlyOnline: boolean;
+      lastActivityText: string;
+      lastActivityTimestamp: string | Date;
+    };
   };
   stats: {
     totalActivities: number;
-    completedGoals: number;
-    totalGoals: number;
-    averageSkillScore: number;
-    totalSkills: number;
     totalStudyTime: number;
-    streak: number;
+    averageScore: number;
+    studyStreak: number;
+    totalInterviews: number;
+    totalQuizzes: number;
+    totalPractice: number;
+    completedGoals: number;
+    activeGoals: number;
   };
-  lastActive: string;
-  recentActivity: string;
-  createdAt: string;
+  lastUpdated?: string | Date;
 }
 
 interface UserActivitiesListProps {
@@ -133,9 +137,22 @@ export default function UserActivitiesList({
       const data = await response.json();
 
       if (response.ok) {
-        setActivities(data.activities);
-        setSummary(data.summary);
-        setPagination(data.pagination);
+        setActivities(data.activities || []);
+        setSummary({
+          totalUsers: data.summary?.totalUsers || 0,
+          activeUsersToday: data.summary?.currentlyOnlineUsers || data.summary?.currentlyActiveUsers || 0,
+          totalActivities: data.summary?.totalActivities || 0,
+          totalCompletedGoals: 0,
+          averageStudyTime: 0
+        });
+        setPagination(data.pagination || {
+          page: 1,
+          limit: 10,
+          total: data.activities?.length || 0,
+          totalPages: 1,
+          hasNext: false,
+          hasPrev: false
+        });
       } else {
         console.error('Error fetching activities:', data.error);
       }
@@ -180,14 +197,13 @@ export default function UserActivitiesList({
   };
 
   const getStatusBadge = (user: UserActivity['user']) => {
-    if (user.status === 'online') {
+    const rt = user.realTimeActivity;
+    if (rt?.isCurrentlyOnline) {
       return <Badge className="bg-green-100 text-green-800">Online</Badge>;
     }
-    
-    if (user.status === 'active') {
+    if (rt?.isCurrentlyActive) {
       return <Badge className="bg-yellow-100 text-yellow-800">Active</Badge>;
     }
-    
     return <Badge className="bg-gray-100 text-gray-800">Offline</Badge>;
   };
 
@@ -387,7 +403,7 @@ export default function UserActivitiesList({
                     
                     <div className="text-center">
                       <div className="font-medium text-gray-900">
-                        {activity.stats.completedGoals}/{activity.stats.totalGoals}
+                        {activity.stats.completedGoals}/{activity.stats.activeGoals}
                       </div>
                       <div>Goals</div>
                     </div>
@@ -396,7 +412,7 @@ export default function UserActivitiesList({
                       <div className="flex items-center justify-center">
                         <Star className="h-3 w-3 text-yellow-400 mr-1" />
                         <span className="font-medium text-gray-900">
-                          {activity.stats.averageSkillScore}
+                          {activity.stats.averageScore}
                         </span>
                       </div>
                       <div>Avg Score</div>
@@ -411,7 +427,7 @@ export default function UserActivitiesList({
                     
                     <div className="text-center">
                       <div className="font-medium text-gray-900">
-                        {activity.stats.streak}
+                        {activity.stats.studyStreak}
                       </div>
                       <div>Streak</div>
                     </div>
@@ -419,7 +435,7 @@ export default function UserActivitiesList({
 
                   <div className="text-right">
                     <p className="text-sm text-gray-500">
-                      {formatLastActive(activity.lastActive)}
+                      {formatLastActive(String(activity.user.realTimeActivity?.lastActivityTimestamp || activity.lastUpdated || ''))}
                     </p>
                   </div>
                 </div>
@@ -428,7 +444,7 @@ export default function UserActivitiesList({
                   <Button 
                     variant="ghost" 
                     size="sm"
-                    onClick={() => onViewDetails(activity.userId)}
+                    onClick={() => onViewDetails(activity.user.id)}
                     className="text-blue-600 hover:text-blue-700"
                   >
                     <Eye className="h-4 w-4" />
@@ -436,7 +452,7 @@ export default function UserActivitiesList({
                   <Button 
                     variant="ghost" 
                     size="sm"
-                    onClick={() => onEditUser(activity.userId)}
+                    onClick={() => onEditUser(activity.user.id)}
                     className="text-green-600 hover:text-green-700"
                   >
                     <Edit className="h-4 w-4" />
@@ -444,7 +460,7 @@ export default function UserActivitiesList({
                   <Button 
                     variant="ghost" 
                     size="sm"
-                    onClick={() => onDeleteUser(activity.userId)}
+                    onClick={() => onDeleteUser(activity.user.id)}
                     className="text-red-600 hover:text-red-700"
                   >
                     <Trash2 className="h-4 w-4" />

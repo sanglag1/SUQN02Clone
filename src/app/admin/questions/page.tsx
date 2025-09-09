@@ -6,22 +6,9 @@ import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 
 export default function AdminQuestionsPage() {
-  const { userId, isLoaded } = useAuth();
   const router = useRouter();
-
   useEffect(() => {
-    if (isLoaded && !userId) {
-      router.push('/sign-in');
-    }
-  }, [isLoaded, userId, router]);
-
-  if (!isLoaded || !userId) {
-    return null;
-  }
-
-  return (
-    <div>
-      <QuestionManager/>
-    </div>
-  );
+    router.replace('/admin/question-bank/questions');
+  }, [router]);
+  return null;
 }

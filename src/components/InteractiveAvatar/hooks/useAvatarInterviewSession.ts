@@ -6,7 +6,7 @@ import { useAvatarControl } from './useAvatarControl';
 import { useAIConversation } from './useAIConversation';
 import { useInterviewApi } from './useInterviewApi';
 import { useInterviewSession } from './useInterviewSession';
-import { generateInterviewEvaluation } from '@/services/evaluationService';
+import { generateInterviewEvaluation } from '@/services/avatarInterviewService/evaluationService';
 import { AVATARS } from '../HeygenConfig';
 import { ChatMessage } from '@/services/openaiService';
 import { mapUILanguageToAI } from '@/utils/languageMapping';
@@ -431,7 +431,13 @@ export function useAvatarInterviewSession({ onEndSession }: { onEndSession: (dat
         questionCount: questionCount ?? 0,
         coveredTopics: interviewState.coveredTopics ?? [],
         conversationHistory: apiConversation ?? [],
-        evaluation: evaluation,
+        evaluation: {
+          overallRating: Math.round((evaluation.technicalScore + evaluation.communicationScore + evaluation.problemSolvingScore + evaluation.deliveryScore) / 4),
+          technicalScore: evaluation.technicalScore,
+          communicationScore: evaluation.communicationScore,
+          problemSolvingScore: evaluation.problemSolvingScore,
+          recommendations: evaluation.recommendations
+        },
         skillAssessment: interviewState.skillAssessment
       };
       

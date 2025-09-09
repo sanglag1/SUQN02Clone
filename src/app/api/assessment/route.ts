@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@clerk/nextjs/server';
 import prisma from '@/lib/prisma';
 import { AssessmentType } from '@prisma/client';
-import { TrackingIntegrationService } from '@/services/trackingIntegrationService';
+import TrackingEventService from '@/services/trackingEventService';
 
 // Handle preflight OPTIONS request
 export async function OPTIONS() {
@@ -145,15 +145,23 @@ export async function POST(request: NextRequest) {
       });
       console.log(`[Assessment API] Decremented testQuizEQ remaining: ${activeUserPackage.testQuizEQUsed} -> ${newRemaining}`);
     }
-    // Track assessment completion với database user ID chỉ khi có điểm số thực tế
-    // Không track assessment mới tạo mà chưa có finalScores
-    if ((type === 'test' && data.finalScores && data.finalScores.overall !== undefined)) {
+    // Track assessment completion via event system only when finalScores are present
+    if (type === 'test' && data.finalScores && data.finalScores.overall !== undefined) {
       try {
-        await TrackingIntegrationService.trackAssessmentCompletion(dbUser.id, assessment, { clerkId: userId });
-        console.log(`[Assessment API] Successfully tracked ${type} assessment completion for user ${dbUser.id} (Clerk ID: ${userId})`);
+        await TrackingEventService.trackAssessmentCompleted({
+          userId: dbUser.id,
+          assessmentId: assessment.id,
+          level: assessment.level,
+          totalTimeSeconds: assessment.totalTime || 0,
+          overallScore: Number((assessment.finalScores as any)?.overall ?? data.finalScores.overall ?? 0),
+          jobRoleId: assessment.jobRoleId,
+          history: assessment.history,
+          realTimeScores: assessment.realTimeScores,
+          finalScores: assessment.finalScores,
+        });
+        console.log(`[Assessment API] Event-tracked ${type} completion for user ${dbUser.id}`);
       } catch (trackingError) {
-        console.error(`[Assessment API] Error tracking ${type} completion:`, trackingError);
-        // Continue despite error
+        console.error(`[Assessment API] Error tracking (events) ${type} completion:`, trackingError);
       }
     } else {
       console.log(`[Assessment API] Skipping tracking for ${type} assessment ${assessment.id} - no final scores yet`);

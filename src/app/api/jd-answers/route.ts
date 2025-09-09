@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@clerk/nextjs/server';
 import { JdAnswerService, JdAnswerData, AnalysisResult } from '@/services/jdAnswerService';
-import { UserActivityService } from '@/services/userActivityService';
-import { ActivityType } from '@prisma/client';
+import TrackingEventService from '@/services/trackingEventService';
 
 export async function POST(request: NextRequest) {
   try {
@@ -77,16 +76,20 @@ export async function POST(request: NextRequest) {
 
     
     try {
-      await UserActivityService.addActivity(userId, {
-        type: ActivityType.jd,
-        referenceId: jdQuestionSetId,
-        score: undefined, // Don't track score for JD activities
-        duration: timeSpent || 0,
-        timestamp: new Date()
+      await TrackingEventService.trackJdAnswered({
+        userId,
+        jdQuestionSetId,
+        questionIndex,
+        timeSpentSeconds: timeSpent || 0,
+        overallScore: analysisResult?.overallScore,
+        strengths: analysisResult?.strengths,
+        improvements: analysisResult?.improvements,
+        detailedScores: analysisResult?.detailedScores as Record<string, number> | undefined,
+        feedback: analysisResult?.feedback,
+        skillDeltas: analysisResult?.skillAssessment as Record<string, number> | undefined,
       });
     } catch (activityError) {
-      console.error(' Error tracking JD activity:', activityError);
-      // Don't fail the main operation if activity tracking fails
+      console.error(' Error tracking JD activity (events):', activityError);
     }
 
     return NextResponse.json({

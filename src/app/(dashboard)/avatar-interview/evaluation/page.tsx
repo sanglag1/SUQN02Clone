@@ -11,7 +11,9 @@ interface InterviewEvaluation {
   communicationScore: number;
   technicalScore: number;
   problemSolvingScore: number;
-  confidenceScore: number;
+  // Backend provides deliveryScore; keep confidenceScore for backward compatibility
+  deliveryScore?: number;
+  confidenceScore?: number;
   strengths: string[];
   weaknesses: string[];
   recommendations: string[];
@@ -352,12 +354,21 @@ const InterviewEvaluationContent: React.FC = () => {
                   <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center shadow-md">
                     <Users className="h-5 w-5 text-white" />
                   </div>
-                  <h3 className="text-base font-semibold text-slate-900">Confidence</h3>
+                  <h3 className="text-base font-semibold text-slate-900">{typeof evaluation.deliveryScore === 'number' ? 'Delivery' : 'Confidence'}</h3>
                 </div>
-                <div className={`text-2xl font-bold ${getScoreColor(typeof evaluation.confidenceScore === 'number' ? evaluation.confidenceScore : 0)} mb-1`}>
-                  {(typeof evaluation.confidenceScore === 'number' ? evaluation.confidenceScore : 0).toFixed(1)}
-                </div>
-                <div className="text-slate-600 font-medium text-sm">{getScoreLabel(typeof evaluation.confidenceScore === 'number' ? evaluation.confidenceScore : 0)}</div>
+                {(() => {
+                  const val = typeof evaluation.deliveryScore === 'number'
+                    ? evaluation.deliveryScore
+                    : (typeof evaluation.confidenceScore === 'number' ? evaluation.confidenceScore : 0);
+                  return (
+                    <>
+                      <div className={`text-2xl font-bold ${getScoreColor(val)} mb-1`}>
+                        {val.toFixed(1)}
+                      </div>
+                      <div className="text-slate-600 font-medium text-sm">{getScoreLabel(val)}</div>
+                    </>
+                  );
+                })()}
               </div>
             </div>
 

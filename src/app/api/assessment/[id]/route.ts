@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import {  } from '@/lib/utils';
 import { auth } from '@clerk/nextjs/server';
 import prisma from '@/lib/prisma';
-import { TrackingIntegrationService } from '@/services/trackingIntegrationService';
+import TrackingEventService from '@/services/trackingEventService';
 
 // Handle preflight OPTIONS request
 export async function OPTIONS() {
@@ -171,7 +171,17 @@ export async function PATCH(request: NextRequest, context: { params: Promise<{ i
         });
 
         if (dbUser) {
-          await TrackingIntegrationService.trackAssessmentCompletion(dbUser.id, updatedAssessment, { clerkId: userId });
+          await TrackingEventService.trackAssessmentCompleted({
+            userId: dbUser.id,
+            assessmentId: updatedAssessment.id,
+            level: updatedAssessment.level,
+            totalTimeSeconds: updatedAssessment.totalTime || 0,
+            overallScore: Number(((updatedAssessment.finalScores as Record<string, number> | null | undefined)?.overall) ?? 0),
+            jobRoleId: updatedAssessment.jobRoleId,
+            history: updatedAssessment.history,
+            realTimeScores: updatedAssessment.realTimeScores,
+            finalScores: updatedAssessment.finalScores,
+          });
           console.log(`[Assessment API] Successfully tracked assessment completion for user ${dbUser.id} (Clerk ID: ${userId})`);
         }
       } catch (trackingError) {
@@ -234,7 +244,17 @@ export async function PUT(
 
     // Track khi assessment được cập nhật hoàn chỉnh (có điểm số)
     if (body.finalScores || body.realTimeScores) {
-      await TrackingIntegrationService.trackAssessmentCompletion(userId, updatedAssessment);
+      await TrackingEventService.trackAssessmentCompleted({
+        userId: userId,
+        assessmentId: updatedAssessment.id,
+        level: updatedAssessment.level,
+        totalTimeSeconds: updatedAssessment.totalTime || 0,
+        overallScore: Number(((updatedAssessment.finalScores as Record<string, number> | null | undefined)?.overall) ?? 0),
+        jobRoleId: updatedAssessment.jobRoleId,
+        history: updatedAssessment.history,
+        realTimeScores: updatedAssessment.realTimeScores,
+        finalScores: updatedAssessment.finalScores,
+      });
     }
 
     return (NextResponse.json(updatedAssessment));

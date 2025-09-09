@@ -48,12 +48,23 @@ export async function GET(request: NextRequest) {
       };
     }
 
-    // Get all users first, then include their activities (if any)
+    // Get all users first, then include their tracking data
     const [users, totalCount] = await Promise.all([
       prisma.user.findMany({
         where: userWhere,
         include: {
-          userActivity: true // Include user activity data (may be null)
+          dailyStats: {
+            orderBy: { date: 'desc' },
+            take: 1
+          },
+          activityEvents: {
+            orderBy: { timestamp: 'desc' },
+            take: 10
+          },
+          skillSnapshots: {
+            orderBy: { createdAt: 'desc' },
+            take: 20
+          }
         },
         orderBy: sortBy === 'lastActive' ? { lastActivity: sortOrder } : 
                  sortBy === 'createdAt' ? { createdAt: sortOrder } :
@@ -66,74 +77,61 @@ export async function GET(request: NextRequest) {
       })
     ]);
 
-    // Define types for activities, skills, and goals
-    type Activity = {
-      type: string;
-      score?: number;
-      timestamp: string;
-    };
-
-    type Skill = {
-      score: number;
-      [key: string]: unknown;
-    };
-
-    type Goal = {
-      status: string;
-      [key: string]: unknown;
-    };
-
     // Calculate summary statistics for each user including real-time activity
     const enrichedActivities = users.map(user => {
-      const userActivity = user.userActivity; // May be null for users with no activity
-      const activities: Activity[] = userActivity && Array.isArray(userActivity.activities) ? userActivity.activities as Activity[] : [];
-      const skills: Skill[] = userActivity && Array.isArray(userActivity.skills) ? userActivity.skills as Skill[] : [];
-      const goals: Goal[] = userActivity && Array.isArray(userActivity.goals) ? userActivity.goals as Goal[] : [];
-      const learningStats = (userActivity?.learningStats as { streak?: number; totalStudyTime?: number }) || {};
+      // Get data from new tracking system
+      const latestDailyStats = user.dailyStats[0];
+      const recentEvents = user.activityEvents;
+      const recentSnapshots = user.skillSnapshots;
       
-      // Calculate real-time activity status using multiple indicators
+      // Calculate activity counts from events
+      const totalInterviews = recentEvents.filter(e => e.activityType === 'interview').length;
+      const totalQuizzes = recentEvents.filter(e => e.activityType === 'quiz').length;
+      const totalTests = 0; // test not in ActivityType enum
+      const totalEQs = 0; // eq not in ActivityType enum  
+      const totalPractice = recentEvents.filter(e => e.activityType === 'practice').length;
+      
+      // Calculate average score from events
+      const scores = recentEvents.filter(e => e.score !== null).map(e => e.score!);
+      const averageScore = scores.length > 0 
+        ? scores.reduce((sum, score) => sum + score, 0) / scores.length
+        : 0;
+
+      // Get recent activity
+      const recentActivity = recentEvents[0] ? {
+        type: recentEvents[0].activityType,
+        score: recentEvents[0].score,
+        timestamp: recentEvents[0].timestamp.toISOString()
+      } : null;
+
+      // Get top skills from snapshots
+      const skillMap = new Map<string, number>();
+      recentSnapshots.forEach(snapshot => {
+        const currentScore = skillMap.get(snapshot.skillName) || 0;
+        skillMap.set(snapshot.skillName, Math.max(currentScore, snapshot.score));
+      });
+      
+      const topSkills = Array.from(skillMap.entries())
+        .map(([name, score]) => ({ name, score }))
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 3);
+
+      // Calculate real-time activity status
       const now = new Date();
-      
-      // Use the most recent timestamp from available fields
       const lastActivity = user.lastActivity || user.lastLogin || user.lastSignInAt || user.updatedAt || user.createdAt;
       const timeSinceLastActivity = now.getTime() - lastActivity.getTime();
       
-      // For currently active: check if user has active Clerk session AND recent activity (5 minutes)
       const isCurrentlyActive = user.clerkSessionActive && timeSinceLastActivity < 5 * 60 * 1000;
-      
-      // For currently online: check if user has active Clerk session AND recent activity (20 minutes)
-      // OR if they have very recent lastLogin/lastSignInAt (within 20 minutes)
       const hasRecentClerkActivity = user.clerkSessionActive && timeSinceLastActivity < 20 * 60 * 1000;
       const hasRecentLogin = user.lastLogin && (now.getTime() - user.lastLogin.getTime()) < 20 * 60 * 1000;
       const hasRecentSignIn = user.lastSignInAt && (now.getTime() - user.lastSignInAt.getTime()) < 20 * 60 * 1000;
       
       const isCurrentlyOnline = hasRecentClerkActivity || hasRecentLogin || hasRecentSignIn;
 
-      const totalInterviews = activities.filter((a) => a.type === 'interview').length;
-      const totalQuizzes = activities.filter((a) => a.type === 'quiz').length;
-      const totalTests = activities.filter((a) => a.type === 'test').length;
-      const totalEQs = activities.filter((a) => a.type === 'eq').length;
-      const totalPractice = activities.filter((a) => a.type === 'practice').length;
-      
-      const averageScore = activities.length > 0 
-        ? activities.reduce((sum, act) => sum + (act.score || 0), 0) / activities.length
-        : 0;
-
-      const recentActivity = activities
-        .sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime())[0];
-
-      const topSkills = skills
-        .sort((a, b) => b.score - a.score)
-        .slice(0, 3);
-
-      const completedGoals = goals.filter((g) => g.status === 'completed').length;
-      const activeGoals = goals.filter((g) => g.status === 'in_progress').length;
-
       return {
-        id: userActivity?.id || `user-${user.id}`, // Use userActivity ID if exists, otherwise create unique ID
+        id: `user-${user.id}`,
         user: {
           ...user,
-          // Add real-time activity status
           realTimeActivity: {
             isCurrentlyActive,
             isCurrentlyOnline,
@@ -150,22 +148,18 @@ export async function GET(request: NextRequest) {
           totalTests,
           totalEQs,
           totalPractice,
-          totalActivities: activities.length,
+          totalActivities: recentEvents.length,
           averageScore: Math.round(averageScore * 100) / 100,
-          studyStreak: learningStats.streak || 0,
-          totalStudyTime: learningStats.totalStudyTime || 0,
-          completedGoals,
-          activeGoals
+          studyStreak: latestDailyStats?.totalActivities || 0,
+          totalStudyTime: latestDailyStats?.totalDuration || 0,
+          completedGoals: 0, // Goals not tracked in new system yet
+          activeGoals: 0
         },
         topSkills,
-        recentActivity: recentActivity ? {
-          type: recentActivity.type,
-          score: recentActivity.score,
-          timestamp: recentActivity.timestamp
-        } : null,
-        lastUpdated: userActivity?.lastActive || user.updatedAt,
-        strengths: userActivity && Array.isArray(userActivity.strengths) ? userActivity.strengths : [],
-        weaknesses: userActivity && Array.isArray(userActivity.weaknesses) ? userActivity.weaknesses : []
+        recentActivity,
+        lastUpdated: recentEvents[0]?.timestamp || user.updatedAt,
+        strengths: [], // Not tracked in new system yet
+        weaknesses: [] // Not tracked in new system yet
       };
     });
 
@@ -183,29 +177,24 @@ export async function GET(request: NextRequest) {
       currentlyActiveUsers, // Users active in last 5 minutes
       currentlyOnlineUsers, // Users active in last 15 minutes
       activeUsers: users.filter(user => {
-        const userActivity = user.userActivity;
-        if (!userActivity) return false;
-        const activities = Array.isArray(userActivity.activities) ? userActivity.activities as Activity[] : [];
-        return activities.some((a: Activity) => 
-          new Date(a.timestamp).getTime() > Date.now() - 7 * 24 * 60 * 60 * 1000
+        const recentEvents = user.activityEvents;
+        return recentEvents.some(event => 
+          event.timestamp.getTime() > Date.now() - 7 * 24 * 60 * 60 * 1000
         );
       }).length,
       totalInterviews: users.reduce((sum, user) => {
-        const userActivity = user.userActivity;
-        if (!userActivity) return sum;
-        const activities = Array.isArray(userActivity.activities) ? userActivity.activities as Activity[] : [];
-        return sum + activities.filter((a: Activity) => a.type === 'interview').length;
+        const recentEvents = user.activityEvents;
+        return sum + recentEvents.filter(e => e.activityType === 'interview').length;
       }, 0),
-      averageScore: users.filter(user => user.userActivity).length > 0
+      averageScore: users.filter(user => user.activityEvents.length > 0).length > 0
         ? users.reduce((sum, user) => {
-            const userActivity = user.userActivity;
-            if (!userActivity) return sum;
-            const activities = Array.isArray(userActivity.activities) ? userActivity.activities as Activity[] : [];
-            const userAvg = activities.length > 0 
-              ? activities.reduce((s: number, a: Activity) => s + (a.score || 0), 0) / activities.length
+            const recentEvents = user.activityEvents;
+            const scores = recentEvents.filter(e => e.score !== null).map(e => e.score!);
+            const userAvg = scores.length > 0 
+              ? scores.reduce((s, score) => s + score, 0) / scores.length
               : 0;
             return sum + userAvg;
-          }, 0) / users.filter(user => user.userActivity).length
+          }, 0) / users.filter(user => user.activityEvents.length > 0).length
         : 0
     };
 

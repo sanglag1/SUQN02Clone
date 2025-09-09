@@ -55,22 +55,22 @@ export async function GET(request: NextRequest) {
     const days = parseInt(timeframe);
     const startDate = new Date(Date.now() - days * 24 * 60 * 60 * 1000);
 
-    // Get all user activities with user info - include role relation properly
-    const userActivities = await prisma.userActivity.findMany({
+    // Get all users with their tracking data
+    const userActivities = await prisma.user.findMany({
       include: {
-        user: {
+        dailyStats: {
+          orderBy: { date: 'desc' }
+        },
+        activityEvents: {
+          orderBy: { timestamp: 'desc' }
+        },
+        skillSnapshots: {
+          orderBy: { createdAt: 'desc' }
+        },
+        role: {
           select: {
-            id: true,
-            firstName: true,
-            lastName: true,
-            email: true,
-            createdAt: true,
-            role: {
-              select: {
-                name: true,
-                displayName: true
-              }
-            }
+            name: true,
+            displayName: true
           }
         }
       }
@@ -79,32 +79,55 @@ export async function GET(request: NextRequest) {
     // Get total users count
     const totalUsers = await prisma.user.count();
 
-    // Process activities data
+    // Process activities data from new tracking system
     const allActivities: Record<string, unknown>[] = [];
-    const processedUserActivities = userActivities.map((ua) => {
-      const activities = Array.isArray(ua.activities) ? ua.activities as Record<string, unknown>[] : [];
-      const skills = Array.isArray(ua.skills) ? ua.skills as Record<string, unknown>[] : [];
-      const goals = Array.isArray(ua.goals) ? ua.goals as Record<string, unknown>[] : [];
-      const learningStats = (ua.learningStats ?? {}) as Record<string, unknown>;
+    const processedUserActivities = userActivities.map((user) => {
+      const events = user.activityEvents;
+      const snapshots = user.skillSnapshots;
+      const dailyStats = user.dailyStats;
       
-      // Add user info to activities for global stats
-      const activitiesWithUser = activities.map(activity => ({
-        ...activity,
-        userId: ua.userId,
-        userName: ua.user ? `${ua.user.firstName || ''} ${ua.user.lastName || ''}`.trim() || ua.user.email : 'Unknown',
-        userEmail: ua.user?.email || 'N/A'
+      // Convert events to activities format for compatibility
+      const activities = events.map(event => ({
+        type: event.activityType,
+        score: event.score,
+        timestamp: event.timestamp.toISOString(),
+        duration: event.duration,
+        userId: user.id,
+        userName: `${user.firstName || ''} ${user.lastName || ''}`.trim() || user.email,
+        userEmail: user.email || 'N/A',
+        referenceId: event.referenceId,
+        details: event.metadata || {}
       }));
       
-      allActivities.push(...activitiesWithUser);
+      allActivities.push(...activities);
       
       return {
-        ...ua,
+        userId: user.id,
+        user: {
+          id: user.id,
+          firstName: user.firstName,
+          lastName: user.lastName,
+          email: user.email,
+          role: user.role,
+          createdAt: user.createdAt
+        },
         activities,
-        skills,
-        goals,
-        learningStats
+        skills: snapshots.map(snapshot => ({
+          name: snapshot.skillName,
+          score: snapshot.score,
+          level: 'intermediate', // Default level
+          category: 'general',
+          lastAssessed: snapshot.createdAt.toISOString()
+        })),
+        goals: [], // Goals not tracked in new system yet
+        learningStats: {
+          streak: dailyStats.length > 0 ? dailyStats[0].totalActivities : 0,
+          totalStudyTime: dailyStats.reduce((sum, stat) => sum + stat.totalDuration, 0),
+          weeklyStudyTime: 0,
+          monthlyStudyTime: 0
+        }
       };
-    }) as ProcessedUserActivity[];
+    });
 
     // Calculate active users (users with activities in timeframe)
     const activeUsers = processedUserActivities.filter((ua) => 

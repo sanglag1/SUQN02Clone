@@ -38,33 +38,47 @@ export async function GET(
     
     const startDate = new Date(Date.now() - timeRange * 24 * 60 * 60 * 1000);
 
-    // Get user with activity data
-    const userActivity = await prisma.userActivity.findUnique({
-      where: { userId },
+    // Get user with tracking data
+    const userActivity = await prisma.user.findUnique({
+      where: { id: userId },
       include: {
-        user: {
+        dailyStats: {
+          orderBy: { date: 'desc' }
+        },
+        activityEvents: {
+          orderBy: { timestamp: 'desc' }
+        },
+        skillSnapshots: {
+          orderBy: { createdAt: 'desc' }
+        },
+        role: {
           select: {
-            id: true,
-            firstName: true,
-            lastName: true,
-            email: true,
-            role: true,
-            createdAt: true,
-            clerkId: true
+            name: true,
+            displayName: true
           }
         }
       }
     });
 
-    if (!userActivity || !userActivity.user) {
-      return NextResponse.json({ error: "User activity not found" }, { status: 404 });
+    if (!userActivity) {
+      return NextResponse.json({ error: "User not found" }, { status: 404 });
     }
 
-    // Process activities
-    const activities = Array.isArray(userActivity.activities) ? userActivity.activities as Record<string, unknown>[] : [];
-    const skills = Array.isArray(userActivity.skills) ? userActivity.skills as Record<string, unknown>[] : [];
-    const goals = Array.isArray(userActivity.goals) ? userActivity.goals as Record<string, unknown>[] : [];
-    const learningStats = userActivity.learningStats as Record<string, unknown> || {};
+    // Process activities from new tracking system
+    const events = userActivity.activityEvents;
+    const snapshots = userActivity.skillSnapshots;
+    const dailyStats = userActivity.dailyStats;
+    
+    // Convert events to activities format
+    const activities = events.map((event) => ({
+      id: event.id,
+      type: event.activityType,
+      score: event.score,
+      duration: event.duration,
+      timestamp: event.timestamp.toISOString(),
+      referenceId: event.referenceId,
+      details: event.metadata || {}
+    }));
 
     // Filter activities by time range and type
     const filteredActivities = activities.filter((activity: Record<string, unknown>) => {
@@ -86,8 +100,8 @@ export async function GET(
         eq: filteredActivities.filter((a: Record<string, unknown>) => a.type === 'eq').length,
         practice: filteredActivities.filter((a: Record<string, unknown>) => a.type === 'practice').length,
         learning: filteredActivities.filter((a: Record<string, unknown>) => a.type === 'learning').length,
-        goalCompleted: goals.filter((g: Record<string, unknown>) => g.status === 'completed').length,
-        goalStarted: goals.filter((g: Record<string, unknown>) => g.status === 'in_progress').length,
+        goalCompleted: 0, // Goals not tracked in new system yet
+        goalStarted: 0
       },
       averageScore: filteredActivities.length > 0
         ? filteredActivities.reduce((sum: number, a: Record<string, unknown>) => sum + (Number(a.score) || 0), 0) / filteredActivities.length
@@ -99,9 +113,9 @@ export async function GET(
       worstScore: filteredActivities.length > 0
         ? Math.min(...filteredActivities.map((a: Record<string, unknown>) => Number(a.score) || 0))
         : 0,
-      currentStreak: Number(learningStats.streak) || 0,
-      longestStreak: Number(learningStats.longestStreak) || 0,
-      totalStudyTime: Number(learningStats.totalStudyTime) || 0
+      currentStreak: dailyStats.length > 0 ? dailyStats[0].totalActivities : 0,
+      longestStreak: dailyStats.length > 0 ? dailyStats[0].totalActivities : 0,
+      totalStudyTime: dailyStats.reduce((sum: number, stat: { totalDuration: number }) => sum + stat.totalDuration, 0)
     };
 
     // Recent activities (last 10)
@@ -111,52 +125,38 @@ export async function GET(
         const timestampB = new Date(b.timestamp as string).getTime();
         return timestampB - timestampA;
       })
-      .slice(0, 10)
-      .map((activity: Record<string, unknown>) => ({
-        id: activity.id,
-        type: activity.type,
-        score: activity.score,
-        duration: activity.duration,
-        timestamp: activity.timestamp,
-        referenceId: activity.referenceId, // Add referenceId for JD activity identification
-        details: activity.details || {}
-      }));
+      .slice(0, 10);
 
-    // Goal insights
-    const goalInsights = {
-      total: goals.length,
-      completed: goals.filter((g: Record<string, unknown>) => g.status === 'completed').length,
-      inProgress: goals.filter((g: Record<string, unknown>) => g.status === 'in_progress').length,
-      notStarted: goals.filter((g: Record<string, unknown>) => g.status === 'not_started').length,
-      completionRate: goals.length > 0 
-        ? Math.round((goals.filter((g: Record<string, unknown>) => g.status === 'completed').length / goals.length) * 100)
-        : 0
-    };
-
-    // Skills data
-    const skillsData = skills.map((skill: Record<string, unknown>) => ({
-      name: skill.name,
-      currentScore: Number(skill.score) || 0,
-      level: skill.level as string || 'beginner',
-      category: skill.category as string || 'general',
-      lastAssessed: skill.lastAssessed || null
+    // Skills data from snapshots
+    const skillsData = snapshots.map((snapshot: { skillName: string; score: number; createdAt: Date }) => ({
+      name: snapshot.skillName,
+      currentScore: snapshot.score,
+      level: 'intermediate', // Default level
+      category: 'general',
+      lastAssessed: snapshot.createdAt.toISOString()
     }));
 
     return NextResponse.json({
       user: {
-        id: userActivity.user.id,
-        firstName: userActivity.user.firstName || '',
-        lastName: userActivity.user.lastName || '',
-        email: userActivity.user.email,
-        role: userActivity.user.role,
+        id: userActivity.id,
+        firstName: userActivity.firstName || '',
+        lastName: userActivity.lastName || '',
+        email: userActivity.email,
+        role: userActivity.role,
         isOnline: false,
-        lastActivity: userActivity.user.createdAt.toISOString(),
-        clerkId: userActivity.user.clerkId
+        lastActivity: userActivity.createdAt.toISOString(),
+        clerkId: userActivity.clerkId
       },
       stats,
       activities: recentActivities,
       skills: skillsData,
-      goals: goalInsights,
+      goals: {
+        total: 0,
+        completed: 0,
+        inProgress: 0,
+        notStarted: 0,
+        completionRate: 0
+      },
       learningStats: {
         totalStudyTime: stats.totalStudyTime,
         currentStreak: stats.currentStreak,
@@ -165,7 +165,7 @@ export async function GET(
           ? Math.round(stats.totalDuration / stats.totalActivities)
           : 0,
         totalSessions: stats.totalActivities,
-        completionRate: goalInsights.completionRate
+        completionRate: 0
       },
       timeframe: {
         days: timeRange,

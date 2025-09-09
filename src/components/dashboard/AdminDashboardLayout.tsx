@@ -101,10 +101,12 @@ export default function AdminDashboardLayout({
     },
     {
       icon: MessageSquare,
-      label: 'Question Management',
+      label: 'Question Bank',
       key: 'content',
       subItems: [
-        { label: 'Questions', href: '/admin/questions' },
+        { label: 'Questions', href: '/admin/question-bank/questions' },
+        { label: 'Question Sets', href: '/admin/question-bank/sets' },
+        { label: 'Quiz Templates', href: '/admin/question-bank/templates' },
       ]
     },
     {

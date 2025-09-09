@@ -112,7 +112,7 @@ export default function DashboardPage() {
   ];
 
   // Multi-Line Chart State
-  const [viewMode, setViewMode] = useState<'day' | 'month' | 'year'>('day');
+  const [viewMode, setViewMode] = useState<'day' | 'month' | 'year' | 'session'>('day');
   const [lineMode, setLineMode] = useState<'score' | 'total'>('score');
   const [lineChartData, setLineChartData] = useState<Array<{
     period: string;
@@ -239,26 +239,59 @@ export default function DashboardPage() {
     // Sử dụng allActivities thay vì recentActivities để có đầy đủ dữ liệu
     const activities = progress.allActivities || progress.recentActivities || [];
     
-
-
+    // Debug: Log dữ liệu để kiểm tra
+    console.log('📊 Dashboard Debug - Activities:', activities);
+    console.log('📊 Dashboard Debug - Activities length:', activities.length);
+    console.log('📊 Dashboard Debug - View mode:', viewMode);
     
-    const groupKey = (date: Date): string => {
+    const groupKey = (date: Date, index?: number): string => {
       if (viewMode === 'day') return date.toISOString().slice(0, 10);
       if (viewMode === 'month') return date.getFullYear() + '-' + String(date.getMonth() + 1).padStart(2, '0');
       if (viewMode === 'year') return String(date.getFullYear());
+      if (viewMode === 'session') return `Session ${(index || 0) + 1}`;
       return '';
     };
     const grouped: Record<string, { quiz: number[]; test: number[]; interview: number[] }> = {};
-    activities.forEach(a => {
-      if (!a.timestamp) return;
-      const date = new Date(a.timestamp);
-      const key = groupKey(date);
-      if (!key) return;
-      if (!grouped[key]) grouped[key] = { quiz: [], test: [], interview: [] };
-      if (a.type === 'quiz') grouped[key].quiz.push(a.score || 0);
-      if (a.type === 'test' || a.type === 'eq') grouped[key].test.push(a.score || 0);
-      if (a.type === 'interview') grouped[key].interview.push(a.score || 0);
-    });
+    
+    if (viewMode === 'session') {
+      // Chế độ Session: mỗi activity là 1 session riêng biệt
+      activities.forEach((a, index) => {
+        if (!a.timestamp) {
+          console.log('⚠️ Activity missing timestamp:', a);
+          return;
+        }
+        const date = new Date(a.timestamp);
+        const key = groupKey(date, index);
+        if (!key) {
+          console.log('⚠️ Invalid group key for date:', date, 'activity:', a);
+          return;
+        }
+        if (!grouped[key]) grouped[key] = { quiz: [], test: [], interview: [] };
+        if (a.type === 'quiz') grouped[key].quiz.push(a.score || 0);
+        if (a.type === 'test' || a.type === 'eq') grouped[key].test.push(a.score || 0);
+        if (a.type === 'interview') grouped[key].interview.push(a.score || 0);
+      });
+    } else {
+      // Chế độ Day/Month/Year: nhóm theo thời gian
+      activities.forEach(a => {
+        if (!a.timestamp) {
+          console.log('⚠️ Activity missing timestamp:', a);
+          return;
+        }
+        const date = new Date(a.timestamp);
+        const key = groupKey(date);
+        if (!key) {
+          console.log('⚠️ Invalid group key for date:', date, 'activity:', a);
+          return;
+        }
+        if (!grouped[key]) grouped[key] = { quiz: [], test: [], interview: [] };
+        if (a.type === 'quiz') grouped[key].quiz.push(a.score || 0);
+        if (a.type === 'test' || a.type === 'eq') grouped[key].test.push(a.score || 0);
+        if (a.type === 'interview') grouped[key].interview.push(a.score || 0);
+      });
+    }
+    
+    console.log('📊 Dashboard Debug - Grouped data:', grouped);
     
     const chartData = Object.entries(grouped).map(([period, vals]) => {
       if (lineMode === 'score') {
@@ -279,8 +312,44 @@ export default function DashboardPage() {
       }
     }).sort((a, b) => a.period.localeCompare(b.period));
 
-
-    setLineChartData(chartData);
+    console.log('📊 Dashboard Debug - Final chart data:', chartData);
+    
+    // Nếu có ít hơn 3 điểm dữ liệu và không phải chế độ Session, tạo dữ liệu giả lập để có đường cong
+    if (chartData.length < 3 && viewMode !== 'session') {
+      console.log('⚠️ Ít dữ liệu, tạo dữ liệu giả lập');
+      
+      // Tạo dữ liệu cho 7 ngày gần nhất
+      const today = new Date();
+      const extendedData = [];
+      
+      for (let i = 6; i >= 0; i--) {
+        const date = new Date(today.getTime() - i * 24 * 60 * 60 * 1000);
+        const dateKey = date.toISOString().slice(0, 10);
+        
+        // Tìm dữ liệu thực tế cho ngày này
+        const realData = chartData.find(d => d.period === dateKey);
+        
+        if (realData) {
+          extendedData.push(realData);
+        } else {
+          // Tạo dữ liệu giả lập dựa trên dữ liệu thực tế
+          const lastRealData = chartData[chartData.length - 1];
+          const variation = (Math.random() - 0.5) * 2; // ±1 điểm
+          
+          extendedData.push({
+            period: dateKey,
+            quiz: Math.max(0, (lastRealData?.quiz || 0) + variation),
+            test: Math.max(0, (lastRealData?.test || 0) + variation),
+            interview: Math.max(0, (lastRealData?.interview || 0) + variation),
+          });
+        }
+      }
+      
+      console.log('📊 Dashboard Debug - Extended data:', extendedData);
+      setLineChartData(extendedData);
+    } else {
+      setLineChartData(chartData);
+    }
   }, [progress, viewMode, lineMode]);
 
   // Tính toán dữ liệu spider chart mỗi khi progress thay đổi
@@ -436,11 +505,12 @@ export default function DashboardPage() {
                   <select
                     className="border rounded px-2 py-1"
                     value={viewMode}
-                    onChange={e => setViewMode(e.target.value as 'day' | 'month' | 'year')}
+                    onChange={e => setViewMode(e.target.value as 'day' | 'month' | 'year' | 'session')}
                   >
                     <option value="day">Day</option>
                     <option value="month">Month</option>
                     <option value="year">Year</option>
+                    <option value="session">Session</option>
                   </select>
                   <span className="font-medium ml-6">Mode:</span>
                   <select
@@ -453,6 +523,30 @@ export default function DashboardPage() {
                   </select>
                 </div>
               </div>
+              {/* Thông báo khi dữ liệu ít */}
+              {lineChartData.length < 3 && viewMode !== 'session' && (
+                <div className="mb-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                    <p className="text-sm text-yellow-700">
+                      Biểu đồ hiển thị dữ liệu giả lập để tạo đường cong. Hãy luyện tập thêm để có dữ liệu thực tế!
+                    </p>
+                  </div>
+                </div>
+              )}
+              
+              {/* Thông báo cho chế độ Session */}
+              {viewMode === 'session' && (
+                <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <p className="text-sm text-blue-700">
+                      Chế độ Session: So sánh từng lần luyện tập riêng biệt
+                    </p>
+                  </div>
+                </div>
+              )}
+              
               <ChartMultiAreaInteractive
                 data={lineChartData.map(d => ({
                   // map period -> date to keep X axis formatter compatible

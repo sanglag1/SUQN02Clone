@@ -80,6 +80,10 @@ export default function TrackingDashboard() {
   const [progress, setProgress] = useState<ProgressData | null>(null);
   const [loading, setLoading] = useState(true);
   const [overallSpiderData, setOverallSpiderData] = useState<SpiderChartData[]>([]);
+  const [improvement, setImprovement] = useState<{ current: number; previous: number; delta: number }>({ current: 0, previous: 0, delta: 0 });
+  const [normalizedTrend, setNormalizedTrend] = useState<Array<{ date: string; overall: number }>>([]);
+  const [dimensionRadarData, setDimensionRadarData] = useState<Array<{ subject: string; value: number }>>([]);
+  const [modeBreakdown, setModeBreakdown] = useState<Record<string, number>>({});
 
   const [showTargetModal, setShowTargetModal] = useState(false);
   const [personalTargets, setPersonalTargets] = useState({
@@ -133,6 +137,24 @@ export default function TrackingDashboard() {
         console.log('Tracking data fetched:', data);
         
         setProgress(data);
+
+        // New normalized datasets
+        if (data.normalized) {
+          setImprovement({
+            current: data.normalized.overallCurrent || 0,
+            previous: data.normalized.overallPrevious || 0,
+            delta: data.normalized.improvementDelta || 0,
+          });
+          setNormalizedTrend(Array.isArray(data.normalized.trend) ? data.normalized.trend : []);
+          const dims = data.normalized.dimensions || {};
+          setDimensionRadarData([
+            { subject: 'Fundamental', value: Math.round(dims.FUND || 0) },
+            { subject: 'Problem Solving', value: Math.round(dims.PROB || 0) },
+            { subject: 'Communication', value: Math.round(dims.COMM || 0) },
+            { subject: 'Domain', value: Math.round(dims.DOMAIN || 0) },
+          ]);
+          setModeBreakdown(data.normalized.modeBreakdown || {});
+        }
 
         // Tính toán dữ liệu cho spider charts
         if (data.allActivities && Array.isArray(data.allActivities)) {
@@ -301,6 +323,71 @@ export default function TrackingDashboard() {
   return (
     <div className="space-y-8">
       {/* Overall RadarChart (spider chart) */}
+      {/* Overall Improvement and Trend */}
+      <Card className="p-6">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-semibold">Overall Improvement</h2>
+          <div className={`text-lg font-semibold ${improvement.delta >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+            {improvement.delta >= 0 ? '+' : ''}{improvement.delta.toFixed(2)}
+          </div>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="col-span-1">
+            <div className="text-sm text-gray-500">Current (0-100)</div>
+            <div className="text-3xl font-semibold">{improvement.current.toFixed(1)}%</div>
+            <div className="mt-2 text-sm text-gray-500">Previous</div>
+            <div className="text-xl">{improvement.previous.toFixed(1)}%</div>
+            {/* Mode breakdown */}
+            <div className="mt-6">
+              <div className="text-sm font-medium mb-2">Mode breakdown</div>
+              <div className="space-y-2">
+                {Object.keys(modeBreakdown).length === 0 && (
+                  <div className="text-sm text-gray-500">No data</div>
+                )}
+                {Object.entries(modeBreakdown).map(([k, v]) => (
+                  <div key={k} className="flex items-center justify-between">
+                    <span className="text-sm text-gray-700">{k}</span>
+                    <span className="text-sm font-medium">{v.toFixed(1)}%</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="col-span-2 h-64">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={normalizedTrend} margin={{ top: 10, right: 20, left: 0, bottom: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="date" />
+                <YAxis domain={[0, 100]} />
+                <Tooltip formatter={(value: number) => value.toFixed(1) + '%'} />
+                <Legend />
+                <Line type="monotone" dataKey="overall" name="Overall" stroke="#2563eb" strokeWidth={2} dot={false} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+      </Card>
+
+      {/* Dimension Radar (normalized) */}
+      <Card className="p-6">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-semibold">Dimensions (Normalized)</h2>
+        </div>
+        <div className="h-80">
+          <ResponsiveContainer width="100%" height="100%">
+            <RadarChart data={dimensionRadarData}>
+              <PolarGrid />
+              <PolarAngleAxis dataKey="subject" />
+              <PolarRadiusAxis angle={90} domain={[0, 100]} />
+              <Tooltip />
+              <Legend />
+              <Radar name="Current" dataKey="value" stroke="#0ea5e9" fill="#0ea5e9" fillOpacity={0.35} />
+            </RadarChart>
+          </ResponsiveContainer>
+        </div>
+      </Card>
+
+      {/* Legacy Overall RadarChart (kept) */}
       <Card className="p-6">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-semibold">Overall Progress</h2>

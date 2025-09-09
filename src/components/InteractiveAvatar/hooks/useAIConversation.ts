@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { ChatMessage } from '@/services/openaiService';
-import { processInterviewResponse, startInterview, InterviewResponse } from '@/services/Avatar-AI';
+import { processInterviewResponse, startInterview, InterviewResponse } from '@/services/avatarInterviewService/Avatar-AI';
 
 interface InterviewState {
   coveredTopics: string[];
